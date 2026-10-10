@@ -101,7 +101,7 @@ is in [`results/5_resource_usage/resource_usage_analysis.md`](results/5_resource
 | ![FFFF decimal](board_test/board_4_ffff_dec_65535.jpg) | ![FFFF hex](board_test/board_5_ffff_hex.jpg) | ![1234 decimal](board_test/board_6_1234_dec_04660.jpg) |
 | `FFFF` decimal → `65535` | `FFFF` hex | `1234` decimal → `04660` |
 
-Full report (English, with every waveform and report excerpt): [`docs/lab3_report.pdf`](docs/lab3_report.pdf).
+Submitted report (Hebrew, with every waveform and report excerpt): [`docs/lab3_report.pdf`](docs/lab3_report.pdf).
 
 ## Files
 

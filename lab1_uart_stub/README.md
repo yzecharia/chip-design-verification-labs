@@ -16,6 +16,8 @@ architecture, the interfaces and the hierarchy right *before* writing any micro-
 6. **Cross-check** against the RTL schematic Vivado generates from the elaborated design
    (`docs/vivado_rtl_schematic.pdf`) – it matches the hand-drawn diagram.
 
+Submitted report (Hebrew): [`docs/lab1_report.pdf`](docs/lab1_report.pdf).
+
 ![chip_top block diagram](docs/chip_top.png)
 
 ## Interfaces
@@ -63,4 +65,5 @@ constraints/nexys_a7_100t.xdc                      clock, switches, LEDs and UAR
 docs/chip_top.drawio / .png                        my block diagram
 docs/chip_top_soc.drawio / .png                    the same diagram with unconnected (NC) handshake pins marked
 docs/vivado_rtl_schematic.pdf                      Vivado's auto-generated schematic for the cross-check
+docs/lab1_report.pdf                               submitted lab report
 ```

@@ -67,6 +67,9 @@ clock constraint.
 * For the same function and the same tool, both synthesize to the same thing. The abstraction level is a
   design-time choice, not a resource one.
 
+Submitted report (Hebrew, with the full design process, waveforms, lint/synthesis/implementation reports and the
+behavioral-vs-structural comparison): [`docs/lab2_report.pdf`](docs/lab2_report.pdf).
+
 ## Files
 
 ```
@@ -76,6 +79,6 @@ sim/        xsim log + waveform screenshot
 constraints/nexys_a7_100t.xdc           SW, LED, BTNC + max-delay constraints
 reports/    lint, synthesis and implementation reports (DRC, methodology, timing, power, utilization, route status)
 schematics/ RTL and post-synthesis schematics of both adders and chip_top (png + pdf)
-docs/       block diagram
+docs/       block diagram, lab2_report.pdf
 board_test/ photos
 ```
