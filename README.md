@@ -1,6 +1,6 @@
 # Chip Design and Verification – course labs
 
-Lab work from the **Chip Design and Verification** course (Verilog + Verification track, Reichman Tech School).
+Lab work from the **Google & Reichman Tech School Chip Design & Verification program** (Verilog + Verification track).
 Every lab goes through the full FPGA flow: RTL in Verilog, self-checking testbenches, lint, synthesis,
 place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Artix-7 `xc7a100tcsg324-1`).
 
