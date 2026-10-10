@@ -1,0 +1,23 @@
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++---------+----------+--------------+----------+
+| Rule ID | Severity | # Violations | # Waived |
++---------+----------+--------------+----------+
+
+
+INFO: [Synth 37-85] Total of 0 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 13434.273 ; gain = 0.000 ; free physical = 3585 ; free virtual = 9462
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 13434.273 ; gain = 0.000 ; free physical = 3581 ; free virtual = 9458
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3837.829; main = 3277.216; forked = 560.613
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 15908.855; main = 13432.078; forked = 2476.777
