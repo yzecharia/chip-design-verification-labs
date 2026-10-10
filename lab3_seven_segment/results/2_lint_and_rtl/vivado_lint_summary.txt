@@ -1,0 +1,2 @@
+LINT (RTL ANALYSIS > Run Linter)
+  chip_top                 clean (no violations)

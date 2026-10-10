@@ -1,0 +1,5 @@
+ELABORATED DESIGN (RTL ANALYSIS > Open Elaborated Design)
+  Top:        chip_top, 169 instance(s) below it
+  Checks:     clean (Report Methodology, Report DRC)
+  Reports:    methodology.rpt, drc.rpt, noise.rpt
+  Schematics: rtl_<module>.pdf/.png (elaborated design, as in RTL ANALYSIS > Schematic)

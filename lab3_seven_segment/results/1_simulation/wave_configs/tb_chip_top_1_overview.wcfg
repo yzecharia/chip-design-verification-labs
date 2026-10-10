@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="11446000 ps"></ZoomEndTime>
+      <Cursor1Time time="0 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 SW=12345, BTNC" time="296000" />
+      <marker label="2 pressed_c: dec" time="395000" />
+      <marker label="3 BTND: 777 hex" time="1555000" />
+      <marker label="4 short BTNC" time="2036000" />
+      <marker label="5 65535 dec" time="2555000" />
+      <marker label="6 FFFF hex" time="3135000" />
+      <marker label="7 0 dec" time="3715000" />
+      <marker label="8 both: hex" time="4295000" />
+      <marker label="9 4321 dec" time="4875000" />
+      <marker label="10 reset" time="5346000" />
+      <marker label="11 189/189 PASS" time="11446000" />
+   </wave_markers>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/tb_chip_top/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/sw">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/btnc">
+      <obj_property name="ElementShortName">btnc</obj_property>
+      <obj_property name="ObjectShortName">btnc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/btnd">
+      <obj_property name="ElementShortName">btnd</obj_property>
+      <obj_property name="ObjectShortName">btnd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/chip_top_i/pressed_c">
+      <obj_property name="ElementShortName">pressed_c</obj_property>
+      <obj_property name="ObjectShortName">pressed_c</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/chip_top_i/pressed_d">
+      <obj_property name="ElementShortName">pressed_d</obj_property>
+      <obj_property name="ObjectShortName">pressed_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/sw_reg">
+      <obj_property name="ElementShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/chip_top_i/dec_hex">
+      <obj_property name="ElementShortName">dec_hex</obj_property>
+      <obj_property name="ObjectShortName">dec_hex</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/bcd_val">
+      <obj_property name="ElementShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/pass">
+      <obj_property name="ElementShortName">pass[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pass[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/fail">
+      <obj_property name="ElementShortName">fail[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fail[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

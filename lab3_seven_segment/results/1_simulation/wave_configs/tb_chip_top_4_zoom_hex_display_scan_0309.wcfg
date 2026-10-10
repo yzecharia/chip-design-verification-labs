@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1660000 ps"></ZoomStartTime>
+      <ZoomEndTime time="1780000 ps"></ZoomEndTime>
+      <Cursor1Time time="1660000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 AN0 shows 9" time="1675000" />
+      <marker label="2 AN1 shows 0" time="1695000" />
+      <marker label="3 AN2 shows 3" time="1715000" />
+      <marker label="4 AN3 shows 0" time="1735000" />
+      <marker label="5 all off: off" time="1755000" />
+      <marker label="6 AN0 shows 9" time="1775000" />
+   </wave_markers>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/tb_chip_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/chip_top_i/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/chip_top_i/dec_hex">
+      <obj_property name="ElementShortName">dec_hex</obj_property>
+      <obj_property name="ObjectShortName">dec_hex</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/sw_reg">
+      <obj_property name="ElementShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/bcd_val">
+      <obj_property name="ElementShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/display_ctrl_i/ring_reg">
+      <obj_property name="ElementShortName">ring_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ring_reg[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/chip_top_i/display_ctrl_i/dig_in">
+      <obj_property name="ElementShortName">dig_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dig_in[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/disp_an">
+      <obj_property name="ElementShortName">disp_an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_an[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/ss_dig">
+      <obj_property name="ElementShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dp">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+</wave_config>

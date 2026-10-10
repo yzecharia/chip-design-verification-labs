@@ -1,0 +1,95 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module value_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd
+WARNING: [VRFC 10-8497] literal value 'd67890 truncated to fit in 16 bits [/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_ss.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ss
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_value_latch
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_binary_2_bcd_snap work.tb_binary_2_bcd work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.binary_2_bcd
+Compiling module work.tb_binary_2_bcd
+Compiling module work.glbl
+Built simulation snapshot tb_binary_2_bcd_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct  7 12:08:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_binary_2_bcd_snap/xsim_script.tcl
+# xsim {tb_binary_2_bcd_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/lab_3/build/xsim/behavioral/tb_binary_2_bcd/tb_binary_2_bcd.vcd}
+## log_vcd [get_objects -r /tb_binary_2_bcd/*]
+## run -all
+Time:    66 | Check BCD conversion correct | sw=0011000000111001 | actual_bcd=00000000000000000000 | expected_bcd=00000000000000000000 | PASS
+Time:   250 | Check BCD conversion correct | sw=0000000000000000 | actual_bcd=00000000000000000000 | expected_bcd=00000000000000000000 | PASS
+Time:   430 | Check BCD conversion correct | sw=1111111111111111 | actual_bcd=01100101010100110101 | expected_bcd=01100101010100110101 | PASS
+Time:   610 | Check BCD conversion correct | sw=0011000000111001 | actual_bcd=00010010001101000101 | expected_bcd=00010010001101000101 | PASS
+Time:   790 | Check BCD conversion correct | sw=0000100100110010 | actual_bcd=00000010001101010100 | expected_bcd=00000010001101010100 | PASS
+Time:   970 | Check BCD conversion correct | sw=1111100111100011 | actual_bcd=01100011100101110001 | expected_bcd=01100011100101110001 | PASS
+Time:  1150 | Check BCD conversion correct | sw=0000100100001011 | actual_bcd=00000010001100010101 | expected_bcd=00000010001100010101 | PASS
+Time:  1330 | Check BCD conversion correct | sw=0001101111010100 | actual_bcd=00000111000100100100 | expected_bcd=00000111000100100100 | PASS
+Time:  1510 | Check BCD conversion correct | sw=0010111111110110 | actual_bcd=00010010001001111000 | expected_bcd=00010010001001111000 | PASS
+Time:  1690 | Check BCD conversion correct | sw=0011000111000101 | actual_bcd=00010010011101000001 | expected_bcd=00010010011101000001 | PASS
+Time:  1870 | Check BCD conversion correct | sw=0110001011000001 | actual_bcd=00100101001010000001 | expected_bcd=00100101001010000001 | PASS
+Time:  2050 | Check BCD conversion correct | sw=1111100001000011 | actual_bcd=01100011010101010101 | expected_bcd=01100011010101010101 | PASS
+Time:  2230 | Check BCD conversion correct | sw=0010101110101000 | actual_bcd=00010001000101110110 | expected_bcd=00010001000101110110 | PASS
+Time:  2410 | Check BCD conversion correct | sw=0110101111001101 | actual_bcd=00100111010110010111 | expected_bcd=00100111010110010111 | PASS
+Time:  2590 | Check BCD conversion correct | sw=0001010000010111 | actual_bcd=00000101000101000011 | expected_bcd=00000101000101000011 | PASS
+Time:  2770 | Check BCD conversion correct | sw=0101101110011111 | actual_bcd=00100011010001010101 | expected_bcd=00100011010001010101 | PASS
+Time:  2950 | Check BCD conversion correct | sw=1001110110010010 | actual_bcd=01000000001100111000 | expected_bcd=01000000001100111000 | PASS
+Time:  3130 | Check BCD conversion correct | sw=0111011011011000 | actual_bcd=00110000010000100100 | expected_bcd=00110000010000100100 | PASS
+Time:  3310 | Check BCD conversion correct | sw=0101001111100010 | actual_bcd=00100001010001110100 | expected_bcd=00100001010001110100 | PASS
+Time:  3490 | Check BCD conversion correct | sw=1100100100111010 | actual_bcd=01010001010100010100 | expected_bcd=01010001010100010100 | PASS
+Time:  3670 | Check BCD conversion correct | sw=1110001010100101 | actual_bcd=01011000000000100001 | expected_bcd=01011000000000100001 | PASS
+Time:  3850 | Check BCD conversion correct | sw=0110011111111001 | actual_bcd=00100110011000010111 | expected_bcd=00100110011000010111 | PASS
+Time:  4030 | Check BCD conversion correct | sw=0010010011011001 | actual_bcd=00001001010000110011 | expected_bcd=00001001010000110011 | PASS
+Time:  4210 | Check BCD conversion correct | sw=1000000000110111 | actual_bcd=00110010100000100011 | expected_bcd=00110010100000100011 | PASS
+Time:  4390 | Check BCD conversion correct | sw=1101111011010001 | actual_bcd=01010111000001000001 | expected_bcd=01010111000001000001 | PASS
+Time:  4390 | TEST PASS | 25/25
+$finish called at time : 4390 ns : File "/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v" Line 93
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701060 KB (Peak: 757980 KB), Simulation CPU Usage: 1930 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 12:08:54 2026...

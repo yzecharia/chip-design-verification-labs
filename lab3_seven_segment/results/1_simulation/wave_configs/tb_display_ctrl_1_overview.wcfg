@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_display_ctrl_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_display_ctrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="8515000 ps"></ZoomEndTime>
+      <Cursor1Time time="0 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 reset: AN0" time="15000" />
+      <marker label="2 first tick" time="260000" />
+      <marker label="3 dec_hex=1" time="1290000" />
+      <marker label="4 dec_hex=0 on AN4" time="2160000" />
+      <marker label="5 random values" time="2500000" />
+      <marker label="6 525/525 PASS" time="8515000" />
+   </wave_markers>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/tb_display_ctrl/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_display_ctrl/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_display_ctrl/dec_hex">
+      <obj_property name="ElementShortName">dec_hex</obj_property>
+      <obj_property name="ObjectShortName">dec_hex</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/hex_val">
+      <obj_property name="ElementShortName">hex_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_val[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/bcd_val">
+      <obj_property name="ElementShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_val[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/ring_reg">
+      <obj_property name="ElementShortName">ring_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ring_reg[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_an">
+      <obj_property name="ElementShortName">display_an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">display_an[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/dig_in">
+      <obj_property name="ElementShortName">dig_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dig_in[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/ss_dig">
+      <obj_property name="ElementShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_display_ctrl/dp">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/pass">
+      <obj_property name="ElementShortName">pass[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pass[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/fail">
+      <obj_property name="ElementShortName">fail[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fail[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

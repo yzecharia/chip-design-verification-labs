@@ -1,0 +1,267 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module value_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd
+WARNING: [VRFC 10-8497] literal value 'd67890 truncated to fit in 16 bits [/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_ss.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ss
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_value_latch
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_chip_top_snap work.tb_chip_top work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.tick_gen(MAX_TICK=2)
+Compiling module work.btn_hold_1s(MAX_COUNT=5)
+Compiling module work.value_latch
+Compiling module work.binary_2_bcd
+Compiling module work.seven_segment
+Compiling module work.display_ctrl
+Compiling module work.chip_top(MAX_TICK=2,MAX_COUNT=5)
+Compiling module work.tb_chip_top
+Compiling module work.glbl
+Built simulation snapshot tb_chip_top_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct  7 12:09:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_chip_top_snap/xsim_script.tcl
+# xsim {tb_chip_top_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/lab_3/build/xsim/behavioral/tb_chip_top/tb_chip_top.vcd}
+## log_vcd [get_objects -r /tb_chip_top/*]
+INFO: HDL object /tb_chip_top/ss_dig_on_display is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+INFO: HDL object /tb_chip_top/display_on_off is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+## run -all
+Time:   296 | Check display 0 | actual=0 | expected=0 | PASS
+Time:   296 | Check display 1 | actual=0 | expected=0 | PASS
+Time:   296 | Check display 2 | actual=0 | expected=0 | PASS
+Time:   296 | Check display 3 | actual=0 | expected=0 | PASS
+Time:   296 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:   296 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:   296 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:   296 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:   296 | Check dp is off | actual=1 | expected=1 | PASS
+Time:   876 | Check display 0 | actual=5 | expected=5 | PASS
+Time:   876 | Check display 1 | actual=4 | expected=4 | PASS
+Time:   876 | Check display 2 | actual=3 | expected=3 | PASS
+Time:   876 | Check display 3 | actual=2 | expected=2 | PASS
+Time:   876 | Check display 4 | actual=1 | expected=1 | PASS
+Time:   876 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:   876 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:   876 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:   876 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  1456 | Check display 0 | actual=5 | expected=5 | PASS
+Time:  1456 | Check display 1 | actual=4 | expected=4 | PASS
+Time:  1456 | Check display 2 | actual=3 | expected=3 | PASS
+Time:  1456 | Check display 3 | actual=2 | expected=2 | PASS
+Time:  1456 | Check display 4 | actual=1 | expected=1 | PASS
+Time:  1456 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  1456 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  1456 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  1456 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  2036 | Check display 0 | actual=9 | expected=9 | PASS
+Time:  2036 | Check display 1 | actual=0 | expected=0 | PASS
+Time:  2036 | Check display 2 | actual=3 | expected=3 | PASS
+Time:  2036 | Check display 3 | actual=0 | expected=0 | PASS
+Time:  2036 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  2036 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  2036 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  2036 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  2036 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  2446 | Check display 0 | actual=9 | expected=9 | PASS
+Time:  2446 | Check display 1 | actual=0 | expected=0 | PASS
+Time:  2446 | Check display 2 | actual=3 | expected=3 | PASS
+Time:  2446 | Check display 3 | actual=0 | expected=0 | PASS
+Time:  2446 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  2446 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  2446 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  2446 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  2446 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  3026 | Check display 0 | actual=5 | expected=5 | PASS
+Time:  3026 | Check display 1 | actual=3 | expected=3 | PASS
+Time:  3026 | Check display 2 | actual=5 | expected=5 | PASS
+Time:  3026 | Check display 3 | actual=5 | expected=5 | PASS
+Time:  3026 | Check display 4 | actual=6 | expected=6 | PASS
+Time:  3026 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  3026 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  3026 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  3026 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  3606 | Check display 0 | actual=f | expected=f | PASS
+Time:  3606 | Check display 1 | actual=f | expected=f | PASS
+Time:  3606 | Check display 2 | actual=f | expected=f | PASS
+Time:  3606 | Check display 3 | actual=f | expected=f | PASS
+Time:  3606 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  3606 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  3606 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  3606 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  3606 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  4186 | Check display 0 | actual=0 | expected=0 | PASS
+Time:  4186 | Check display 1 | actual=0 | expected=0 | PASS
+Time:  4186 | Check display 2 | actual=0 | expected=0 | PASS
+Time:  4186 | Check display 3 | actual=0 | expected=0 | PASS
+Time:  4186 | Check display 4 | actual=0 | expected=0 | PASS
+Time:  4186 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  4186 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  4186 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  4186 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  4766 | Check display 0 | actual=d | expected=d | PASS
+Time:  4766 | Check display 1 | actual=c | expected=c | PASS
+Time:  4766 | Check display 2 | actual=b | expected=b | PASS
+Time:  4766 | Check display 3 | actual=a | expected=a | PASS
+Time:  4766 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  4766 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  4766 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  4766 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  4766 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  5346 | Check display 0 | actual=1 | expected=1 | PASS
+Time:  5346 | Check display 1 | actual=2 | expected=2 | PASS
+Time:  5346 | Check display 2 | actual=3 | expected=3 | PASS
+Time:  5346 | Check display 3 | actual=4 | expected=4 | PASS
+Time:  5346 | Check display 4 | actual=0 | expected=0 | PASS
+Time:  5346 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  5346 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  5346 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  5346 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  5646 | Check display 0 | actual=0 | expected=0 | PASS
+Time:  5646 | Check display 1 | actual=0 | expected=0 | PASS
+Time:  5646 | Check display 2 | actual=0 | expected=0 | PASS
+Time:  5646 | Check display 3 | actual=0 | expected=0 | PASS
+Time:  5646 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  5646 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  5646 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  5646 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  5646 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  6226 | Check display 0 | actual=3 | expected=3 | PASS
+Time:  6226 | Check display 1 | actual=e | expected=e | PASS
+Time:  6226 | Check display 2 | actual=9 | expected=9 | PASS
+Time:  6226 | Check display 3 | actual=f | expected=f | PASS
+Time:  6226 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  6226 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  6226 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  6226 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  6226 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  6806 | Check display 0 | actual=5 | expected=5 | PASS
+Time:  6806 | Check display 1 | actual=1 | expected=1 | PASS
+Time:  6806 | Check display 2 | actual=3 | expected=3 | PASS
+Time:  6806 | Check display 3 | actual=2 | expected=2 | PASS
+Time:  6806 | Check display 4 | actual=0 | expected=0 | PASS
+Time:  6806 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  6806 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  6806 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  6806 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  7386 | Check display 0 | actual=4 | expected=4 | PASS
+Time:  7386 | Check display 1 | actual=d | expected=d | PASS
+Time:  7386 | Check display 2 | actual=b | expected=b | PASS
+Time:  7386 | Check display 3 | actual=1 | expected=1 | PASS
+Time:  7386 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  7386 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  7386 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  7386 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  7386 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  7966 | Check display 0 | actual=8 | expected=8 | PASS
+Time:  7966 | Check display 1 | actual=7 | expected=7 | PASS
+Time:  7966 | Check display 2 | actual=2 | expected=2 | PASS
+Time:  7966 | Check display 3 | actual=2 | expected=2 | PASS
+Time:  7966 | Check display 4 | actual=1 | expected=1 | PASS
+Time:  7966 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  7966 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  7966 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  7966 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  8546 | Check display 0 | actual=5 | expected=5 | PASS
+Time:  8546 | Check display 1 | actual=c | expected=c | PASS
+Time:  8546 | Check display 2 | actual=1 | expected=1 | PASS
+Time:  8546 | Check display 3 | actual=3 | expected=3 | PASS
+Time:  8546 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  8546 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  8546 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  8546 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  8546 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  9126 | Check display 0 | actual=1 | expected=1 | PASS
+Time:  9126 | Check display 1 | actual=8 | expected=8 | PASS
+Time:  9126 | Check display 2 | actual=2 | expected=2 | PASS
+Time:  9126 | Check display 3 | actual=5 | expected=5 | PASS
+Time:  9126 | Check display 4 | actual=2 | expected=2 | PASS
+Time:  9126 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  9126 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  9126 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  9126 | Check dp is off | actual=1 | expected=1 | PASS
+Time:  9706 | Check display 0 | actual=3 | expected=3 | PASS
+Time:  9706 | Check display 1 | actual=4 | expected=4 | PASS
+Time:  9706 | Check display 2 | actual=8 | expected=8 | PASS
+Time:  9706 | Check display 3 | actual=f | expected=f | PASS
+Time:  9706 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time:  9706 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time:  9706 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time:  9706 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time:  9706 | Check dp is off | actual=1 | expected=1 | PASS
+Time: 10286 | Check display 0 | actual=6 | expected=6 | PASS
+Time: 10286 | Check display 1 | actual=7 | expected=7 | PASS
+Time: 10286 | Check display 2 | actual=1 | expected=1 | PASS
+Time: 10286 | Check display 3 | actual=1 | expected=1 | PASS
+Time: 10286 | Check display 4 | actual=1 | expected=1 | PASS
+Time: 10286 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time: 10286 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time: 10286 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time: 10286 | Check dp is off | actual=1 | expected=1 | PASS
+Time: 10866 | Check display 0 | actual=d | expected=d | PASS
+Time: 10866 | Check display 1 | actual=c | expected=c | PASS
+Time: 10866 | Check display 2 | actual=b | expected=b | PASS
+Time: 10866 | Check display 3 | actual=6 | expected=6 | PASS
+Time: 10866 | Check display 4 is off | actual=OFF | exp=OFF | PASS
+Time: 10866 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time: 10866 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time: 10866 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time: 10866 | Check dp is off | actual=1 | expected=1 | PASS
+Time: 11446 | Check display 0 | actual=3 | expected=3 | PASS
+Time: 11446 | Check display 1 | actual=4 | expected=4 | PASS
+Time: 11446 | Check display 2 | actual=1 | expected=1 | PASS
+Time: 11446 | Check display 3 | actual=5 | expected=5 | PASS
+Time: 11446 | Check display 4 | actual=0 | expected=0 | PASS
+Time: 11446 | Check display 5 is off | actual=OFF | exp=OFF | PASS
+Time: 11446 | Check display 6 is off | actual=OFF | exp=OFF | PASS
+Time: 11446 | Check display 7 is off | actual=OFF | exp=OFF | PASS
+Time: 11446 | Check dp is off | actual=1 | expected=1 | PASS
+Time: 11446 | TEST PASS | 189/189
+$finish called at time : 11446 ns : File "/Users/yuval/Projects/lab_3/sim/tb_chip_top.v" Line 238
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701172 KB (Peak: 758036 KB), Simulation CPU Usage: 1910 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 12:09:52 2026...

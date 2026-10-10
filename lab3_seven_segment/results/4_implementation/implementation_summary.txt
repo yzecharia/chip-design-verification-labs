@@ -1,0 +1,22 @@
+IMPLEMENTATION (impl_chip_top: opt, place, route)
+  Messages:   0 error(s), 0 critical warning(s), 0 warning(s)  (implementation.log)
+  DRC:        1 rule(s) violated (drc_routed.rpt, methodology_drc_routed.rpt)
+               34x WARNING [Methodology TIMING-18] Missing input or output delay
+  Resources:  80 slice LUTs (110 LUT primitives before LUT combining), 95 FF, 4 CARRY4, 0 BRAM/DSP, 36 I/O ports  (percentages: utilization_placed.rpt)
+              (slice LUT / FF counts from utilization_placed.rpt)
+  Clock:      sys_clk_pin  10.000 ns (100.00 MHz)
+  Setup:      worst slack 5.326 ns ok
+  Hold:       worst slack 0.163 ns ok
+  Reports:    utilization_placed.rpt, timing_summary_routed.rpt, power_routed.rpt,
+              drc_routed.rpt, methodology_drc_routed.rpt, io_placed.rpt, route_status.rpt, ...
+
+OPEN IMPLEMENTED DESIGN (impl_chip_top: reports and schematic)
+  Clock:      sys_clk_pin  10.000 ns (100.00 MHz)
+  Setup:      worst slack 5.326 ns ok
+  Hold:       worst slack 0.163 ns ok
+  Routing:    444 net(s), all routed  (route_status.rpt)
+  Power:      0.109 W total on-chip (estimate, power_impl.rpt)
+  Checks:     1 rule(s) violated (Report Methodology, Report DRC)
+               34x WARNING [Methodology TIMING-18] Missing input or output delay
+  Reports:    timing_summary_impl.rpt, clock_networks_impl.rpt, clock_interaction_impl.rpt, methodology_impl.rpt, drc_impl.rpt, noise_impl.rpt, utilization_impl.rpt, utilization_hierarchical_impl.rpt, power_impl.rpt
+  Schematics: impl_<module>.pdf/.png (implemented design; the device view is GUI-only)

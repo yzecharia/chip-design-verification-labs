@@ -1,0 +1,86 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module value_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd
+WARNING: [VRFC 10-8497] literal value 'd67890 truncated to fit in 16 bits [/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_ss.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ss
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_value_latch
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_ss_snap work.tb_ss work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.seven_segment
+Compiling module work.tb_ss
+Compiling module work.glbl
+Built simulation snapshot tb_ss_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct  7 12:06:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_ss_snap/xsim_script.tcl
+# xsim {tb_ss_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/lab_3/build/xsim/behavioral/tb_ss/tb_ss.vcd}
+## log_vcd [get_objects -r /tb_ss/*]
+## run -all
+Time:   10 | digit:0 | decoded:0 | ss:0000001 | PASS
+Time:   20 | digit:1 | decoded:1 | ss:1001111 | PASS
+Time:   30 | digit:2 | decoded:2 | ss:0010010 | PASS
+Time:   40 | digit:3 | decoded:3 | ss:0000110 | PASS
+Time:   50 | digit:4 | decoded:4 | ss:1001100 | PASS
+Time:   60 | digit:5 | decoded:5 | ss:0100100 | PASS
+Time:   70 | digit:6 | decoded:6 | ss:0100000 | PASS
+Time:   80 | digit:7 | decoded:7 | ss:0001111 | PASS
+Time:   90 | digit:8 | decoded:8 | ss:0000000 | PASS
+Time:  100 | digit:9 | decoded:9 | ss:0000100 | PASS
+Time:  110 | digit:a | decoded:a | ss:0001000 | PASS
+Time:  120 | digit:b | decoded:b | ss:1100000 | PASS
+Time:  130 | digit:c | decoded:c | ss:0110001 | PASS
+Time:  140 | digit:d | decoded:d | ss:1000010 | PASS
+Time:  150 | digit:e | decoded:e | ss:0110000 | PASS
+Time:  160 | digit:f | decoded:f | ss:0111000 | PASS
+Time: 170 | TEST PASS 16/16
+$finish called at time : 170 ns : File "/Users/yuval/Projects/lab_3/sim/tb_ss.v" Line 28
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 700736 KB (Peak: 757964 KB), Simulation CPU Usage: 1910 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 12:06:54 2026...

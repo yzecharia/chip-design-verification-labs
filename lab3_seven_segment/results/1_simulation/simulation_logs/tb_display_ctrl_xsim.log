@@ -1,0 +1,597 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/src/value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module value_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd
+WARNING: [VRFC 10-8497] literal value 'd67890 truncated to fit in 16 bits [/Users/yuval/Projects/lab_3/sim/tb_binary_2_bcd.v:85]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_ss.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ss
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/lab_3/sim/tb_value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_value_latch
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_display_ctrl_snap work.tb_display_ctrl work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.seven_segment
+Compiling module work.display_ctrl
+Compiling module work.tb_display_ctrl
+Compiling module work.glbl
+Built simulation snapshot tb_display_ctrl_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct  7 12:09:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_display_ctrl_snap/xsim_script.tcl
+# xsim {tb_display_ctrl_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/lab_3/build/xsim/behavioral/tb_display_ctrl/tb_display_ctrl.vcd}
+## log_vcd [get_objects -r /tb_display_ctrl/*]
+## run -all
+Time:     0 | Applied reset
+Time:    40 | display_an after reset | actual=11111110 | expected=11111110 | PASS
+Time:   240 | display_an stable without tick | actual=11111110 | expected=11111110 | PASS
+Time:   270 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:   270 | Check ss_dig at pos 1 is correct | actual=0 | expected=0 | PASS
+Time:   300 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:   300 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:   330 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:   330 | Check ss_dig at pos 3 is correct | actual=0 | expected=0 | PASS
+Time:   360 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:   390 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:   390 | Check ss_dig at pos 0 is correct | actual=0 | expected=0 | PASS
+Time:   420 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:   420 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:   450 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:   450 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:   480 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:   480 | Check ss_dig at pos 3 is correct | actual=0 | expected=0 | PASS
+Time:   510 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:   540 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:   540 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:   570 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:   570 | Check ss_dig at pos 1 is correct | actual=6 | expected=6 | PASS
+Time:   600 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:   600 | Check ss_dig at pos 2 is correct | actual=5 | expected=5 | PASS
+Time:   630 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:   630 | Check ss_dig at pos 3 is correct | actual=4 | expected=4 | PASS
+Time:   660 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:   690 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:   690 | Check ss_dig at pos 0 is correct | actual=7 | expected=7 | PASS
+Time:   720 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:   720 | Check ss_dig at pos 1 is correct | actual=14 | expected=14 | PASS
+Time:   750 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:   750 | Check ss_dig at pos 2 is correct | actual=9 | expected=9 | PASS
+Time:   780 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:   780 | Check ss_dig at pos 3 is correct | actual=8 | expected=8 | PASS
+Time:   810 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:   840 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:   840 | Check ss_dig at pos 0 is correct | actual=15 | expected=15 | PASS
+Time:   870 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:   870 | Check ss_dig at pos 1 is correct | actual=15 | expected=15 | PASS
+Time:   900 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:   900 | Check ss_dig at pos 2 is correct | actual=15 | expected=15 | PASS
+Time:   930 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:   930 | Check ss_dig at pos 3 is correct | actual=15 | expected=15 | PASS
+Time:   960 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:   990 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:   990 | Check ss_dig at pos 0 is correct | actual=15 | expected=15 | PASS
+Time:  1020 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1020 | Check ss_dig at pos 1 is correct | actual=12 | expected=12 | PASS
+Time:  1050 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1050 | Check ss_dig at pos 2 is correct | actual=11 | expected=11 | PASS
+Time:  1080 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1080 | Check ss_dig at pos 3 is correct | actual=10 | expected=10 | PASS
+Time:  1110 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  1140 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1140 | Check ss_dig at pos 0 is correct | actual=13 | expected=13 | PASS
+Time:  1170 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1170 | Check ss_dig at pos 1 is correct | actual=11 | expected=11 | PASS
+Time:  1200 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1200 | Check ss_dig at pos 2 is correct | actual=2 | expected=2 | PASS
+Time:  1230 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1230 | Check ss_dig at pos 3 is correct | actual=10 | expected=10 | PASS
+Time:  1260 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  1290 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1290 | Check ss_dig at pos 0 is correct | actual=2 | expected=2 | PASS
+Time:  1320 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1320 | Check ss_dig at pos 1 is correct | actual=0 | expected=0 | PASS
+Time:  1350 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1350 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  1380 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1380 | Check ss_dig at pos 3 is correct | actual=0 | expected=0 | PASS
+Time:  1410 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  1410 | Check ss_dig at pos 4 is correct | actual=0 | expected=0 | PASS
+Time:  1440 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1440 | Check ss_dig at pos 0 is correct | actual=0 | expected=0 | PASS
+Time:  1470 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1470 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  1500 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1500 | Check ss_dig at pos 2 is correct | actual=2 | expected=2 | PASS
+Time:  1530 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1530 | Check ss_dig at pos 3 is correct | actual=1 | expected=1 | PASS
+Time:  1560 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  1560 | Check ss_dig at pos 4 is correct | actual=0 | expected=0 | PASS
+Time:  1590 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1590 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  1620 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1620 | Check ss_dig at pos 1 is correct | actual=8 | expected=8 | PASS
+Time:  1650 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1650 | Check ss_dig at pos 2 is correct | actual=7 | expected=7 | PASS
+Time:  1680 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1680 | Check ss_dig at pos 3 is correct | actual=6 | expected=6 | PASS
+Time:  1710 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  1710 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  1740 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1740 | Check ss_dig at pos 0 is correct | actual=9 | expected=9 | PASS
+Time:  1770 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1770 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  1800 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1800 | Check ss_dig at pos 2 is correct | actual=5 | expected=5 | PASS
+Time:  1830 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1830 | Check ss_dig at pos 3 is correct | actual=5 | expected=5 | PASS
+Time:  1860 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  1860 | Check ss_dig at pos 4 is correct | actual=6 | expected=6 | PASS
+Time:  1890 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  1890 | Check ss_dig at pos 0 is correct | actual=5 | expected=5 | PASS
+Time:  1920 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  1920 | Check ss_dig at pos 1 is correct | actual=8 | expected=8 | PASS
+Time:  1950 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  1950 | Check ss_dig at pos 2 is correct | actual=6 | expected=6 | PASS
+Time:  1980 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  1980 | Check ss_dig at pos 3 is correct | actual=4 | expected=4 | PASS
+Time:  2010 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  2010 | Check ss_dig at pos 4 is correct | actual=2 | expected=2 | PASS
+Time:  2040 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2040 | Check ss_dig at pos 0 is correct | actual=0 | expected=0 | PASS
+Time:  2070 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2070 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  2100 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2100 | Check ss_dig at pos 2 is correct | actual=3 | expected=3 | PASS
+Time:  2130 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2130 | Check ss_dig at pos 3 is correct | actual=2 | expected=2 | PASS
+Time:  2160 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  2160 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  2161 | AN4 off right after switch to hex | actual=11111111 | expected=11111111 | PASS
+Time:  2200 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2200 | Check ss_dig at pos 0 is correct | actual=9 | expected=9 | PASS
+Time:  2230 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2230 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  2260 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2260 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  2290 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2290 | Check ss_dig at pos 3 is correct | actual=3 | expected=3 | PASS
+Time:  2320 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  2350 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2350 | Check ss_dig at pos 0 is correct | actual=9 | expected=9 | PASS
+Time:  2380 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2380 | Check ss_dig at pos 1 is correct | actual=1 | expected=1 | PASS
+Time:  2410 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2410 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  2440 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2440 | Check ss_dig at pos 3 is correct | actual=4 | expected=4 | PASS
+Time:  2470 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  2470 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  2500 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2500 | Check ss_dig at pos 0 is correct | actual=1 | expected=1 | PASS
+Time:  2530 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2530 | Check ss_dig at pos 1 is correct | actual=14 | expected=14 | PASS
+Time:  2560 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2560 | Check ss_dig at pos 2 is correct | actual=9 | expected=9 | PASS
+Time:  2590 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2590 | Check ss_dig at pos 3 is correct | actual=15 | expected=15 | PASS
+Time:  2620 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  2650 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2650 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  2680 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2680 | Check ss_dig at pos 1 is correct | actual=1 | expected=1 | PASS
+Time:  2710 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2710 | Check ss_dig at pos 2 is correct | actual=3 | expected=3 | PASS
+Time:  2740 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2740 | Check ss_dig at pos 3 is correct | actual=2 | expected=2 | PASS
+Time:  2770 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  2770 | Check ss_dig at pos 4 is correct | actual=0 | expected=0 | PASS
+Time:  2800 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2800 | Check ss_dig at pos 0 is correct | actual=5 | expected=5 | PASS
+Time:  2830 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2830 | Check ss_dig at pos 1 is correct | actual=13 | expected=13 | PASS
+Time:  2860 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  2860 | Check ss_dig at pos 2 is correct | actual=11 | expected=11 | PASS
+Time:  2890 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  2890 | Check ss_dig at pos 3 is correct | actual=1 | expected=1 | PASS
+Time:  2920 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  2950 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  2950 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  2980 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  2980 | Check ss_dig at pos 1 is correct | actual=7 | expected=7 | PASS
+Time:  3010 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3010 | Check ss_dig at pos 2 is correct | actual=2 | expected=2 | PASS
+Time:  3040 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3040 | Check ss_dig at pos 3 is correct | actual=2 | expected=2 | PASS
+Time:  3070 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  3070 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  3100 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3100 | Check ss_dig at pos 0 is correct | actual=8 | expected=8 | PASS
+Time:  3130 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3130 | Check ss_dig at pos 1 is correct | actual=12 | expected=12 | PASS
+Time:  3160 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3160 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  3190 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3190 | Check ss_dig at pos 3 is correct | actual=3 | expected=3 | PASS
+Time:  3220 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  3250 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3250 | Check ss_dig at pos 0 is correct | actual=5 | expected=5 | PASS
+Time:  3280 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3280 | Check ss_dig at pos 1 is correct | actual=8 | expected=8 | PASS
+Time:  3310 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3310 | Check ss_dig at pos 2 is correct | actual=2 | expected=2 | PASS
+Time:  3340 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3340 | Check ss_dig at pos 3 is correct | actual=5 | expected=5 | PASS
+Time:  3370 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  3370 | Check ss_dig at pos 4 is correct | actual=2 | expected=2 | PASS
+Time:  3400 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3400 | Check ss_dig at pos 0 is correct | actual=1 | expected=1 | PASS
+Time:  3430 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3430 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  3460 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3460 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  3490 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3490 | Check ss_dig at pos 3 is correct | actual=15 | expected=15 | PASS
+Time:  3520 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  3550 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3550 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  3580 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3580 | Check ss_dig at pos 1 is correct | actual=7 | expected=7 | PASS
+Time:  3610 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3610 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  3640 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3640 | Check ss_dig at pos 3 is correct | actual=1 | expected=1 | PASS
+Time:  3670 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  3670 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  3700 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3700 | Check ss_dig at pos 0 is correct | actual=6 | expected=6 | PASS
+Time:  3730 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3730 | Check ss_dig at pos 1 is correct | actual=12 | expected=12 | PASS
+Time:  3760 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3760 | Check ss_dig at pos 2 is correct | actual=11 | expected=11 | PASS
+Time:  3790 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3790 | Check ss_dig at pos 3 is correct | actual=6 | expected=6 | PASS
+Time:  3820 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  3850 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  3850 | Check ss_dig at pos 0 is correct | actual=13 | expected=13 | PASS
+Time:  3880 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  3880 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  3910 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  3910 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  3940 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  3940 | Check ss_dig at pos 3 is correct | actual=5 | expected=5 | PASS
+Time:  3970 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  3970 | Check ss_dig at pos 4 is correct | actual=0 | expected=0 | PASS
+Time:  4000 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4000 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  4030 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4030 | Check ss_dig at pos 1 is correct | actual=9 | expected=9 | PASS
+Time:  4060 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4060 | Check ss_dig at pos 2 is correct | actual=11 | expected=11 | PASS
+Time:  4090 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4090 | Check ss_dig at pos 3 is correct | actual=5 | expected=5 | PASS
+Time:  4120 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  4150 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4150 | Check ss_dig at pos 0 is correct | actual=15 | expected=15 | PASS
+Time:  4180 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4180 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  4210 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4210 | Check ss_dig at pos 2 is correct | actual=3 | expected=3 | PASS
+Time:  4240 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4240 | Check ss_dig at pos 3 is correct | actual=0 | expected=0 | PASS
+Time:  4270 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  4270 | Check ss_dig at pos 4 is correct | actual=4 | expected=4 | PASS
+Time:  4300 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4300 | Check ss_dig at pos 0 is correct | actual=8 | expected=8 | PASS
+Time:  4330 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4330 | Check ss_dig at pos 1 is correct | actual=13 | expected=13 | PASS
+Time:  4360 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4360 | Check ss_dig at pos 2 is correct | actual=6 | expected=6 | PASS
+Time:  4390 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4390 | Check ss_dig at pos 3 is correct | actual=7 | expected=7 | PASS
+Time:  4420 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  4450 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4450 | Check ss_dig at pos 0 is correct | actual=8 | expected=8 | PASS
+Time:  4480 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4480 | Check ss_dig at pos 1 is correct | actual=7 | expected=7 | PASS
+Time:  4510 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4510 | Check ss_dig at pos 2 is correct | actual=4 | expected=4 | PASS
+Time:  4540 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4540 | Check ss_dig at pos 3 is correct | actual=1 | expected=1 | PASS
+Time:  4570 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  4570 | Check ss_dig at pos 4 is correct | actual=2 | expected=2 | PASS
+Time:  4600 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4600 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  4630 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4630 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  4660 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4660 | Check ss_dig at pos 2 is correct | actual=9 | expected=9 | PASS
+Time:  4690 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4690 | Check ss_dig at pos 3 is correct | actual=12 | expected=12 | PASS
+Time:  4720 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  4750 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4750 | Check ss_dig at pos 0 is correct | actual=10 | expected=10 | PASS
+Time:  4780 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4780 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:  4810 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4810 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  4840 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4840 | Check ss_dig at pos 3 is correct | actual=8 | expected=8 | PASS
+Time:  4870 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  4870 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  4900 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  4900 | Check ss_dig at pos 0 is correct | actual=1 | expected=1 | PASS
+Time:  4930 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  4930 | Check ss_dig at pos 1 is correct | actual=15 | expected=15 | PASS
+Time:  4960 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  4960 | Check ss_dig at pos 2 is correct | actual=7 | expected=7 | PASS
+Time:  4990 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  4990 | Check ss_dig at pos 3 is correct | actual=6 | expected=6 | PASS
+Time:  5020 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  5050 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5050 | Check ss_dig at pos 0 is correct | actual=9 | expected=9 | PASS
+Time:  5080 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5080 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  5110 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5110 | Check ss_dig at pos 2 is correct | actual=4 | expected=4 | PASS
+Time:  5140 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5140 | Check ss_dig at pos 3 is correct | actual=9 | expected=9 | PASS
+Time:  5170 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  5170 | Check ss_dig at pos 4 is correct | actual=0 | expected=0 | PASS
+Time:  5200 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5200 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  5230 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5230 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  5260 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5260 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  5290 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5290 | Check ss_dig at pos 3 is correct | actual=8 | expected=8 | PASS
+Time:  5320 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  5350 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5350 | Check ss_dig at pos 0 is correct | actual=7 | expected=7 | PASS
+Time:  5380 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5380 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  5410 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5410 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  5440 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5440 | Check ss_dig at pos 3 is correct | actual=7 | expected=7 | PASS
+Time:  5470 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  5470 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  5500 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5500 | Check ss_dig at pos 0 is correct | actual=1 | expected=1 | PASS
+Time:  5530 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5530 | Check ss_dig at pos 1 is correct | actual=11 | expected=11 | PASS
+Time:  5560 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5560 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  5590 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5590 | Check ss_dig at pos 3 is correct | actual=7 | expected=7 | PASS
+Time:  5620 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  5650 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5650 | Check ss_dig at pos 0 is correct | actual=11 | expected=11 | PASS
+Time:  5680 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5680 | Check ss_dig at pos 1 is correct | actual=0 | expected=0 | PASS
+Time:  5710 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5710 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  5740 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5740 | Check ss_dig at pos 3 is correct | actual=8 | expected=8 | PASS
+Time:  5770 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  5770 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  5800 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5800 | Check ss_dig at pos 0 is correct | actual=2 | expected=2 | PASS
+Time:  5830 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5830 | Check ss_dig at pos 1 is correct | actual=7 | expected=7 | PASS
+Time:  5860 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  5860 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  5890 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  5890 | Check ss_dig at pos 3 is correct | actual=12 | expected=12 | PASS
+Time:  5920 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  5950 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  5950 | Check ss_dig at pos 0 is correct | actual=7 | expected=7 | PASS
+Time:  5980 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  5980 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:  6010 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6010 | Check ss_dig at pos 2 is correct | actual=5 | expected=5 | PASS
+Time:  6040 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6040 | Check ss_dig at pos 3 is correct | actual=7 | expected=7 | PASS
+Time:  6070 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  6070 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  6100 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6100 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  6130 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6130 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  6160 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6160 | Check ss_dig at pos 2 is correct | actual=14 | expected=14 | PASS
+Time:  6190 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6190 | Check ss_dig at pos 3 is correct | actual=6 | expected=6 | PASS
+Time:  6220 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  6250 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6250 | Check ss_dig at pos 0 is correct | actual=11 | expected=11 | PASS
+Time:  6280 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6280 | Check ss_dig at pos 1 is correct | actual=1 | expected=1 | PASS
+Time:  6310 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6310 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  6340 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6340 | Check ss_dig at pos 3 is correct | actual=6 | expected=6 | PASS
+Time:  6370 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  6370 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  6400 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6400 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  6430 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6430 | Check ss_dig at pos 1 is correct | actual=8 | expected=8 | PASS
+Time:  6460 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6460 | Check ss_dig at pos 2 is correct | actual=15 | expected=15 | PASS
+Time:  6490 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6490 | Check ss_dig at pos 3 is correct | actual=11 | expected=11 | PASS
+Time:  6520 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  6550 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6550 | Check ss_dig at pos 0 is correct | actual=6 | expected=6 | PASS
+Time:  6580 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6580 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  6610 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6610 | Check ss_dig at pos 2 is correct | actual=1 | expected=1 | PASS
+Time:  6640 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6640 | Check ss_dig at pos 3 is correct | actual=9 | expected=9 | PASS
+Time:  6670 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  6670 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  6700 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6700 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  6730 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6730 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:  6760 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6760 | Check ss_dig at pos 2 is correct | actual=11 | expected=11 | PASS
+Time:  6790 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6790 | Check ss_dig at pos 3 is correct | actual=8 | expected=8 | PASS
+Time:  6820 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  6850 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  6850 | Check ss_dig at pos 0 is correct | actual=0 | expected=0 | PASS
+Time:  6880 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  6880 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:  6910 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  6910 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  6940 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  6940 | Check ss_dig at pos 3 is correct | actual=3 | expected=3 | PASS
+Time:  6970 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  6970 | Check ss_dig at pos 4 is correct | actual=3 | expected=3 | PASS
+Time:  7000 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7000 | Check ss_dig at pos 0 is correct | actual=1 | expected=1 | PASS
+Time:  7030 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7030 | Check ss_dig at pos 1 is correct | actual=11 | expected=11 | PASS
+Time:  7060 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7060 | Check ss_dig at pos 2 is correct | actual=7 | expected=7 | PASS
+Time:  7090 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7090 | Check ss_dig at pos 3 is correct | actual=12 | expected=12 | PASS
+Time:  7120 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  7150 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7150 | Check ss_dig at pos 0 is correct | actual=11 | expected=11 | PASS
+Time:  7180 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7180 | Check ss_dig at pos 1 is correct | actual=5 | expected=5 | PASS
+Time:  7210 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7210 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  7240 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7240 | Check ss_dig at pos 3 is correct | actual=3 | expected=3 | PASS
+Time:  7270 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  7270 | Check ss_dig at pos 4 is correct | actual=6 | expected=6 | PASS
+Time:  7300 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7300 | Check ss_dig at pos 0 is correct | actual=2 | expected=2 | PASS
+Time:  7330 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7330 | Check ss_dig at pos 1 is correct | actual=10 | expected=10 | PASS
+Time:  7360 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7360 | Check ss_dig at pos 2 is correct | actual=2 | expected=2 | PASS
+Time:  7390 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7390 | Check ss_dig at pos 3 is correct | actual=12 | expected=12 | PASS
+Time:  7420 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  7450 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7450 | Check ss_dig at pos 0 is correct | actual=11 | expected=11 | PASS
+Time:  7480 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7480 | Check ss_dig at pos 1 is correct | actual=2 | expected=2 | PASS
+Time:  7510 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7510 | Check ss_dig at pos 2 is correct | actual=6 | expected=6 | PASS
+Time:  7540 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7540 | Check ss_dig at pos 3 is correct | actual=4 | expected=4 | PASS
+Time:  7570 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  7570 | Check ss_dig at pos 4 is correct | actual=3 | expected=3 | PASS
+Time:  7600 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7600 | Check ss_dig at pos 0 is correct | actual=5 | expected=5 | PASS
+Time:  7630 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7630 | Check ss_dig at pos 1 is correct | actual=7 | expected=7 | PASS
+Time:  7660 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7660 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  7690 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7690 | Check ss_dig at pos 3 is correct | actual=14 | expected=14 | PASS
+Time:  7720 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  7750 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7750 | Check ss_dig at pos 0 is correct | actual=3 | expected=3 | PASS
+Time:  7780 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7780 | Check ss_dig at pos 1 is correct | actual=1 | expected=1 | PASS
+Time:  7810 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7810 | Check ss_dig at pos 2 is correct | actual=9 | expected=9 | PASS
+Time:  7840 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7840 | Check ss_dig at pos 3 is correct | actual=9 | expected=9 | PASS
+Time:  7870 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  7870 | Check ss_dig at pos 4 is correct | actual=1 | expected=1 | PASS
+Time:  7900 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  7900 | Check ss_dig at pos 0 is correct | actual=6 | expected=6 | PASS
+Time:  7930 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  7930 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  7960 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  7960 | Check ss_dig at pos 2 is correct | actual=8 | expected=8 | PASS
+Time:  7990 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  7990 | Check ss_dig at pos 3 is correct | actual=0 | expected=0 | PASS
+Time:  8020 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  8050 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  8050 | Check ss_dig at pos 0 is correct | actual=14 | expected=14 | PASS
+Time:  8080 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  8080 | Check ss_dig at pos 1 is correct | actual=5 | expected=5 | PASS
+Time:  8110 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  8110 | Check ss_dig at pos 2 is correct | actual=0 | expected=0 | PASS
+Time:  8140 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  8140 | Check ss_dig at pos 3 is correct | actual=3 | expected=3 | PASS
+Time:  8170 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  8170 | Check ss_dig at pos 4 is correct | actual=4 | expected=4 | PASS
+Time:  8200 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  8200 | Check ss_dig at pos 0 is correct | actual=4 | expected=4 | PASS
+Time:  8230 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  8230 | Check ss_dig at pos 1 is correct | actual=3 | expected=3 | PASS
+Time:  8260 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  8260 | Check ss_dig at pos 2 is correct | actual=7 | expected=7 | PASS
+Time:  8290 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  8290 | Check ss_dig at pos 3 is correct | actual=4 | expected=4 | PASS
+Time:  8320 | display_an after tick | actual=11111111 | expected=11111111 | PASS
+Time:  8350 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  8350 | Check ss_dig at pos 0 is correct | actual=8 | expected=8 | PASS
+Time:  8380 | display_an after tick | actual=11111101 | expected=11111101 | PASS
+Time:  8380 | Check ss_dig at pos 1 is correct | actual=4 | expected=4 | PASS
+Time:  8410 | display_an after tick | actual=11111011 | expected=11111011 | PASS
+Time:  8410 | Check ss_dig at pos 2 is correct | actual=9 | expected=9 | PASS
+Time:  8440 | display_an after tick | actual=11110111 | expected=11110111 | PASS
+Time:  8440 | Check ss_dig at pos 3 is correct | actual=1 | expected=1 | PASS
+Time:  8470 | display_an after tick | actual=11101111 | expected=11101111 | PASS
+Time:  8470 | Check ss_dig at pos 4 is correct | actual=5 | expected=5 | PASS
+Time:  8500 | display_an after tick | actual=11111110 | expected=11111110 | PASS
+Time:  8500 | Check ss_dig at pos 0 is correct | actual=6 | expected=6 | PASS
+Time:  8520 | TEST PASS | 525/525
+$finish called at time : 8520 ns : File "/Users/yuval/Projects/lab_3/sim/tb_display_ctrl.v" Line 222
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701104 KB (Peak: 758004 KB), Simulation CPU Usage: 1960 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 12:09:23 2026...
