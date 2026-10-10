@@ -1,0 +1,32 @@
+Lab 3 - 7-Segment Controller: behavioral simulation results
+============================================================
+Simulator : Vivado 2025.2 xsim (behavioral), timescale 1ns/1ps, 100 MHz clock (10 ns period)
+Run date  : 2026-10-07 (all testbenches re-run against the final sources)
+Each testbench is self-checking: every check prints PASS/FAIL and the run ends with a TEST PASS/FAIL line.
+
+Testbench         DUT               Checks  Result        Sim time   Notes
+----------------  ----------------  ------  ------------  ---------  ----------------------------------------------------------------
+tb_ss             seven_segment      16/16  TEST PASS        170 ns  all 16 digits 0-F decoded back from the 7 cathodes
+tb_tick_gen       tick_gen           19/19  TEST PASS       1020 ns  MAX_TICK=5 -> every tick interval measured = 5 clk cycles
+tb_value_latch    value_latch          6/6  TEST PASS         66 ns  reset, no press, center, down, hold, both pressed (down wins)
+tb_btn_hold_1s    btn_hold_1s        18/18  TEST PASS       2106 ns  MAX_COUNT=2: short presses ignored, 1 pulse per hold,
+                                                                     all 6 tick phases, bouncing clicks ignored
+tb_binary_2_bcd   binary_2_bcd       25/25  TEST PASS       4390 ns  0, 65535, 12345, 67890(->2354), 20 random; start clears
+tb_display_ctrl   display_ctrl+ss  525/525  TEST PASS       8520 ns  hex 4-digit scan, decimal 5-digit scan, mode switch mid-scan,
+                                                                     40 random values alternating hex/decimal
+tb_chip_top       chip_top         189/189  TEST PASS      11446 ns  full system: SW latched by 1 s BTNC/BTND, decimal/hex display,
+                                                                     short press ignored, both buttons, reset, 10 random values
+
+Total: 7 testbenches, 798 checks, 0 failures.
+
+Simulation-only parameter overrides (the lab asks to shorten the push-button time to ~100 ns in simulation):
+  tb_chip_top     : chip_top #(.MAX_TICK(2), .MAX_COUNT(5))   -> tick every 2 clk, "1 s" = 5 ticks = 10 clk = 100 ns
+  tb_btn_hold_1s  : btn_hold_1s #(.MAX_COUNT(2)), TB tick every 5 clk -> "1 s" = 2 ticks = 10 clk
+  tb_tick_gen     : tick_gen #(.MAX_TICK(5))
+  Real hardware   : MAX_TICK = 50000 (100 MHz / 50000 = 2 kHz scan tick), MAX_COUNT = 2000 (2000 ticks = 1.000 s)
+
+Files
+  <tb>_1_overview.png          Vivado waveform window, whole run, numbered markers on the important events
+  <tb>_<n>_zoom_<topic>.png    Vivado waveform window zoomed in on the important sections, with markers
+  <tb>_*.wcfg (build/wave/shots) the wave configurations the screenshots were taken from
+  simulation_logs/<tb>_xsim.log  full xsim transcript with every PASS/FAIL line

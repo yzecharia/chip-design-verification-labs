@@ -1,0 +1,20 @@
+MODULE COMPARISON (each module synthesized alone, out-of-context, no I/O buffers)
+  Module                 LUTs    FFs  CARRY4   Levels   Delay (ns)*
+  binary_2_bcd             27     25       0        -             -
+  btn_hold_1s              20     13       0        1          2.07
+  display_ctrl             37      5       0        4         4.414
+  seven_segment             7      0       0        1          2.07
+  tick_gen                  7     16       4        -             -
+  value_latch               3     17       0        -             -
+  * longest input-to-output path after synthesis (estimate, before placement)
+  Reports: utilization_<module>.rpt, longest_path_<module>.rpt; schematics: ooc_<module>.pdf
+
+  NOTE: the 'LUTs' column above counts LUT primitives (LUT1..LUT6 cells). report_utilization counts slice LUTs
+  after LUT combining - quote these (from utilization_<module>.rpt):
+  Module               SliceLUTs    FFs
+  binary_2_bcd             17     25
+  btn_hold_1s              15     13
+  display_ctrl             37      5
+  seven_segment             7      0
+  tick_gen                  7     16
+  value_latch               3     17

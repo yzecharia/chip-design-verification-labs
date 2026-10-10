@@ -1,0 +1,20 @@
+%Warning-PROCASSINIT: src/chip_top.v:22:24: Procedural assignment to declaration with initial value: 'reset_n_sync'
+                                          : ... note: In instance 'chip_top'
+                                          : ... Location of variable initialization
+   22 |     reg reset_n_sync = 1'b0, reset_n_sync0 = 1'b0;
+      |                        ^~~~
+                      src/chip_top.v:25:9: ... Location of variable process write
+                                         : ... Perhaps should initialize instead using a reset in this process
+   25 |         reset_n_sync <= reset_n_sync0;
+      |         ^~~~~~~~~~~~
+                      ... For warning description see https://verilator.org/warn/PROCASSINIT?v=5.052
+                      ... Use "/* verilator lint_off PROCASSINIT */" and lint_on around source to disable this message.
+%Warning-PROCASSINIT: src/chip_top.v:22:46: Procedural assignment to declaration with initial value: 'reset_n_sync0'
+                                          : ... note: In instance 'chip_top'
+                                          : ... Location of variable initialization
+   22 |     reg reset_n_sync = 1'b0, reset_n_sync0 = 1'b0;
+      |                                              ^~~~
+                      src/chip_top.v:24:9: ... Location of variable process write
+                                         : ... Perhaps should initialize instead using a reset in this process
+   24 |         reset_n_sync0 <= CPU_RESETN;
+      |         ^~~~~~~~~~~~~

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_value_latch_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_value_latch" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="44000 ps"></ZoomStartTime>
+      <ZoomEndTime time="60000 ps"></ZoomEndTime>
+      <Cursor1Time time="44000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 pressed_c=pressed_d=1" time="46000" />
+      <marker label="2 sw_reg=FFFF, dec_hex=0" time="55000" />
+      <marker label="3 PASS" time="56000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_value_latch/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_value_latch/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_value_latch/pressed_c">
+      <obj_property name="ElementShortName">pressed_c</obj_property>
+      <obj_property name="ObjectShortName">pressed_c</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_value_latch/pressed_d">
+      <obj_property name="ElementShortName">pressed_d</obj_property>
+      <obj_property name="ObjectShortName">pressed_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_value_latch/sw">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_value_latch/sw_reg">
+      <obj_property name="ElementShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_reg[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_value_latch/dec_hex">
+      <obj_property name="ElementShortName">dec_hex</obj_property>
+      <obj_property name="ObjectShortName">dec_hex</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_value_latch/pass">
+      <obj_property name="ElementShortName">pass[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pass[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_value_latch/fail">
+      <obj_property name="ElementShortName">fail[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fail[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

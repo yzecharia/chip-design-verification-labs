@@ -1,0 +1,16 @@
+SYNTHESIS (synth_chip_top, top chip_top)
+  Messages:   0 error(s), 0 critical warning(s), 4 warning(s)  (synthesis.log)
+                4x WARNING [Synth 8-3917] design chip_top has port DP driven by constant 1
+  Resources:  83 slice LUTs (110 LUT primitives before LUT combining), 91 FF, 4 CARRY4, 0 BRAM/DSP, 36 I/O ports
+              (slice LUT / FF counts from utilization_synth.rpt)
+  Reports:    utilization_synth.rpt, utilization_hierarchical_synth.rpt
+
+OPEN SYNTHESIZED DESIGN (synth_chip_top: reports and schematic)
+  Clock:      sys_clk_pin  10.000 ns (100.00 MHz)
+  Setup:      worst slack 5.262 ns ok
+  Hold:       worst slack 0.144 ns ok
+  Power:      0.110 W total on-chip (estimate, power_synth.rpt)
+  Checks:     1 rule(s) violated (Report Methodology, Report DRC)
+               34x WARNING [Methodology TIMING-18] Missing input or output delay
+  Reports:    timing_summary_synth.rpt, clock_networks_synth.rpt, clock_interaction_synth.rpt, methodology_synth.rpt, drc_synth.rpt, noise_synth.rpt, utilization_synth.rpt, utilization_hierarchical_synth.rpt, power_synth.rpt
+  Schematics: synth_<module>.pdf/.png (synthesized design, as in SYNTHESIS > Schematic)
