@@ -1,0 +1,24 @@
+# Vivado / simulator output
+build/
+.Xil/
+*.jou
+*.pb
+*.wdb
+*.str
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.bit
+xsim.dir/
+*.vcd
+*.fst
+# Icarus output from scripts/run_tests.sh
+/sim_out/
+# OS / editor
+.DS_Store
+*.bkp
+*.bak
+.vscode/
