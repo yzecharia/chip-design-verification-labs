@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Time: 0 | a: 2 | b: 5 | cin: 0 | Beh Sum: 7 | Beh Cout: 0 | Str Sum: 7 | Str Cout: 0
+Time: 10 | a: 210 | b: 150 | cin: 0 | Beh Sum: 104 | Beh Cout: 1 | Str Sum: 104 | Str Cout: 1
+Time: 20 | a: 255 | b: 0 | cin: 0 | Beh Sum: 255 | Beh Cout: 0 | Str Sum: 255 | Str Cout: 0
+Time: 30 | a: 255 | b: 255 | cin: 1 | Beh Sum: 255 | Beh Cout: 1 | Str Sum: 255 | Str Cout: 1
+Time: 40 | a: 255 | b: 0 | cin: 1 | Beh Sum: 0 | Beh Cout: 1 | Str Sum: 0 | Str Cout: 1
+$finish called at time : 60 ns : File "/home/user/projects/Labs/lab_2/lab_2.srcs/sources_1/new/tb_fa_8.v" Line 26
