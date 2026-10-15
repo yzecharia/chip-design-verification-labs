@@ -12,8 +12,8 @@ synthesized, placed, routed and tested on the board.
 
 ## Architecture
 
-One 100 MHz clock domain. Nothing slow has its own clock: the UART bit rate and the display scan are
-**one-cycle enables** from `baud_gen`, and the 20 ms debounce, the 1 s hold and the inter-byte delay are
+Everything runs on one 100 MHz clock, I didn't divide the clock for anything slow: the UART bit rate and the
+display scan are **one-cycle enables** from `baud_gen`, and the 20 ms debounce, the 1 s hold and the inter-byte delay are
 counters in the same domain. The path from the button to the line is
 `debounce → btn_hold → latch → tx_fsm → uart_phy`, with a `start`/`done` handshake between the byte-level
 FSM and the bit-level PHY.
@@ -55,7 +55,7 @@ Design notes that came up while doing it:
   `WAIT` follows every space and every `CR LF` except the last one; with delay 0 it lasts one clock.
 * The row counter is 9 bits wide because N = 256 needs the value 256; T3 shows `FF` once bit 8 is set,
   and T2 shows `FF` for N = 256 as well.
-* `dp` is wired to `AN3`, so the decimal point lights exactly on the T1 digit that needs it (`2.0`).
+* `dp` is wired to `AN3`, so the decimal point lights on the T1 digit that needs it (`2.0`).
 
 ## Verification
 
@@ -98,19 +98,19 @@ full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform sc
 | Worst hold slack | 0.122 ns | |
 | Power (estimate) | 0.100 W | |
 
-Each module was also synthesized out-of-context; the per-module numbers are in
+I also synthesized each module out-of-context, the per-module numbers are in
 [`results/5_resource_usage/per_module_out_of_context/summary.txt`](results/5_resource_usage/per_module_out_of_context/summary.txt).
 Most of the flip-flops are long counters (debounce, the 1 s hold, the 200 ms delay).
 
 ## On the board
 
-The terminal on macOS is [tio](https://github.com/tio/tio), which also logs everything the board sends:
+On macOS I used [tio](https://github.com/tio/tio) as the terminal. It also logs everything the board sends:
 
 ```sh
 tio -b 57600 --log --log-file "$PWD/output.txt" --log-strip /dev/cu.usbserial-210292BE39B31
 ```
 
-In the photos the colour of each switch group matches the display field it sets; in every case the byte is `0x23` (`#`).
+In the photos I marked each switch group in the colour of the display field it sets. The byte is `0x23` (`#`) in all the cases.
 
 | | | |
 |---|---|---|
