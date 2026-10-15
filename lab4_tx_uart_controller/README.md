@@ -30,7 +30,7 @@ FSM and the bit-level PHY.
 | [`display_ctrl`](rtl/display_ctrl.v) | 8-bit anode ring, T0 = byte, T1 = delay (`0.0 / 0.5 / 1.0 / 2.0`), T2 = N, T3 = rows sent | 8 |
 | [`seven_segment`](rtl/seven_segment.v) | hex digit → 7 active-low cathodes | 0 |
 
-State diagrams of the three state machines, with every transition including the "stay" loops:
+State diagrams of the three state machines:
 [`fsm_tx_fsm`](docs/fsm_tx_fsm.png), [`fsm_uart_phy`](docs/fsm_uart_phy.png), [`fsm_btn_hold`](docs/fsm_btn_hold.png);
 the transition tables are in the report.
 
