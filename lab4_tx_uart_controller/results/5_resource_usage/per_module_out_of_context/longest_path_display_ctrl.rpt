@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Oct 15 12:43:59 2026
+| Host         : 3189282edfe1 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_4_new/build/report/6_module_comparison/longest_path_display_ctrl.rpt
+| Design       : display_ctrl
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 size[1]
+                            (input port)
+  Destination:            seg[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.136ns  (logic 0.496ns (9.657%)  route 4.640ns (90.343%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  size[1] (IN)
+                         net (fo=4, unset)            0.973     0.973    size[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  seg[6]_INST_0_i_23/O
+                         net (fo=2, unplaced)         0.975     2.072    seg[6]_INST_0_i_23_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     2.196 r  seg[6]_INST_0_i_13/O
+                         net (fo=2, unplaced)         0.952     3.148    seg[6]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     3.272 r  seg[6]_INST_0_i_4/O
+                         net (fo=7, unplaced)         0.767     4.039    display_data[1]
+                         LUT4 (Prop_lut4_I1_O)        0.124     4.163 r  seg[4]_INST_0/O
+                         net (fo=0)                   0.973     5.136    seg[4]
+                                                                      r  seg[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

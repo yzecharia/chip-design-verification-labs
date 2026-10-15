@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Oct 15 12:34:40 2026
+| Host         : fb6636bdfce8 running 64-bit unknown
+| Command      : report_utilization -hierarchical -file /Users/yuval/Projects/labs/lab_4_new/build/report/3_synthesis/chip_top/utilization_hierarchical_synth.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+----------+------------+------------+---------+------+-----+--------+--------+------------+
+|   Instance   |  Module  | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------+----------+------------+------------+---------+------+-----+--------+--------+------------+
+| chip_top     |    (top) |        170 |        170 |       0 |    0 | 246 |      0 |      0 |          0 |
+|   (chip_top) |    (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   debounce_i | debounce |         24 |         24 |       0 |    0 |  98 |      0 |      0 |          0 |
+|   tx_fsm_i   |   tx_fsm |         45 |         45 |       0 |    0 |  58 |      0 |      0 |          0 |
++--------------+----------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

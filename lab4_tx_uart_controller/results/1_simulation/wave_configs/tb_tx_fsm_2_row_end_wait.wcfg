@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_tx_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_tx_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2188785000 ps"></ZoomStartTime>
+      <ZoomEndTime time="2189445000 ps"></ZoomEndTime>
+      <Cursor1Time time="2189040000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 WAIT: row_out=1, col=0" time="2189035000" />
+      <marker label="2 delay_done: DATA 55" time="2189235000" />
+   </wave_markers>
+   <WVObjectSize size="10" />
+   <wvobject type="array" fp_name="/tb_tx_fsm/tx_fsm_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">tx_fsm.state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_fsm/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_fsm/drive_data">
+      <obj_property name="ElementShortName">drive_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">drive_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_fsm/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_fsm/tx_fsm_i/col">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">col[7:0]</obj_property>
+      <obj_property name="ObjectShortName">col[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">tx_fsm.col[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_fsm/row_out">
+      <obj_property name="ElementShortName">row_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">row_out[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_fsm/tx_fsm_i/delay_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">delay_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_cnt[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">tx_fsm.delay_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_fsm/tx_fsm_i/delay_done">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">delay_done</obj_property>
+      <obj_property name="ObjectShortName">delay_done</obj_property>
+      <obj_property name="label">tx_fsm.delay_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_fsm/led0">
+      <obj_property name="ElementShortName">led0</obj_property>
+      <obj_property name="ObjectShortName">led0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_fsm/tx">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+</wave_config>
