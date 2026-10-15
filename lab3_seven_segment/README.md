@@ -61,14 +61,11 @@ full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform sc
 
 ![tb_chip_top: center press latches 12345 in decimal](results/1_simulation/tb_chip_top_2_zoom_center_press_to_decimal.png)
 
-Reproduce without Vivado: `../scripts/run_tests.sh lab3` (Icarus Verilog).
-
 ## Lint, synthesis, implementation
 
 Flow summary: [`results/vivado_flow_summary.txt`](results/vivado_flow_summary.txt).
 
-* **Lint**: Vivado linter clean; Verilator `-Wall` per module in `results/2_lint_and_rtl/verilator_lint/`
-  (only two `PROCASSINIT` notes on the reset synchronizer's initial values).
+* **Lint**: Vivado linter on `chip_top` with all sub-modules – clean.
 * **Elaborated design**: DRC and methodology clean; RTL schematics per module in `results/2_lint_and_rtl/`.
 * **Synthesis**: 0 errors, 0 critical warnings; the 4 warnings are `DP` and `AN7..AN5` being driven
   by constants, which is intended.

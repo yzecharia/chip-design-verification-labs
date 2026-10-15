@@ -14,9 +14,6 @@ build/
 *.bit
 xsim.dir/
 *.vcd
-*.fst
-# Icarus output from scripts/run_tests.sh
-/sim_out/
 # OS / editor
 .DS_Store
 *.bkp

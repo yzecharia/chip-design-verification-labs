@@ -14,34 +14,7 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 ## Tools
 
 * **Vivado 2025.2** – xsim behavioral simulation, lint, elaboration, synthesis, implementation, bitstream
-* **Verilator 5** – extra lint pass (`-Wall`)
-* **Icarus Verilog** – the testbenches also run on open-source tools, see below
 * **tio** – serial terminal on macOS for the UART board tests (`--log` keeps what the board sent)
-
-## Running the testbenches without Vivado
-
-Every testbench prints a `PASS`/`FAIL` line per check and a `TEST PASS`/`TEST FAIL` summary.
-With [Icarus Verilog](https://steveicarus.github.io/iverilog/) installed:
-
-```sh
-./scripts/run_tests.sh          # all labs
-./scripts/run_tests.sh lab3     # one lab
-```
-
-```
-lab3_seven_segment
-  tb_ss                  TEST PASS 16/16
-  tb_tick_gen            TEST PASS | 19/19
-  tb_value_latch         TEST PASS | 6/6
-  tb_btn_hold_1s         TEST PASS | 18/18
-  tb_binary_2_bcd        TEST PASS | 25/25
-  tb_display_ctrl        TEST PASS | 525/525
-  tb_chip_top            TEST PASS | 189/189
-lab4_tx_uart_controller
-  tb_uart_phy            TEST PASS | 32/32
-  tb_tx_fsm              TEST PASS | pass=8338 | fail=0
-  tb_chip_top            TEST PASS | pass=4179 | fail=0
-```
 
 ## Layout of each lab
 

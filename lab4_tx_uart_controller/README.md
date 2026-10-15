@@ -48,7 +48,10 @@ Parameters make the slow timing simulable:
 
 Design notes that came up while doing it:
 
-* `100 MHz / 57600 ≈ 1736`, so the real bit rate is 57 604 bps (+0.006 %), well inside what a UART receiver tolerates.
+* Checking the baud error: `COUNT = 100M / 57600 = 1736.11` and the integer division keeps 1736, so the actual baud is
+  `100M / 1736 = 57 603.69 bps` and the error is `(57 603.69 − 57 600) / 57 600 = +0.0064 %`. The receiver samples each bit
+  in its middle, so the error adds up until the stop bit, 9.5 bits after the start edge: `9.5 · 0.0064 % ≈ 0.06 %` of a bit,
+  far from the half bit where it would read the wrong bit.
 * The switches are sampled only when `tx_fsm` is idle (`ready`), so a press during a run is ignored
   and a run is never reconfigured half way.
 * `tx_fsm` moves on only at `uart_phy`'s `done`, and `start`, `drive_data` and `LED0` are registered outputs.
@@ -74,8 +77,6 @@ full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform sc
 | **total** | | **12 549/12 549** | |
 
 ![tb_tx_fsm: end of a row and the WAIT state](results/1_simulation/tb_tx_fsm_2_row_end_wait.png)
-
-Reproduce without Vivado: `../scripts/run_tests.sh lab4` (Icarus Verilog, same check counts as xsim).
 
 ## Lint, synthesis, implementation
 
