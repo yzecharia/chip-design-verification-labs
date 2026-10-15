@@ -14,7 +14,7 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 ## Tools
 
 * **Vivado 2025.2** – xsim behavioral simulation, lint, elaboration, synthesis, implementation, bitstream
-* **tio** – serial terminal on macOS for the UART board tests (`--log` keeps what the board sent)
+* **tio** – serial terminal on macOS for the UART board tests
 
 ## Layout of each lab
 
