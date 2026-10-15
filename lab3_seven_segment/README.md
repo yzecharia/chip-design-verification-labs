@@ -109,7 +109,7 @@ Submitted report (Hebrew, with every waveform and report excerpt): [`docs/lab3_r
 rtl/          7 modules, one per file
 tb/           7 testbenches
 constraints/  nexys_a7_100t.xdc – CLK100MHZ, CPU_RESETN, SW, BTNC, BTND, CA..CG, DP, AN
-docs/         chip_top.drawio / .png, lab3_report.pdf
+docs/         block diagram, lab3_report.pdf
 results/      1_simulation  2_lint_and_rtl  3_synthesis  4_implementation  5_resource_usage
               vivado_flow_summary.txt  bitstream_summary.txt
 board_test/   photos

@@ -14,7 +14,7 @@ architecture, the interfaces and the hierarchy right *before* writing any micro-
 4. **Integration** – both UARTs instantiated in `chip_top` with named port connections.
 5. **Lint** – every module linted individually and after integration, clean.
 6. **Cross-check** against the RTL schematic Vivado generates from the elaborated design
-   (`docs/vivado_rtl_schematic.pdf`) – it matches the hand-drawn diagram.
+   (`docs/vivado_rtl_schematic.pdf`) – it matches my block diagram.
 
 Submitted report (Hebrew): [`docs/lab1_report.pdf`](docs/lab1_report.pdf).
 
@@ -62,8 +62,8 @@ transmit, what to write and what to put on the lines comes in a later stage of t
 ```
 rtl/chip_top.sv  rtl/uart_rx.sv  rtl/uart_tx.sv   the stubs
 constraints/nexys_a7_100t.xdc                      clock, switches, LEDs and UART pins enabled
-docs/chip_top.drawio / .png                        my block diagram
-docs/chip_top_soc.drawio / .png                    the same diagram with unconnected (NC) handshake pins marked
+docs/chip_top.png                                  my block diagram
+docs/chip_top_soc.png                              the same diagram with unconnected (NC) handshake pins marked
 docs/vivado_rtl_schematic.pdf                      Vivado's auto-generated schematic for the cross-check
 docs/lab1_report.pdf                               submitted lab report
 ```
