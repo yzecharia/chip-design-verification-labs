@@ -72,7 +72,7 @@ full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform sc
 | Testbench | DUT | Checks | What is checked |
 |---|---|---|---|
 | `tb_uart_phy` | `uart_phy` (10 clocks per bit) | 32/32 | frame `{1, data, 0}` sampled mid-bit by a receiver model, `done` exactly 100 clocks after `start`; `0x00`, `0xAA`, `0x55`, `0xFF`, 10 random bytes, back-to-back bytes |
-| `tb_tx_fsm` | `tx_fsm` + `uart_phy` (`DELAY50` = 20) | 8338/8338 | every byte of the run (data, `0x20`, `0x0D 0x0A`), `row_out`, run time including `WAIT`; 1×1 and 32×32 with all four delays |
+| `tb_tx_fsm` | `tx_fsm` + `uart_phy` (`DELAY50` = 20) | 8338/8338 | every byte of the run (data, `0x20`, `0x0D 0x0A`), `row_out`, run time including `WAIT`; 1×1 with delays 0 and 3, 32×32 with all four delays, two runs with data `0x20` and `0x0D` |
 | `tb_chip_top` | full system (simulation parameters) | 4179/4179 | 1×1 `0x41`; short press → no transmission; 32×32 with delay 1; press during a run ignored; reset during a run (`tx`, `LED0`, `ready`, `row_out`, no more frames) |
 | **total** | | **12 549/12 549** | |
 
@@ -103,7 +103,9 @@ full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform sc
 
 I also synthesized each module out-of-context, the per-module numbers are in
 [`results/5_resource_usage/per_module_out_of_context/summary.txt`](results/5_resource_usage/per_module_out_of_context/summary.txt).
-Most of the flip-flops are long counters (debounce, the 1 s hold, the 200 ms delay).
+The four long counters (two in `debounce`, the 1 s hold and the 200 ms delay) are 94 of the 246 flip-flops.
+`tx_fsm` has 58 and not the 55 in the RTL because Vivado re-encoded its state one-hot (6 bits instead of 3), and
+`uart_phy` has 25 and not 26 because `sh_reg[9]` is always 1 and Vivado removes it.
 
 ## On the board
 
