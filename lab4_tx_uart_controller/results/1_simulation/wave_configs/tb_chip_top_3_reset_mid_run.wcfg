@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4434630000 ps"></ZoomStartTime>
+      <ZoomEndTime time="4435055000 ps"></ZoomEndTime>
+      <Cursor1Time time="4434840000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1 cpu_reset=0" time="4434750000" />
+      <marker label="2 reset_n=0" time="4434815000" />
+      <marker label="3 reset_n=1" time="4434895000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_chip_top/cpu_reset">
+      <obj_property name="ElementShortName">cpu_reset</obj_property>
+      <obj_property name="ObjectShortName">cpu_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/tx_fsm_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">tx_fsm.state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/tx">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/led0">
+      <obj_property name="ElementShortName">led0</obj_property>
+      <obj_property name="ObjectShortName">led0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/row_out">
+      <obj_property name="ElementShortName">row_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">row_out[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/data">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+</wave_config>

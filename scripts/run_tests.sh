@@ -2,7 +2,7 @@
 # Runs every self-checking testbench in this repo with Icarus Verilog (open source),
 # so the results can be reproduced without Vivado.
 #   ./scripts/run_tests.sh           # run everything
-#   ./scripts/run_tests.sh lab3      # one lab
+#   ./scripts/run_tests.sh lab3      # one lab (lab2, lab3, lab4)
 # Needs: iverilog + vvp (brew install icarus-verilog / apt install iverilog)
 set -u
 cd "$(dirname "$0")/.."
@@ -38,6 +38,15 @@ if [[ $want == all || $want == lab3 ]]; then
     for tb in tb_ss tb_tick_gen tb_value_latch tb_btn_hold_1s tb_binary_2_bcd tb_display_ctrl tb_chip_top; do
         run "$tb" "$tb" lab3_seven_segment/rtl/*.v "lab3_seven_segment/tb/$tb.v"
     done
+fi
+
+if [[ $want == all || $want == lab4 ]]; then
+    echo "lab4_tx_uart_controller"
+    OUT=sim_out/lab4; mkdir -p "$OUT"     # tb_chip_top is also a Lab 3 name
+    for tb in tb_uart_phy tb_tx_fsm tb_chip_top; do
+        run "$tb" "$tb" lab4_tx_uart_controller/rtl/*.v "lab4_tx_uart_controller/tb/$tb.v"
+    done
+    OUT=sim_out
 fi
 
 exit $status

@@ -1,0 +1,12 @@
+MODULE COMPARISON (each module synthesized alone, out-of-context, no I/O buffers)
+  Module                 LUTs    FFs  CARRY4   Levels   Delay (ns)*
+  baud_gen                 17     11       0        -             -
+  btn_hold                 17     29       7        1          2.07
+  debounce                 25     98      12        -             -
+  display_ctrl             43      8       0        4         5.136
+  latch                     3     13       0        -             -
+  seven_segment             7      0       0        1          2.07
+  tx_fsm                   81     58      18        -             -
+  uart_phy                 36     25       0        -             -
+  * longest input-to-output path after synthesis (estimate, before placement)
+  Reports: utilization_<module>.rpt, longest_path_<module>.rpt; schematics: ooc_<module>.pdf

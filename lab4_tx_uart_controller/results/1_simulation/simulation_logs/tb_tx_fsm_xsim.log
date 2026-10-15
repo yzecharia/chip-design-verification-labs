@@ -1,0 +1,74 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/baud_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/btn_hold.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/debounce.v" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/latch.v" into library work
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_tx_fsm_snap work.tb_tx_fsm work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.tx_fsm(DELAY50=20)
+Compiling module work.baud_gen(BAUD_RATE=10000000)
+Compiling module work.uart_phy(BAUD_RATE=10000000)
+Compiling module work.tb_tx_fsm
+Compiling module work.glbl
+Built simulation snapshot tb_tx_fsm_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Oct 15 12:24:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_tx_fsm_snap/xsim_script.tcl
+# xsim {tb_tx_fsm_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_4_new/build/xsim/behavioral/tb_tx_fsm/tb_tx_fsm.vcd}
+## log_vcd [get_objects -r /tb_tx_fsm/*]
+## run -all
+Time: 3075 | RUN data=41 delay=0 size=1x1 done | fails so far=0
+Time: 6125 | RUN data=ff delay=3 size=1x1 done | fails so far=0
+Time: 2117175 | RUN data=20 delay=0 size=32x32 done | fails so far=0
+Time: 4422595 | RUN data=55 delay=1 size=32x32 done | fails so far=0
+Time: 6932615 | RUN data=aa delay=2 size=32x32 done | fails so far=0
+Time: 9851835 | RUN data=0d delay=3 size=32x32 done | fails so far=0
+Time: 9851835 | TEST PASS | pass=8338 | fail=0
+$finish called at time : 9851835 ns : File "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm.v" Line 96
+run: Time (s): cpu = 00:00:00.48 ; elapsed = 00:01:50 . Memory (MB): peak = 2094.805 ; gain = 0.000 ; free physical = 9679 ; free virtual = 15064
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 704964 KB (Peak: 757768 KB), Simulation CPU Usage: 29490 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 15 12:26:35 2026...
