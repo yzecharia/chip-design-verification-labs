@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_btn_hold_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_btn_hold" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="365000 ps"></ZoomEndTime>
+      <Cursor1Time time="130000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="30000" />
+      <marker label="2" time="125000" />
+      <marker label="3" time="180000" />
+      <marker label="4" time="190000" />
+      <marker label="5" time="270000" />
+   </wave_markers>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/tb_btn_hold/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold/btn">
+      <obj_property name="ElementShortName">btn</obj_property>
+      <obj_property name="ObjectShortName">btn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_btn_hold/btn_hold_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">btn_hold.state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_btn_hold/btn_hold_i/cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">btn_hold.cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold/held">
+      <obj_property name="ElementShortName">held</obj_property>
+      <obj_property name="ObjectShortName">held</obj_property>
+   </wvobject>
+</wave_config>

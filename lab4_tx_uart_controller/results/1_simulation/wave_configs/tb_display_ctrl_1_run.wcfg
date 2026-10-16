@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_display_ctrl_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_display_ctrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="2305000 ps"></ZoomEndTime>
+      <Cursor1Time time="1240000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="135000" />
+      <marker label="2" time="905000" />
+      <marker label="3" time="1235000" />
+      <marker label="4" time="1565000" />
+      <marker label="5" time="1800000" />
+      <marker label="6" time="1960000" />
+   </wave_markers>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/tb_display_ctrl/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_display_ctrl/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/an">
+      <obj_property name="ElementShortName">an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">an[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/data">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/delay">
+      <obj_property name="ElementShortName">delay[1:0]</obj_property>
+      <obj_property name="ObjectShortName">delay[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/delay_decode">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">delay_decode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_decode[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">display_ctrl.delay_decode[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/size">
+      <obj_property name="ElementShortName">size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">size[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/size_decode">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">size_decode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">size_decode[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">display_ctrl.size_decode[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/row">
+      <obj_property name="ElementShortName">row[8:0]</obj_property>
+      <obj_property name="ObjectShortName">row[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/row_decode">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">row_decode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row_decode[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">display_ctrl.row_decode[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_display_ctrl/display_ctrl_i/display_data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">display_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display_data[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">display_ctrl.display_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_display_ctrl/dp">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+</wave_config>

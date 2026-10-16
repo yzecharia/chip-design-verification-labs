@@ -5,8 +5,8 @@ square size (`SW[14:13]`: N = 1, 32, 128 or 256). Holding the **center** button 
 them, and the board sends an **N×N square** of that byte to the PC over the on-board USB-UART at
 57600 bps, 8N1: a space (`0x20`) after every byte, `CR LF` (`0x0D 0x0A`) at the end of every row.
 The 8-digit display shows the configuration and the number of rows sent, and `LED0` toggles with every
-data byte. Fully verified in simulation (3 self-checking testbenches, 12 549 checks), lint-clean,
-synthesized, placed, routed and tested on the board.
+data byte. Each of the nine modules has its own testbench (`tb_chip_top_0` for the top level), and the design
+is lint-clean, synthesized, placed, routed and tested on the board.
 
 ![chip_top architecture](docs/chip_top.png)
 
@@ -38,7 +38,7 @@ the transition tables are in the report.
 
 Parameters make the slow timing simulable:
 
-| Parameter | Hardware | `tb_chip_top` | Meaning |
+| Parameter | Hardware | `tb_chip_top_0` | Meaning |
 |---|---|---|---|
 | `BAUD_RATE` | 57 600 | 10 000 000 | UART bit rate (10 clocks per bit in simulation) |
 | `DISPLAY_RR` | 4 000 | 10 000 000 | display scan tick rate (4 kHz → 500 Hz per digit) |
@@ -62,21 +62,28 @@ Design notes that came up while doing it:
 
 ## Verification
 
-Every testbench computes the expected output itself, prints a `PASS`/`FAIL` line per check and ends with
-`TEST PASS` / `TEST FAIL`. `tb_chip_top` is built like a small UVM environment: a driver (`drive`,
-`btn_press`), a monitor on `tx` that samples each bit in its middle, a predictor (`build_exp`) and a
-scoreboard that reports wrong, extra and missing bytes.
+The testbenches are order 0, as the course requires: one `initial` block drives the inputs in a fixed
+sequence, with no tasks, functions or reference model and no self-check. The inputs change on the falling
+edge of the clock. I checked every case in the waveforms and in the console output (`$monitor` / `$display`)
+and marked it on the screenshot: numbered markers on the events, and a coloured box with a tag on the signals
+that show it.
 Results summary: [`results/1_simulation/simulation_summary.txt`](results/1_simulation/simulation_summary.txt),
-full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform screenshots next to them.
+xsim logs in `results/1_simulation/simulation_logs/`, the annotated waveforms and their wave configs next to them.
 
-| Testbench | DUT | Checks | What is checked |
+| Testbench | DUT | Cases | What the waveforms show |
 |---|---|---|---|
-| `tb_uart_phy` | `uart_phy` (10 clocks per bit) | 32/32 | frame `{1, data, 0}` sampled mid-bit by a receiver model, `done` exactly 100 clocks after `start`; `0x00`, `0xAA`, `0x55`, `0xFF`, 10 random bytes, back-to-back bytes |
-| `tb_tx_fsm` | `tx_fsm` + `uart_phy` (`DELAY50` = 20) | 8338/8338 | every byte of the run (data, `0x20`, `0x0D 0x0A`), `row_out`, run time including `WAIT`; 1×1 with delays 0 and 3, 32×32 with all four delays, two runs with data `0x20` and `0x0D` |
-| `tb_chip_top` | full system (simulation parameters) | 4179/4179 | 1×1 `0x41`; short press → no transmission; 32×32 with delay 1; press during a run ignored; reset during a run (`tx`, `LED0`, `ready`, `row_out`, no more frames) |
-| **total** | | **12 549/12 549** | |
+| [`tb_debounce`](tb/tb_debounce.v) | `debounce` (`MAX_COUNT` = 10) | 6 | power-on reset: `cpu_reset_d` = 0 until `reset_cnt` counts 0…9; `sw` = `ABC` stable → `sw_d` = `ABC` 13 clocks later; a 9-clock glitch restarts the counter and `sw_d` stays `ABC`; the same for `btnc`; `cpu_reset` → `sw_d` and `btnc_d` cleared |
+| [`tb_btn_hold`](tb/tb_btn_hold.v) | `btn_hold` (`MAX_COUNT` = 10) | 2 presses | long press: `COUNT`, `cnt` 0…9, one `held` pulse, `WAIT` until release; 8-clock press: back to `IDLE`, no `held` |
+| [`tb_latch`](tb/tb_latch.v) | `latch` | 5 | `held & ready` loads data, delay and size and gives a one-clock `transmit` (`ABC`, `555`, `111`); `ready` without `held` and `held` without `ready` load nothing |
+| [`tb_tx_fsm_0`](tb/tb_tx_fsm_0.v) | `tx_fsm` + `uart_phy` (`DELAY50` = 10) | 3 runs | 1×1 of `0x41`: `41 0D 0A`, back to `IDLE` with no `WAIT`; 32×32 of `0x55`, delay 1: a 10-clock `WAIT` after the row end; 32×32 of `0xAA`, delay 3: a 40-clock `WAIT` after a space; `row_out` = 1, 32, 32 |
+| [`tb_uart_phy_0`](tb/tb_uart_phy_0.v) | `uart_phy` (10 clocks per bit) | 3 bytes | frame of `0xA5`: start bit, `1 0 1 0 0 1 0 1` LSB first, stop bit, `done` for one clock at `cnt` = 9; `0x00` and `0xFF` in the log |
+| [`tb_baud_gen`](tb/tb_baud_gen.v) | `baud_gen` (`BAUD_RATE` = 10M) | 2 | `en` = 1: a one-clock tick every 10 clocks; `en` = 0: `tick_cnt` stays 0 |
+| [`tb_seven_segment`](tb/tb_seven_segment.v) | `seven_segment` | 16 digits | every hex digit, one waveform row per cathode |
+| [`tb_display_ctrl`](tb/tb_display_ctrl.v) | `display_ctrl` + `baud_gen` (10M) | 20 | anode ring `FE → FD → … → 7F → FE`, one step per tick; delay decode `00 05 10 20`, size decode `01 20 80 FF`; `dp` = 0 only on `AN3`; `row` = `0FF` and `100` both shown as `FF` |
+| [`tb_chip_top_0`](tb/tb_chip_top_0.v) | full system (simulation parameters) | 2 runs | an 11-clock press → `btnc_d` 7 clocks later → `held` → `transmit` → the first start bit; the display scan after a 32×32 run of `0x23` with delay 1: T0 = `23`, T1 = `0.5`, T2 = `20`, T3 = `20` |
+| **total** | | **59** | |
 
-![tb_tx_fsm: end of a row and the WAIT state](results/1_simulation/tb_tx_fsm_2_row_end_wait.png)
+![tb_tx_fsm_0: end of a row and the WAIT state](results/1_simulation/tb_tx_fsm_0_2_row_end_wait.png)
 
 ## Lint, synthesis, implementation
 
@@ -134,7 +141,7 @@ Submitted report (Hebrew, with every waveform, FSM transition table and report e
 
 ```
 rtl/          9 modules, one per file
-tb/           3 testbenches
+tb/           9 testbenches, one per module (tb_chip_top_0 for the top level)
 constraints/  nexys_a7_100t.xdc – CLK100MHZ, CPU_RESETN, BTNC, SW[9:0], SW[14:13], LED0, CA..CG, DP, AN, UART_RXD_OUT
 docs/         block diagram, the three FSM diagrams, lab4_report.pdf
 results/      1_simulation  2_lint_and_rtl  3_synthesis  4_implementation  5_resource_usage

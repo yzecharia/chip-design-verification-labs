@@ -3,16 +3,16 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_chip_top_behav.wdb" id="1">
+      <db_ref path="tb_chip_top_0_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="tb_chip_top" />
+            <top_module name="tb_chip_top_0" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="70000 ps"></ZoomStartTime>
-      <ZoomEndTime time="325000 ps"></ZoomEndTime>
+      <ZoomEndTime time="335000 ps"></ZoomEndTime>
       <Cursor1Time time="260000 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
@@ -20,66 +20,66 @@
       <ValueColumnWidth column_width="120"></ValueColumnWidth>
    </column_width_setting>
    <wave_markers>
-      <marker label="1 btnc=1" time="90000" />
-      <marker label="2 btnc_d=1" time="155000" />
-      <marker label="3 btnc=0" time="200000" />
-      <marker label="4 held (cnt=9)" time="255000" />
-      <marker label="5 transmit" time="265000" />
-      <marker label="6 tx start bit" time="285000" />
+      <marker label="1" time="90000" />
+      <marker label="2" time="155000" />
+      <marker label="3" time="200000" />
+      <marker label="4" time="255000" />
+      <marker label="5" time="265000" />
+      <marker label="6" time="285000" />
    </wave_markers>
    <WVObjectSize size="11" />
-   <wvobject type="logic" fp_name="/tb_chip_top/btnc">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/btnc">
       <obj_property name="ElementShortName">btnc</obj_property>
       <obj_property name="ObjectShortName">btnc</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_chip_top/sw">
+   <wvobject type="array" fp_name="/tb_chip_top_0/sw">
       <obj_property name="ElementShortName">sw[11:0]</obj_property>
       <obj_property name="ObjectShortName">sw[11:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_chip_top/dut/btnc_d">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/chip_top_i/btnc_d">
       <obj_property name="ElementShortName">btnc_d</obj_property>
       <obj_property name="ObjectShortName">btnc_d</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_chip_top/dut/btn_hold_i/state">
+   <wvobject type="array" fp_name="/tb_chip_top_0/chip_top_i/btn_hold_i/state">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">state[1:0]</obj_property>
       <obj_property name="ObjectShortName">state[1:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="label">btn_hold.state[1:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_chip_top/dut/btn_hold_i/cnt">
+   <wvobject type="array" fp_name="/tb_chip_top_0/chip_top_i/btn_hold_i/cnt">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">cnt[3:0]</obj_property>
       <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="label">btn_hold.cnt[3:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_chip_top/dut/held">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/chip_top_i/held">
       <obj_property name="ElementShortName">held</obj_property>
       <obj_property name="ObjectShortName">held</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_chip_top/dut/transmit">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/chip_top_i/transmit">
       <obj_property name="ElementShortName">transmit</obj_property>
       <obj_property name="ObjectShortName">transmit</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_chip_top/dut/data">
+   <wvobject type="array" fp_name="/tb_chip_top_0/chip_top_i/data">
       <obj_property name="ElementShortName">data[7:0]</obj_property>
       <obj_property name="ObjectShortName">data[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_chip_top/dut/tx_fsm_i/state">
+   <wvobject type="array" fp_name="/tb_chip_top_0/chip_top_i/tx_fsm_i/state">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">state[2:0]</obj_property>
       <obj_property name="ObjectShortName">state[2:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="label">tx_fsm.state[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_chip_top/dut/start">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/chip_top_i/start">
       <obj_property name="ElementShortName">start</obj_property>
       <obj_property name="ObjectShortName">start</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_chip_top/tx">
+   <wvobject type="logic" fp_name="/tb_chip_top_0/tx">
       <obj_property name="ElementShortName">tx</obj_property>
       <obj_property name="ObjectShortName">tx</obj_property>
    </wvobject>

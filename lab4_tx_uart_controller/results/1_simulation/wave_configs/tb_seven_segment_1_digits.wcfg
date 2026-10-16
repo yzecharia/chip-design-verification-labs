@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_seven_segment_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_seven_segment" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="315000 ps"></ZoomEndTime>
+      <Cursor1Time time="160000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="15000" />
+      <marker label="2" time="155000" />
+      <marker label="3" time="195000" />
+      <marker label="4" time="295000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="array" fp_name="/tb_seven_segment/dig_in">
+      <obj_property name="ElementShortName">dig_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dig_in[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_seven_segment/ss_dig">
+      <obj_property name="ElementShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ss_dig[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[6]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">[6]</obj_property>
+      <obj_property name="label">CA</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[5]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">[5]</obj_property>
+      <obj_property name="label">CB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[4]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">[4]</obj_property>
+      <obj_property name="label">CC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[3]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">[3]</obj_property>
+      <obj_property name="label">CD</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[2]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+      <obj_property name="label">CE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[1]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+      <obj_property name="label">CF</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_seven_segment/ss_dig[0]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">CG</obj_property>
+   </wvobject>
+</wave_config>

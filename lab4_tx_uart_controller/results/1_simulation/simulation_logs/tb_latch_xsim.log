@@ -1,0 +1,96 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/baud_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/btn_hold.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/debounce.v" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/latch.v" into library work
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_baud_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_btn_hold.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_chip_top_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_debounce.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_fsm_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_uart_phy_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart_phy_0
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_latch_snap work.tb_latch work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.latch
+Compiling module work.tb_latch
+Compiling module work.glbl
+Built simulation snapshot tb_latch_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 16 10:48:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_latch_snap/xsim_script.tcl
+# xsim {tb_latch_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_4_new/build/xsim/behavioral/tb_latch/tb_latch.vcd}
+## log_vcd [get_objects -r /tb_latch/*]
+## run -all
+Time: 0 | held=0 | sw_d=0 | ready=0 | data=xx | delay=x | size=x | transmit=x
+Time: 5 | held=0 | sw_d=0 | ready=0 | data=0 | delay=0 | size=0 | transmit=0
+Time: 30 | held=1 | sw_d=abc | ready=1 | data=0 | delay=0 | size=0 | transmit=0
+Time: 35 | held=1 | sw_d=abc | ready=1 | data=bc | delay=2 | size=2 | transmit=1
+Time: 40 | held=0 | sw_d=abc | ready=0 | data=bc | delay=2 | size=2 | transmit=1
+Time: 45 | held=0 | sw_d=abc | ready=0 | data=bc | delay=2 | size=2 | transmit=0
+Time: 50 | held=0 | sw_d=aba | ready=1 | data=bc | delay=2 | size=2 | transmit=0
+Time: 60 | held=0 | sw_d=fff | ready=1 | data=bc | delay=2 | size=2 | transmit=0
+Time: 70 | held=1 | sw_d=555 | ready=1 | data=bc | delay=2 | size=2 | transmit=0
+Time: 75 | held=1 | sw_d=555 | ready=1 | data=55 | delay=1 | size=1 | transmit=1
+Time: 80 | held=1 | sw_d=555 | ready=0 | data=55 | delay=1 | size=1 | transmit=1
+Time: 85 | held=1 | sw_d=555 | ready=0 | data=55 | delay=1 | size=1 | transmit=0
+Time: 90 | held=0 | sw_d=111 | ready=0 | data=55 | delay=1 | size=1 | transmit=0
+Time: 110 | held=1 | sw_d=111 | ready=0 | data=55 | delay=1 | size=1 | transmit=0
+Time: 120 | held=1 | sw_d=111 | ready=1 | data=55 | delay=1 | size=1 | transmit=0
+Time: 125 | held=1 | sw_d=111 | ready=1 | data=11 | delay=1 | size=0 | transmit=1
+$finish called at time : 165 ns : File "/Users/yuval/Projects/labs/lab_4_new/sim/tb_latch.v" Line 41
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701024 KB (Peak: 757968 KB), Simulation CPU Usage: 1680 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 16 10:48:15 2026...

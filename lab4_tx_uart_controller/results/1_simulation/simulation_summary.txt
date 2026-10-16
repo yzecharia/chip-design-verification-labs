@@ -1,3 +1,10 @@
-tb_uart_phy  uart_phy (BAUD 10M)              32/32  TEST PASS  16,235 ns
-tb_tx_fsm    tx_fsm + uart_phy (DELAY50=20)   8338/8338  TEST PASS  9,851,835 ns
-tb_chip_top  chip_top (sim parameters)        4179/4179  TEST PASS  4,437,105 ns
+Order-0 testbenches (no self-checking): every case was checked in the waveforms (report chapter 3).
+tb_debounce      debounce (MAX_COUNT=10)           6 cases   as expected (waveforms)  785 ns
+tb_btn_hold      btn_hold (MAX_COUNT=10)           2 presses as expected (waveforms)  365 ns
+tb_latch         latch                             5 cases   as expected (waveforms)  165 ns
+tb_tx_fsm_0      tx_fsm (DELAY50=10) + uart_phy    3 runs    as expected (waveforms)  4,716,205 ns
+tb_uart_phy_0    uart_phy (BAUD 10M)               3 bytes   as expected (waveforms)  3,365 ns
+tb_baud_gen      baud_gen (BAUD 10M)               2 cases   as expected (waveforms)  315 ns
+tb_seven_segment seven_segment                    16 digits  as expected (waveforms)  315 ns
+tb_display_ctrl  display_ctrl (+ baud_gen 10M)    20 cases   as expected (waveforms)  2,305 ns
+tb_chip_top_0    chip_top (sim parameters)         2 runs    as expected (waveforms)  2,309,925 ns
