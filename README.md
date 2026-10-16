@@ -1,7 +1,7 @@
 # Chip Design and Verification – course labs
 
 Lab work from the **Google & Reichman Tech School Chip Design & Verification program** (Verilog + Verification track).
-Every lab goes through the full FPGA flow: RTL in Verilog, self-checking testbenches, lint, synthesis,
+Every lab goes through the full FPGA flow: RTL in Verilog, testbenches, lint, synthesis,
 place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Artix-7 `xc7a100tcsg324-1`).
 
 | Lab | Design | What it covers | Verification | On the board |
@@ -9,7 +9,7 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 | [Lab 1 – UART stub](lab1_uart_stub/) | `chip_top` with `uart_rx` / `uart_tx` stubs | Top-down architecture: block diagram, I/O tables, module stubs, hierarchical integration, lint | lint only (stubs) | – |
 | [Lab 2 – 8-bit adder](lab2_adder_8bit/) | Behavioral vs. flat structural ripple-carry adder | Two coding styles for the same function, shared testbench, schematic comparison, resource usage | `$monitor` testbench, both adders side by side | switches → LEDs ✔ |
 | [Lab 3 – 7-segment controller](lab3_seven_segment/) | 16-bit value latched by a 1 s button press, shown in decimal or hex on the 8-digit display | Clock dividing, button synchronizing and hold detection, serial double-dabble binary→BCD, display multiplexing | 7 self-checking testbenches, **798/798** checks pass | ✔ (photos) |
-| [Lab 4 – TX UART controller](lab4_tx_uart_controller/) | A switch-selected byte sent to the PC as an N×N square over UART (57600 bps, 8N1), configuration and row count on the display | Debounce and 1 s hold, byte-level FSM with an inter-byte WAIT state and registered outputs, bit-level UART PHY with a start/done handshake, state diagrams and transition tables for the three FSMs | 3 self-checking testbenches (driver / monitor / scoreboard in `tb_chip_top`), **12 549/12 549** checks pass | ✔ (photos + terminal log) |
+| [Lab 4 – TX UART controller](lab4_tx_uart_controller/) | A switch-selected byte sent to the PC as an N×N square over UART (57600 bps, 8N1), configuration and row count on the display | Debounce and 1 s hold, byte-level FSM with an inter-byte WAIT state and registered outputs, bit-level UART PHY with a start/done handshake, state diagrams and transition tables for the three FSMs | 9 testbenches, one per module; every case checked in the annotated waveforms (59 cases) | ✔ (photos + terminal log) |
 
 ## Tools
 

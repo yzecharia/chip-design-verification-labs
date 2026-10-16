@@ -1,0 +1,97 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/baud_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/btn_hold.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/debounce.v" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/latch.v" into library work
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/src/uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_baud_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_btn_hold.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_chip_top_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_debounce.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_tx_fsm_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_fsm_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_uart_phy.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_4_new/sim/tb_uart_phy_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart_phy_0
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_debounce_snap work.tb_debounce work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.debounce(MAX_COUNT=10)
+Compiling module work.tb_debounce
+Compiling module work.glbl
+Built simulation snapshot tb_debounce_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 16 10:47:21 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_debounce_snap/xsim_script.tcl
+# xsim {tb_debounce_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_4_new/build/xsim/behavioral/tb_debounce/tb_debounce.vcd}
+## log_vcd [get_objects -r /tb_debounce/*]
+## run -all
+Time: 0 | cpu_reset=1 | cpu_reset_d=0 | btnc=0 | btnc_d=x | sw=0| sw_d=xxx
+Time: 5 | cpu_reset=1 | cpu_reset_d=0 | btnc=0 | btnc_d=0 | sw=0| sw_d=0
+Time: 125 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=0| sw_d=0
+Time: 140 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=abc| sw_d=0
+Time: 265 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=abc| sw_d=abc
+Time: 270 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=0| sw_d=abc
+Time: 360 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=abc| sw_d=abc
+Time: 370 | cpu_reset=1 | cpu_reset_d=1 | btnc=1 | btnc_d=0 | sw=0| sw_d=abc
+Time: 495 | cpu_reset=1 | cpu_reset_d=1 | btnc=1 | btnc_d=1 | sw=0| sw_d=0
+Time: 500 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=1 | sw=0| sw_d=0
+Time: 590 | cpu_reset=1 | cpu_reset_d=1 | btnc=1 | btnc_d=1 | sw=0| sw_d=0
+Time: 600 | cpu_reset=1 | cpu_reset_d=1 | btnc=0 | btnc_d=1 | sw=aba| sw_d=0
+Time: 610 | cpu_reset=0 | cpu_reset_d=1 | btnc=0 | btnc_d=1 | sw=aba| sw_d=0
+Time: 725 | cpu_reset=0 | cpu_reset_d=1 | btnc=0 | btnc_d=0 | sw=aba| sw_d=aba
+Time: 735 | cpu_reset=0 | cpu_reset_d=0 | btnc=0 | btnc_d=0 | sw=aba| sw_d=aba
+Time: 740 | cpu_reset=1 | cpu_reset_d=0 | btnc=0 | btnc_d=0 | sw=aba| sw_d=aba
+Time: 745 | cpu_reset=1 | cpu_reset_d=0 | btnc=0 | btnc_d=0 | sw=aba| sw_d=0
+$finish called at time : 785 ns : File "/Users/yuval/Projects/labs/lab_4_new/sim/tb_debounce.v" Line 53
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701040 KB (Peak: 757976 KB), Simulation CPU Usage: 1910 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 16 10:47:29 2026...
