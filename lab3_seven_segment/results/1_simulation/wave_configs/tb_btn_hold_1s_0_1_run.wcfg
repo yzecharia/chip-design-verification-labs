@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_btn_hold_1s_0_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_btn_hold_1s_0" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="395000 ps"></ZoomEndTime>
+      <Cursor1Time time="130000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="30000" />
+      <marker label="2" time="45000" />
+      <marker label="3" time="125000" />
+      <marker label="4" time="230000" />
+      <marker label="5" time="240000" />
+      <marker label="6" time="300000" />
+   </wave_markers>
+   <WVObjectSize size="6" />
+   <wvobject type="logic" fp_name="/tb_btn_hold_1s_0/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold_1s_0/click">
+      <obj_property name="ElementShortName">click</obj_property>
+      <obj_property name="ObjectShortName">click</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold_1s_0/btn_hold_1s_i/click_sync">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">click_sync</obj_property>
+      <obj_property name="ObjectShortName">click_sync</obj_property>
+      <obj_property name="label">btn_hold_1s.click_sync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold_1s_0/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_btn_hold_1s_0/btn_hold_1s_i/counter_1s">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">counter_1s[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_1s[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">btn_hold_1s.counter_1s[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_btn_hold_1s_0/pressed_1s">
+      <obj_property name="ElementShortName">pressed_1s</obj_property>
+      <obj_property name="ObjectShortName">pressed_1s</obj_property>
+   </wvobject>
+</wave_config>

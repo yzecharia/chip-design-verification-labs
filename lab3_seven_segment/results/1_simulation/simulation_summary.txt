@@ -1,0 +1,8 @@
+Order-0 testbenches (no self-checking): every case was checked in the waveforms (report chapter 4).
+tb_seven_segment   seven_segment                          16 digits      as expected (waveforms)  315 ns
+tb_tick_gen_0      tick_gen (MAX_TICK=5)                  2 cases        as expected (waveforms)  325 ns
+tb_value_latch_0   value_latch                            6 cases        as expected (waveforms)  185 ns
+tb_btn_hold_1s_0   btn_hold_1s (MAX_COUNT=5) + tick_gen   2 presses      as expected (waveforms)  395 ns
+tb_binary_2_bcd_0  binary_2_bcd                           3 conversions  as expected (waveforms)  635 ns
+tb_display_ctrl_0  display_ctrl (+ tick_gen MAX_TICK=4)   3 cases        as expected (waveforms)  635 ns
+tb_chip_top_0      chip_top (MAX_TICK=2, MAX_COUNT=5)     2 runs         as expected (waveforms)  1,125 ns

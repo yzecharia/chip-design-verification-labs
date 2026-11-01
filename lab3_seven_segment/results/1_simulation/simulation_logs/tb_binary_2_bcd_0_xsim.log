@@ -1,0 +1,105 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/binary_2_bcd.v" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/btn_hold_1s.v" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/chip_top.v" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/display_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/tick_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/src/value_latch.v" into library work
+INFO: [VRFC 10-311] analyzing module value_latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_binary_2_bcd_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_btn_hold_1s_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold_1s_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_chip_top_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_display_ctrl_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_tick_gen_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tick_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_3/sim/tb_value_latch_0.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_value_latch_0
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_binary_2_bcd_0_snap work.tb_binary_2_bcd_0 work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.binary_2_bcd
+Compiling module work.tb_binary_2_bcd_0
+Compiling module work.glbl
+Built simulation snapshot tb_binary_2_bcd_0_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov  1 11:21:20 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_binary_2_bcd_0_snap/xsim_script.tcl
+# xsim {tb_binary_2_bcd_0_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_3/build/xsim/behavioral/tb_binary_2_bcd_0/tb_binary_2_bcd_0.vcd}
+## log_vcd [get_objects -r /tb_binary_2_bcd_0/*]
+## run -all
+Time: 0 | sw=0 | start=0 | bcd=xxxxx
+Time: 5 | sw=0 | start=0 | bcd=00000
+Time: 220 | sw=12345 | start=1 | bcd=00000
+Time: 230 | sw=12345 | start=0 | bcd=00000
+Time: 255 | sw=12345 | start=0 | bcd=00001
+Time: 265 | sw=12345 | start=0 | bcd=00003
+Time: 275 | sw=12345 | start=0 | bcd=00006
+Time: 285 | sw=12345 | start=0 | bcd=00012
+Time: 295 | sw=12345 | start=0 | bcd=00024
+Time: 305 | sw=12345 | start=0 | bcd=00048
+Time: 315 | sw=12345 | start=0 | bcd=00096
+Time: 325 | sw=12345 | start=0 | bcd=00192
+Time: 335 | sw=12345 | start=0 | bcd=00385
+Time: 345 | sw=12345 | start=0 | bcd=00771
+Time: 355 | sw=12345 | start=0 | bcd=01543
+Time: 365 | sw=12345 | start=0 | bcd=03086
+Time: 375 | sw=12345 | start=0 | bcd=06172
+Time: 385 | sw=12345 | start=0 | bcd=12345
+Time: 430 | sw=65535 | start=1 | bcd=12345
+Time: 435 | sw=65535 | start=1 | bcd=00000
+Time: 440 | sw=65535 | start=0 | bcd=00000
+Time: 445 | sw=65535 | start=0 | bcd=00001
+Time: 455 | sw=65535 | start=0 | bcd=00003
+Time: 465 | sw=65535 | start=0 | bcd=00007
+Time: 475 | sw=65535 | start=0 | bcd=00015
+Time: 485 | sw=65535 | start=0 | bcd=00031
+Time: 495 | sw=65535 | start=0 | bcd=00063
+Time: 505 | sw=65535 | start=0 | bcd=00127
+Time: 515 | sw=65535 | start=0 | bcd=00255
+Time: 525 | sw=65535 | start=0 | bcd=00511
+Time: 535 | sw=65535 | start=0 | bcd=01023
+Time: 545 | sw=65535 | start=0 | bcd=02047
+Time: 555 | sw=65535 | start=0 | bcd=04095
+Time: 565 | sw=65535 | start=0 | bcd=08191
+Time: 575 | sw=65535 | start=0 | bcd=16383
+Time: 585 | sw=65535 | start=0 | bcd=32767
+Time: 595 | sw=65535 | start=0 | bcd=65535
+$finish called at time : 635 ns : File "/Users/yuval/Projects/labs/lab_3/sim/tb_binary_2_bcd_0.v" Line 30
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701036 KB (Peak: 757976 KB), Simulation CPU Usage: 1720 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 11:21:28 2026...

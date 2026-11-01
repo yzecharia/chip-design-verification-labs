@@ -2,8 +2,8 @@
 
 A 16-bit value set on the switches is latched by holding the **center** (decimal) or **down** (hex)
 push-button for one second, and shown on the Nexys A7's 8-digit 7-segment display without flicker.
-`CPU_RESETN` clears the stored value. Fully verified in simulation (7 self-checking testbenches,
-798 checks), lint-clean, synthesized, placed, routed and tested on the board.
+`CPU_RESETN` clears the stored value. Each of the seven modules has its own testbench (`tb_chip_top_0`
+for the top level), and the design is lint-clean, synthesized, placed, routed and tested on the board.
 
 ![chip_top architecture](docs/chip_top.png)
 
@@ -27,7 +27,7 @@ lab's no-flicker target. A "1 second" press is simply 2000 of those ticks, so no
 
 Parameters make the slow timing simulable: the lab asks for a ~100 ns button hold in simulation.
 
-| Parameter | Hardware | `tb_chip_top` | Meaning |
+| Parameter | Hardware | `tb_chip_top_0` | Meaning |
 |---|---|---|---|
 | `MAX_TICK` | 50 000 | 2 | clocks per tick (2 kHz) |
 | `MAX_COUNT` | 2000 | 5 | ticks per "1 second" press |
@@ -43,23 +43,27 @@ Design notes that came up while doing it:
 
 ## Verification
 
-Each testbench has a reference model in the bench (`bin2bcd`, a 7-segment *decoder* `ss2dig`, an
-expected-anode function), drives directed cases and then random ones, and counts `PASS`/`FAIL` per check.
-Results summary: [`results/1_simulation/simulation_results_summary.txt`](results/1_simulation/simulation_results_summary.txt),
-full xsim logs in `results/1_simulation/simulation_logs/`, annotated waveform screenshots next to them.
+The testbenches are order 0, as the course requires: one `initial` block drives the inputs in a fixed
+sequence, with no tasks, functions or reference model and no self-check. The inputs change on the falling
+edge of the clock. I built them like the Lab 4 benches; `seven_segment` is the same module in both labs,
+so `tb_seven_segment` is the Lab 4 bench unchanged. I checked every case in the waveforms and in the console
+output (`$monitor` / `$display`) and marked it on the screenshot: numbered markers on the events, and a
+coloured box with a tag on the signals that show it.
+Results summary: [`results/1_simulation/simulation_summary.txt`](results/1_simulation/simulation_summary.txt),
+xsim logs in `results/1_simulation/simulation_logs/`, the annotated waveforms and their wave configs next to them.
 
-| Testbench | DUT | Checks | What is checked |
+| Testbench | DUT | Cases | What the waveforms show |
 |---|---|---|---|
-| `tb_ss` | `seven_segment` | 16/16 | all 16 digits decode back to the input |
-| `tb_tick_gen` | `tick_gen` | 19/19 | every tick interval is exactly `MAX_TICK` clocks |
-| `tb_value_latch` | `value_latch` | 6/6 | reset, no press, center, down, hold, both pressed (down wins) |
-| `tb_btn_hold_1s` | `btn_hold_1s` | 18/18 | short presses ignored, one pulse per hold, pulse latency for all tick phases, bouncing then press |
-| `tb_binary_2_bcd` | `binary_2_bcd` | 25/25 | 0, 65535, 12345, overflowing constant, `start` clears, 20 random |
-| `tb_display_ctrl` | `display_ctrl` + decoder | 525/525 | hex 4-digit scan, decimal 5-digit scan, mode switch mid-scan, 40 random values |
-| `tb_chip_top` | full system | 189/189 | decimal/hex latching, short press ignored, both buttons, reset, 10 random values – checked by *reading the display back* digit by digit |
-| **total** | | **798/798** | |
+| [`tb_seven_segment`](tb/tb_seven_segment.v) | `seven_segment` | 16 digits | every hex digit, one waveform row per cathode |
+| [`tb_tick_gen_0`](tb/tb_tick_gen_0.v) | `tick_gen` (`MAX_TICK` = 5) | 2 | a one-clock tick every 5 clocks, `counter` 0…4; `reset_n` = 0 at `counter` = 3 skips that tick and the count starts again from 0 |
+| [`tb_value_latch_0`](tb/tb_value_latch_0.v) | `value_latch` | 6 | switches change without a press: `sw_reg` stays `0000`; center → `ABCD`, `dec_hex` = 1; down → `FFFF`, `dec_hex` = 0; center → `0309`; both pressed → `5555`, down wins; reset → `0000` |
+| [`tb_btn_hold_1s_0`](tb/tb_btn_hold_1s_0.v) | `btn_hold_1s` + `tick_gen` (`MAX_TICK` = 2, `MAX_COUNT` = 5) | 2 presses | `click_sync` follows `click` 2 clocks later; long press: `counter_1s` counts ticks 0…4, one `pressed_1s` pulse, then stops at 5; 6-clock press: `counter_1s` reaches 3, no pulse |
+| [`tb_binary_2_bcd_0`](tb/tb_binary_2_bcd_0.v) | `binary_2_bcd` | 3 conversions | 0 after reset; `start` with 12345 and with 65535: `counter` 0…16, one bit per clock, `bcd` = `12345` and `65535` after 16 clocks, held while `shift_16` = 1 |
+| [`tb_display_ctrl_0`](tb/tb_display_ctrl_0.v) | `display_ctrl` + `tick_gen` (`MAX_TICK` = 4) | 3 | the anode ring moves one place per tick; hex: `D C B A` on `AN0..AN3` and the 5th place dark (`FF`); decimal: `1 8 9 3 4` with `AN4` on (`EF`); reset in the middle of a scan → back to `AN0`; `DP` stays off |
+| [`tb_chip_top_0`](tb/tb_chip_top_0.v) | full system (`MAX_TICK` = 2, `MAX_COUNT` = 5) | 2 runs | BTNC with `SW` = 12345: 5 ticks → `pressed_c` → `sw_reg` = `3039`, `dec_hex` = 1 → 16 shifts → `bcd_val` = `12345`, then `5 4 3 2 1` on `AN0..AN4`; BTND with `SW` = `0309`: hex, `9 0 3 0` on `AN0..AN3`, 5th place dark |
+| **total** | | **34** | |
 
-![tb_chip_top: center press latches 12345 in decimal](results/1_simulation/tb_chip_top_2_zoom_center_press_to_decimal.png)
+![tb_chip_top_0: center press, 12345 latched and converted to BCD](results/1_simulation/tb_chip_top_0_1_press_decimal.png)
 
 ## Lint, synthesis, implementation
 
@@ -98,13 +102,13 @@ is in [`results/5_resource_usage/resource_usage_analysis.md`](results/5_resource
 | ![FFFF decimal](board_test/board_4_ffff_dec_65535.jpg) | ![FFFF hex](board_test/board_5_ffff_hex.jpg) | ![1234 decimal](board_test/board_6_1234_dec_04660.jpg) |
 | `FFFF` decimal → `65535` | `FFFF` hex | `1234` decimal → `04660` |
 
-Submitted report (Hebrew, with every waveform and report excerpt): [`docs/lab3_report.pdf`](docs/lab3_report.pdf).
+Report (Hebrew, with every waveform and report excerpt): [`docs/lab3_report.pdf`](docs/lab3_report.pdf).
 
 ## Files
 
 ```
 rtl/          7 modules, one per file
-tb/           7 testbenches
+tb/           7 testbenches, one per module (tb_chip_top_0 for the top level)
 constraints/  nexys_a7_100t.xdc – CLK100MHZ, CPU_RESETN, SW, BTNC, BTND, CA..CG, DP, AN
 docs/         block diagram, lab3_report.pdf
 results/      1_simulation  2_lint_and_rtl  3_synthesis  4_implementation  5_resource_usage
