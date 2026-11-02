@@ -91,7 +91,7 @@ package lab5_pkg;
     localparam [SS_DIG_WIDTH-1:0] DASH_VAL = 7'b111_1110; 
     localparam [AN_WIDTH-1:0] AN_RESET_VAL = {{(AN_WIDTH-1){1'b1}}, 1'b0};
     localparam [SS_DIG_WIDTH-1:0] SEG_RESET_VAL = 7'd1;
-    localparam DP_RESET_VAL = 1;
+    localparam DP_RESET_VAL = 1'b1;
 
     typedef struct packed {
         logic dash;

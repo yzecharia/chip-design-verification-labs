@@ -1,7 +1,13 @@
 import lab5_pkg::*;
 `include "lab5_definitions.svh"
 
-module chip_top (
+module chip_top #(
+    parameter BAUD_RATE = `BAUD_RATE,
+    parameter DEB_COUNT = `DEB_COUNT,
+    parameter BTN_HOLD_COUNT = `BTN_HOLD_COUNT,
+    parameter DELAY_50MS_VAL = `DELAY_50MS_VAL,
+    parameter DISPLAY_RR = `DISPLAY_RR
+) (
     input logic clk, cpu_reset,
     input logic [SW_WIDTH-1:0] sw,
     input logic btnc,
@@ -13,16 +19,12 @@ module chip_top (
     output logic led0, led15
 );
 
-    `ifdef SIM
-        initial $display("SIM mode: BAUD_RATE=%0d | DEB_COUNT=%0d | BTN_HOLD_COUNT=%0d | DELAY_50MS_VAL=%0d | DISPLAY_RR=%0d", BAUD_RATE, DEB_COUNT, BTN_HOLD_COUNT, DELAY_50MS_VAL, DISPLAY_RR);
-    `endif 
-
     board_in_t io_in; assign io_in = {sw[SW_WIDTH-1], btnc, sw[SW_WIDTH-2:0]};
 
     // debounce
     logic reset_n;
     board_in_t io_d;
-    debounce_top debounce_top_i(
+    debounce_top #(.DEB_COUNT(DEB_COUNT)) debounce_top_i(
         .clk(clk),
         .cpu_reset(cpu_reset),
         .io_in(io_in),
@@ -34,7 +36,7 @@ module chip_top (
 
     // btn_hold
     logic held;
-    btn_hold btn_hold_i(
+    btn_hold #(.BTN_HOLD_COUNT(BTN_HOLD_COUNT)) btn_hold_i(
         .clk(clk),
         .reset_n(reset_n),
         .btn(io_d.btnc),
@@ -60,7 +62,7 @@ module chip_top (
     logic done, start;
     logic [DATA_WIDTH-1:0] drive_data;
     logic [ROW_SIZE_WIDTH-1:0] row_out;
-    tx_mac tx_mac_i(
+    tx_mac #(.DELAY_50MS_VAL(DELAY_50MS_VAL)) tx_mac_i(
         .clk(clk),
         .reset_n(reset_n),
         .en(!rx_tx_mode),
@@ -75,7 +77,7 @@ module chip_top (
     );
 
     //tx_phy
-    tx_phy tx_phy_i(
+    tx_phy #(.BAUD_RATE(BAUD_RATE)) tx_phy_i(
         .clk(clk),
         .reset_n(reset_n),
         .start(start),
@@ -87,7 +89,7 @@ module chip_top (
     //rx_phy
     logic [DATA_WIDTH-1:0] data_rx;
     logic done_rx;
-    rx_phy rx_phy_i(
+    rx_phy #(.BAUD_RATE(BAUD_RATE)) rx_phy_i(
         .clk(clk),
         .reset_n(reset_n),
         .en(rx_tx_mode),
@@ -120,7 +122,7 @@ module chip_top (
 
     //display_ctrl
     display_cfg_t disp_cfg;
-    display_ctrl display_ctrl_i(
+    display_ctrl #(.DISPLAY_RR(DISPLAY_RR)) display_ctrl_i(
         .clk(clk),
         .reset_n(reset_n),
         .rx_data(rx_parsed_data),
