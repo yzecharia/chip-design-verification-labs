@@ -21,7 +21,6 @@ module display_ctrl #(
     );
 
     // 2. rotate an 0 and 500hz rate
-    localparam [AN_WIDTH-1:0] AN_RESET_VAL = {{(AN_WIDTH-1){1'b1}}, 1'b0};
     logic [AN_WIDTH-1:0] an;
     always_ff @(posedge clk) begin
         if (!reset_n) an <= AN_RESET_VAL;
