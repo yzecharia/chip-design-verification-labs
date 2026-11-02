@@ -71,7 +71,7 @@ package lab5_pkg;
     localparam [DATA_WIDTH-1:0] R_SMALL_VAL = 8'h72;
     localparam [DATA_WIDTH-1:0] COMMA_VAL = 8'h2C;
     localparam [DATA_WIDTH-1:0] C_VAL = 8'h43;
-    localparam [DATA_WIDTH-1:0] C_SMALL_VAL = 8'h64;
+    localparam [DATA_WIDTH-1:0] C_SMALL_VAL = 8'h63;
     localparam [DATA_WIDTH-1:0] V_VAL = 8'h56;
     localparam [DATA_WIDTH-1:0] V_SMALL_VAL = 8'h76;
     localparam [DATA_WIDTH-1:0] MSG_CLOSE_VAL = 8'h7D;
