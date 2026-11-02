@@ -8,49 +8,88 @@ module rx_mac (
     output logic pkt_valid
 );
 
-localparam PACKET_SIZE = 16;
-localparam PACKET_CNT_BITS = $clog2(PACKET_SIZE);
+    rx_mac_state_t state, next;
+    
+    localparam [DATA_WIDTH-1:0] ASCII_ZERO = 8'h30;
+    localparam [DATA_WIDTH-1:0] ASCII_NINE = 8'h39;
+    localparam [DATA_WIDTH-1:0] ASCII_A_BIG = 8'h41;
+    localparam [DATA_WIDTH-1:0] ASCII_Z_BIG = 8'h5A;
+    localparam [DATA_WIDTH-1:0] ASCII_A_SMALL = 8'h61;
+    localparam [DATA_WIDTH-1:0] ASCII_Z_SMALL = 8'h7A;
 
-rx_mac_state_t state, next;
+    logic is_big_char; assign is_big_char = (data_in >= ASCII_A_BIG) & (data_in <= ASCII_Z_BIG);
+    logic is_small_char; assign is_small_char = (data_in >= ASCII_A_SMALL) & (data_in <= ASCII_Z_SMALL);
 
-logic first_key; assign first_key = (data_in == MSG_START_VAL);
-logic last_key; assign last_key = (data_in == MSG_CLOSE_VAL);
+    logic is_comma; assign is_comma = (data_in == COMMA_VAL);
+    logic is_start; assign is_start = (data_in == MSG_START_VAL);
+    logic is_end; assign is_end = (data_in == MSG_CLOSE_VAL);
+    logic is_value; assign is_value = (data_in >= ASCII_ZERO) & (data_in <= ASCII_NINE);
+    logic is_opcode; assign is_opcode = is_big_char | is_small_char;
 
-localparam [PACKET_CNT_BITS-1:0] ONE = 1;
-localparam [PACKET_CNT_BITS-1:0] LAST_INDEX = (PACKET_SIZE-1) - 1;
-logic [PACKET_CNT_BITS-1:0] cnt;
-logic last_byte; assign last_byte = (cnt == LAST_INDEX);
-always_ff @(posedge clk) begin
-    if (!reset_n) cnt <= '0;
-    else if (((state == RX_MAC_IDLE) & first_key & done) | ((state == RX_MAC_COUNT) & done & first_key)) cnt <= '0;
-    else if ((state == RX_MAC_COUNT) & done) cnt <= cnt + ONE;
-end
+    localparam VALUE_WIDTH = $clog2(NUM_OF_VALUES);
+    logic [VALUE_WIDTH-1:0] value_cnt;
+    logic value_done; assign value_done = (value_cnt == NUM_OF_VALUES - 1);
+    always_ff @(posedge clk) begin
+        if (!reset_n) value_cnt <= '0;
+        else if ((state == RX_MAC_OPCODE) & done & is_opcode) value_cnt <= '0;
+        else if ((state == (RX_MAC_VALUE)) & done & is_value) value_cnt <= value_cnt + 1;
+    end
 
-always_ff @(posedge clk) begin
-    if (!reset_n) state <= RX_MAC_IDLE;
-    else state <= next;
-end
+    localparam GROUP_WIDTH = $clog2(MAX_GROUPS);
+    logic [GROUP_WIDTH-1:0] group_cnt;
+    logic max_group; assign max_group = (group_cnt == MAX_GROUPS - 1);
+    always_ff @(posedge clk) begin
+        if (!reset_n) group_cnt <= '0;
+        else if (done & is_start) group_cnt <= '0;
+        else if ((state == RX_MAC_DONE_NEXT) & done & is_comma & !max_group) group_cnt <= group_cnt + 1;
+    end
 
-always_comb begin
-    next = state;
-    unique case(state)
-        RX_MAC_IDLE: next = (first_key & done) ? RX_MAC_COUNT : RX_MAC_IDLE;
-        RX_MAC_COUNT: next = (done & ((last_byte & !first_key) | last_key)) ? RX_MAC_IDLE : RX_MAC_COUNT;
-        default: next = state;
-    endcase
-end
+    always_ff @(posedge clk) begin
+        if (!reset_n) state <= RX_MAC_IDLE;
+        else state <= next;
+    end
 
-always_ff @(posedge clk) begin
-    if (!reset_n) pkt_data <= '0;
-    else if ((((state == RX_MAC_IDLE) & first_key) | (state == RX_MAC_COUNT)) & done) pkt_data <= {pkt_data[((PACKET_SIZE-1)*DATA_WIDTH)-1:0], data_in};
-end
+    always_comb begin 
+        next = state;
+        unique case(state)
+            RX_MAC_IDLE: next = (done & is_start) ? RX_MAC_OPCODE : RX_MAC_IDLE;
+            RX_MAC_OPCODE: begin
+                if (done) begin
+                    if (is_start) next = RX_MAC_OPCODE;
+                    else if (is_opcode) next = RX_MAC_VALUE;
+                    else next = RX_MAC_IDLE;
+                end
+            end
+            RX_MAC_VALUE: begin
+                if (done) begin
+                    if (is_value) next = (value_done) ? RX_MAC_DONE_NEXT : RX_MAC_VALUE;
+                    else next = (is_start) ? RX_MAC_OPCODE : RX_MAC_IDLE; 
+                end 
+            end
+            RX_MAC_DONE_NEXT: begin
+                if (done) begin
+                    if ((!is_comma & !is_start) | (max_group & is_comma)) next = RX_MAC_IDLE;
+                    else if (is_start | (is_comma & !max_group)) next = RX_MAC_OPCODE;
+                end
+            end
+            default: next = RX_MAC_IDLE;
+        endcase
+    end
 
-always_ff @(posedge clk) begin
-    if (!reset_n) pkt_valid <= '0;
-    else if ((state == RX_MAC_COUNT) & last_key & last_byte & done) pkt_valid <= '1;
-    else pkt_valid <= '0;
-end
 
+    // MAX_GROUPS is 3, NUM_OF_VALUES = 3; 2 start and end, opcodes as max_group, values the amount of max_group, and commans is max_group - 1
+    // 2 + 3 opcode + 3*3values + 2 commas
+    // => PACKET_SIZE = 2 + MAX_GROUPS + MAX_GROUPS*NUM_OF_VALUES + (MAX_GROUPS-1) = 2 + 3 + 9 + 2 = 16
+    localparam CALC_PACKET_SIZE = 2 + MAX_GROUPS*(2 + NUM_OF_VALUES) - 1;
+    always_ff @(posedge clk) begin
+        if (!reset_n) pkt_data <= '0;
+        else if (done & is_start) pkt_data <= {{(CALC_PACKET_SIZE-1)*DATA_WIDTH{1'b0}}, MSG_START_VAL};
+        else if (done & (((state == RX_MAC_OPCODE) & is_opcode) | ((state == RX_MAC_VALUE) & is_value) | ((state == RX_MAC_DONE_NEXT) & ((is_comma & !max_group) | is_end)))) pkt_data <= {pkt_data[(CALC_PACKET_SIZE-1)*DATA_WIDTH-1:0], data_in};
+    end
 
+    always_ff @(posedge clk) begin
+        if (!reset_n) pkt_valid <= '0;
+        else pkt_valid <= (state == RX_MAC_DONE_NEXT) & done & is_end;
+    end
 
 endmodule

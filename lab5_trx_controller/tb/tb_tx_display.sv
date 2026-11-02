@@ -38,13 +38,11 @@ module tb_tx_display;
 
     int s, d;
     initial begin
-        
         for (s = 0; s < 4; s++) begin
             for (d = 0; d < 4; d++) begin
                 test_drive(size_cfg_t'(s), delay_cfg_t'(d), 8'hA5, (s+d));
             end
-        end
-        
+        end 
         $finish;
     end
 

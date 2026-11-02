@@ -6,6 +6,8 @@ package lab5_pkg;
     localparam DATA_WIDTH = 8;
     localparam DIG_IN_WIDTH = 4;
 
+    localparam PACKET_SIZE = 16;
+
     // TB Values
     localparam CLK_PERIOD = 10;
 
@@ -49,6 +51,8 @@ package lab5_pkg;
 
     // RX message (rx_mac -> parser)
     localparam DIGITS = 3;
+    localparam MAX_GROUPS = 3;
+    localparam NUM_OF_VALUES = 3;
     typedef struct packed {
         logic [DATA_WIDTH-1:0] msg_start;
         logic [DATA_WIDTH-1:0] r;
@@ -64,9 +68,12 @@ package lab5_pkg;
 
     localparam [DATA_WIDTH-1:0] MSG_START_VAL = 8'h7B;
     localparam [DATA_WIDTH-1:0] R_VAL = 8'h52;
+    localparam [DATA_WIDTH-1:0] R_SMALL_VAL = 8'h72;
     localparam [DATA_WIDTH-1:0] COMMA_VAL = 8'h2C;
     localparam [DATA_WIDTH-1:0] C_VAL = 8'h43;
+    localparam [DATA_WIDTH-1:0] C_SMALL_VAL = 8'h64;
     localparam [DATA_WIDTH-1:0] V_VAL = 8'h56;
+    localparam [DATA_WIDTH-1:0] V_SMALL_VAL = 8'h76;
     localparam [DATA_WIDTH-1:0] MSG_CLOSE_VAL = 8'h7D;
 
     // RX result (parser -> display_ctrl -> rx_display)
@@ -107,6 +114,6 @@ package lab5_pkg;
     typedef enum logic [2:0] { TX_MAC_IDLE, TX_MAC_DATA, TX_MAC_SPACE, TX_MAC_NEW_LINE_0, TX_MAC_NEW_LINE_1, TX_MAC_DELAY } tx_mac_state_t;
     typedef enum logic { TX_PHY_IDLE, TX_PHY_TRANSMIT } tx_phy_state_t;
     typedef enum logic [1:0] { RX_PHY_IDLE, RX_PHY_START, RX_PHY_DATA, RX_PHY_STOP } rx_phy_state_t;
-    typedef enum logic { RX_MAC_IDLE, RX_MAC_COUNT } rx_mac_state_t;
+    typedef enum logic [1:0] { RX_MAC_IDLE, RX_MAC_OPCODE, RX_MAC_VALUE, RX_MAC_DONE_NEXT } rx_mac_state_t;
 
 endpackage
