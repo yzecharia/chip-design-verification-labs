@@ -37,11 +37,7 @@ module parser (
 
     always_ff @(posedge clk) begin
         if (!reset_n) rx_parsed_data <= '0;
-        else if (pkt_valid & msg_valid_comb) begin
-            rx_parsed_data.row_index <= row[DATA_WIDTH-1:0];
-            rx_parsed_data.col_index <= col[DATA_WIDTH-1:0];
-            rx_parsed_data.pixel_value <= val[DATA_WIDTH-1:0];
-        end
+        else if (pkt_valid & msg_valid_comb) rx_parsed_data <= {row[DATA_WIDTH-1:0], col[DATA_WIDTH-1:0], val[DATA_WIDTH-1:0]};
     end
 
 endmodule
