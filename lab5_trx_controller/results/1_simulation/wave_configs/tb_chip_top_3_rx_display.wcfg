@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab5_pkg" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3581855000 ps"></ZoomStartTime>
+      <ZoomEndTime time="3582695000 ps"></ZoomEndTime>
+      <Cursor1Time time="3581877000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="3581875000" />
+      <marker label="2" time="3581975000" />
+      <marker label="3" time="3582075000" />
+      <marker label="4" time="3582175000" />
+      <marker label="5" time="3582275000" />
+      <marker label="6" time="3582375000" />
+      <marker label="7" time="3582475000" />
+      <marker label="8" time="3582575000" />
+   </wave_markers>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/rx_tx_mode">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx_tx_mode</obj_property>
+      <obj_property name="ObjectShortName">rx_tx_mode</obj_property>
+      <obj_property name="label">rx_tx_mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/an">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">an[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">an[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/seg">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">seg[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dp">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+      <obj_property name="label">dp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/led15">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led15</obj_property>
+      <obj_property name="ObjectShortName">led15</obj_property>
+      <obj_property name="label">led15</obj_property>
+   </wvobject>
+</wave_config>

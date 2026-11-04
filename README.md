@@ -1,7 +1,7 @@
 # Chip Design and Verification – course labs
 
 Lab work from the **Google & Reichman Tech School Chip Design & Verification program** (Verilog + Verification track).
-Every lab goes through the full FPGA flow: RTL in Verilog, testbenches, lint, synthesis,
+Every lab goes through the full FPGA flow: RTL in Verilog (SystemVerilog from Lab 5), testbenches, lint, synthesis,
 place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Artix-7 `xc7a100tcsg324-1`).
 
 | Lab | Design | What it covers | Verification | On the board |
@@ -10,7 +10,7 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 | [Lab 2 – 8-bit adder](lab2_adder_8bit/) | Behavioral vs. flat structural ripple-carry adder | Two coding styles for the same function, shared testbench, schematic comparison, resource usage | `$monitor` testbench, both adders side by side | switches → LEDs ✔ |
 | [Lab 3 – 7-segment controller](lab3_seven_segment/) | 16-bit value latched by a 1 s button press, shown in decimal or hex on the 8-digit display | Clock dividing, button synchronizing and hold detection, serial double-dabble binary→BCD, display multiplexing | 7 testbenches, one per module; every case checked in the annotated waveforms (34 cases) | ✔ (photos) |
 | [Lab 4 – TX UART controller](lab4_tx_uart_controller/) | A switch-selected byte sent to the PC as an N×N square over UART (57600 bps, 8N1), configuration and row count on the display | Debounce and 1 s hold, byte-level FSM with an inter-byte WAIT state and registered outputs, bit-level UART PHY with a start/done handshake, state diagrams and transition tables for the three FSMs | 9 testbenches, one per module; every case checked in the annotated waveforms (59 cases) | ✔ (photos + terminal log) |
-| [Lab 5 – UART TRX controller](lab5_trx_controller/) (work in progress) | Lab 4's transmitter plus a UART receiver: a 16-byte `{R<ddd>,C<ddd>,V<ddd>}` message from the PC is parsed and its row, column and value shown on the display; `SW[15]` selects TX or RX | Rewrite in SystemVerilog (package, one defines file for the simulation and synthesis values), RX FSM with start-bit detection and mid-bit sampling, message parser | work in progress | not yet |
+| [Lab 5 – UART TRX controller](lab5_trx_controller/) | Lab 4's transmitter plus a UART receiver: a 16-byte `{R<ddd>,C<ddd>,V<ddd>}` message from the PC is parsed and its row, column and value shown on the display; `SW[15]` selects TX or RX | Rewrite in SystemVerilog (package, one defines file for the simulation and synthesis values), RX PHY with 16× oversampling and a 3-sample start-bit check, message FSM and parser, flip-flops counted from the RTL and compared with synthesis | 15 testbenches, one per module; 63 immediate assertions + 15 SVA properties, 0 errors; the three without assertions checked in the annotated waveforms | ✔ (photos; TX cases and terminal log from Lab 4) |
 
 ## Tools
 
@@ -22,12 +22,12 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 ```
 labN_<name>/
 ├── README.md        what was built, how it works, results
-├── rtl/             synthesizable Verilog, one module per file
+├── rtl/             synthesizable Verilog / SystemVerilog, one module per file
 ├── tb/              testbenches
 ├── constraints/     the Nexys A7-100T .xdc with the pins this lab uses enabled
 ├── docs/            block diagram, report
 ├── reports/ or results/   lint, synthesis, implementation and utilization reports from Vivado
-└── board_test/      photos of the design running on the board (Lab 4: also the terminal log)
+└── board_test/      photos of the design running on the board (Labs 4 and 5: also the terminal log)
 ```
 
 The Vivado project files, build directories and bitstreams are not committed; the `.xdc`, sources and

@@ -1,0 +1,138 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_5/defines/lab5_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/defines/lab5_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/pkg/lab5_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/btn_hold.sv" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/debounce_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/latch.sv" into library work
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_btn_hold.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_debounce_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_latch.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_latch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_seven_segment_snap work.tb_seven_segment work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.lab5_pkg
+Compiling module work.seven_segment
+Compiling module work.tb_seven_segment
+Compiling module work.glbl
+Built simulation snapshot tb_seven_segment_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 17:03:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_seven_segment_snap/xsim_script.tcl
+# xsim {tb_seven_segment_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_5/build/xsim/behavioral/tb_seven_segment/tb_seven_segment.vcd}
+## log_vcd [get_objects -r /tb_seven_segment/*]
+## run -all
+Time:     0 | dash=0 | data_val=0000 | dp_in=0 | ss_dig=0000001 | dp=0
+Time:    20 | dash=0 | data_val=0000 | dp_in=1 | ss_dig=0000001 | dp=1
+Time:    30 | dash=0 | data_val=0001 | dp_in=0 | ss_dig=1001111 | dp=0
+Time:    40 | dash=0 | data_val=0001 | dp_in=1 | ss_dig=1001111 | dp=1
+Time:    50 | dash=0 | data_val=0010 | dp_in=0 | ss_dig=0010010 | dp=0
+Time:    60 | dash=0 | data_val=0010 | dp_in=1 | ss_dig=0010010 | dp=1
+Time:    70 | dash=0 | data_val=0011 | dp_in=0 | ss_dig=0000110 | dp=0
+Time:    80 | dash=0 | data_val=0011 | dp_in=1 | ss_dig=0000110 | dp=1
+Time:    90 | dash=0 | data_val=0100 | dp_in=0 | ss_dig=1001100 | dp=0
+Time:   100 | dash=0 | data_val=0100 | dp_in=1 | ss_dig=1001100 | dp=1
+Time:   110 | dash=0 | data_val=0101 | dp_in=0 | ss_dig=0100100 | dp=0
+Time:   120 | dash=0 | data_val=0101 | dp_in=1 | ss_dig=0100100 | dp=1
+Time:   130 | dash=0 | data_val=0110 | dp_in=0 | ss_dig=0100000 | dp=0
+Time:   140 | dash=0 | data_val=0110 | dp_in=1 | ss_dig=0100000 | dp=1
+Time:   150 | dash=0 | data_val=0111 | dp_in=0 | ss_dig=0001111 | dp=0
+Time:   160 | dash=0 | data_val=0111 | dp_in=1 | ss_dig=0001111 | dp=1
+Time:   170 | dash=0 | data_val=1000 | dp_in=0 | ss_dig=0000000 | dp=0
+Time:   180 | dash=0 | data_val=1000 | dp_in=1 | ss_dig=0000000 | dp=1
+Time:   190 | dash=0 | data_val=1001 | dp_in=0 | ss_dig=0000100 | dp=0
+Time:   200 | dash=0 | data_val=1001 | dp_in=1 | ss_dig=0000100 | dp=1
+Time:   210 | dash=0 | data_val=1010 | dp_in=0 | ss_dig=0001000 | dp=0
+Time:   220 | dash=0 | data_val=1010 | dp_in=1 | ss_dig=0001000 | dp=1
+Time:   230 | dash=0 | data_val=1011 | dp_in=0 | ss_dig=1100000 | dp=0
+Time:   240 | dash=0 | data_val=1011 | dp_in=1 | ss_dig=1100000 | dp=1
+Time:   250 | dash=0 | data_val=1100 | dp_in=0 | ss_dig=0110001 | dp=0
+Time:   260 | dash=0 | data_val=1100 | dp_in=1 | ss_dig=0110001 | dp=1
+Time:   270 | dash=0 | data_val=1101 | dp_in=0 | ss_dig=1000010 | dp=0
+Time:   280 | dash=0 | data_val=1101 | dp_in=1 | ss_dig=1000010 | dp=1
+Time:   290 | dash=0 | data_val=1110 | dp_in=0 | ss_dig=0110000 | dp=0
+Time:   300 | dash=0 | data_val=1110 | dp_in=1 | ss_dig=0110000 | dp=1
+Time:   310 | dash=0 | data_val=1111 | dp_in=0 | ss_dig=0111000 | dp=0
+Time:   320 | dash=0 | data_val=1111 | dp_in=1 | ss_dig=0111000 | dp=1
+Time:   330 | dash=1 | data_val=0000 | dp_in=0 | ss_dig=1111110 | dp=0
+Time:   340 | dash=1 | data_val=0000 | dp_in=1 | ss_dig=1111110 | dp=1
+$finish called at time : 350 ns : File "/Users/yuval/Projects/labs/lab_5/sim/tb_seven_segment.sv" Line 26
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 704864 KB (Peak: 757964 KB), Simulation CPU Usage: 1800 ms
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 17:03:32 2026...

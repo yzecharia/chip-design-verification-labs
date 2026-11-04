@@ -1,0 +1,16 @@
+Assertion-based testbenches (immediate asserts + SVA properties), Vivado xsim, SIM defines.
+tb_debounce        debounce                       11 immediate + 1 SVA assertions, 0 errors  738 ns
+tb_debounce_top    debounce_top (+14 debounce)     0 immediate + 2 SVA assertions, 0 errors  2,670 ns
+tb_btn_hold        btn_hold                        3 immediate + 3 SVA assertions, 0 errors  1,110 ns
+tb_latch           latch                           1 immediate + 2 SVA assertions, 0 errors  100 ns
+tb_tx_mac          tx_mac                          7 immediate + 0 SVA assertions, 0 errors  20.54 ms
+tb_tx_phy          tx_phy (+ baud_gen)             4 immediate + 2 SVA assertions, 0 errors  7,450 ns
+tb_baud_gen        baud_gen                        6 immediate + 3 SVA assertions, 0 errors  510 ns
+tb_rx_phy          rx_phy                          7 immediate + 2 SVA assertions, 0 errors  8,070 ns
+tb_rx_mac          rx_mac                         11 immediate + 0 SVA assertions, 0 errors  1,860 ns
+tb_parser          parser                          6 immediate + 0 SVA assertions, 0 errors  190 ns
+tb_rx_display      rx_display                      3 immediate + 0 SVA assertions, 0 errors  160 ns
+tb_tx_display      tx_display                      0 immediate + 0 SVA assertions, 0 errors  1,280 ns
+tb_seven_segment   seven_segment                   0 immediate + 0 SVA assertions, 0 errors  350 ns
+tb_display_ctrl    display_ctrl                    4 immediate + 0 SVA assertions, 0 errors  860 ns
+tb_chip_top        chip_top (all modules)          0 immediate + 0 SVA assertions, 0 errors  3.61 ms

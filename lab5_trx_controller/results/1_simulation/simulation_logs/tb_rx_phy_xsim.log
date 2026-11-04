@@ -1,0 +1,163 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_5/defines/lab5_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/defines/lab5_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/pkg/lab5_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/btn_hold.sv" into library work
+INFO: [VRFC 10-311] analyzing module btn_hold
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/debounce_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/latch.sv" into library work
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_btn_hold.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_btn_hold
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_debounce_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_latch.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_latch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_display.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_5/sim/tb_tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_rx_phy_snap work.tb_rx_phy work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.lab5_pkg
+Compiling module work.rx_phy_default
+Compiling module work.tb_rx_phy
+Compiling module work.glbl
+Built simulation snapshot tb_rx_phy_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 17:00:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_rx_phy_snap/xsim_script.tcl
+# xsim {tb_rx_phy_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_5/build/xsim/behavioral/tb_rx_phy/tb_rx_phy.vcd}
+## log_vcd [get_objects -r /tb_rx_phy/*]
+## run -all
+Time: 0 | TASK: Reset DUT
+Time: 10000 | TASK:  Enable DUT
+Time: 20000 | TASK: Sending frame: 1101001010
+Time: 20000 | TASK: Sending bit[0] | rx = 0
+Time: 180000 | TASK: Sending bit[1] | rx = 1
+Time: 340000 | TASK: Sending bit[2] | rx = 0
+Time: 500000 | TASK: Sending bit[3] | rx = 1
+Time: 660000 | TASK: Sending bit[4] | rx = 0
+Time: 820000 | TASK: Sending bit[5] | rx = 0
+Time: 980000 | TASK: Sending bit[6] | rx = 1
+Time: 1140000 | TASK: Sending bit[7] | rx = 0
+Time: 1300000 | TASK: Sending bit[8] | rx = 1
+Time: 1460000 | TASK: Sending bit[9] | rx = 1
+Time: 1630000 | TASK: Sending frame: 1010110100
+Time: 1630000 | TASK: Sending bit[0] | rx = 0
+Time: 1790000 | TASK: Sending bit[1] | rx = 0
+Time: 1950000 | TASK: Sending bit[2] | rx = 1
+Time: 2110000 | TASK: Sending bit[3] | rx = 0
+Time: 2270000 | TASK: Sending bit[4] | rx = 1
+Time: 2430000 | TASK: Sending bit[5] | rx = 1
+Time: 2590000 | TASK: Sending bit[6] | rx = 0
+Time: 2750000 | TASK: Sending bit[7] | rx = 1
+Time: 2910000 | TASK: Sending bit[8] | rx = 0
+Time: 3070000 | TASK: Sending bit[9] | rx = 1
+Time: 3240000 | TASK: Sending frame: 1100001000
+Time: 3240000 | TASK: Sending bit[0] | rx = 0
+Time: 3400000 | TASK: Sending bit[1] | rx = 0
+Time: 3560000 | TASK: Sending bit[2] | rx = 0
+Time: 3720000 | TASK: Sending bit[3] | rx = 1
+Time: 3880000 | TASK: Sending bit[4] | rx = 0
+Time: 4040000 | TASK: Sending bit[5] | rx = 0
+Time: 4040000 | TASK: Disable DUT
+Time: 4050000 | TASK:  Enable DUT
+Time: 4200000 | TASK: Sending bit[6] | rx = 0
+Time: 4360000 | TASK: Sending bit[7] | rx = 0
+Time: 4520000 | TASK: Sending bit[8] | rx = 1
+Time: 4680000 | TASK: Sending bit[9] | rx = 1
+Time: 4850000 | TASK: Sending frame: 1111111110
+Time: 4850000 | TASK: Sending bit[0] | rx = 0
+Time: 5010000 | TASK: Sending bit[1] | rx = 1
+Time: 5170000 | TASK: Sending bit[2] | rx = 1
+Time: 5330000 | TASK: Sending bit[3] | rx = 1
+Time: 5490000 | TASK: Sending bit[4] | rx = 1
+Time: 5650000 | TASK: Sending bit[5] | rx = 1
+Time: 5810000 | TASK: Sending bit[6] | rx = 1
+Time: 5970000 | TASK: Sending bit[7] | rx = 1
+Time: 6130000 | TASK: Sending bit[8] | rx = 1
+Time: 6290000 | TASK: Sending bit[9] | rx = 1
+Time: 6460000 | TASK: Sending frame: 1000000000
+Time: 6460000 | TASK: Sending bit[0] | rx = 0
+Time: 6620000 | TASK: Sending bit[1] | rx = 0
+Time: 6780000 | TASK: Sending bit[2] | rx = 0
+Time: 6940000 | TASK: Sending bit[3] | rx = 0
+Time: 7100000 | TASK: Sending bit[4] | rx = 0
+Time: 7260000 | TASK: Sending bit[5] | rx = 0
+Time: 7420000 | TASK: Sending bit[6] | rx = 0
+Time: 7580000 | TASK: Sending bit[7] | rx = 0
+Time: 7740000 | TASK: Sending bit[8] | rx = 0
+Time: 7900000 | TASK: Sending bit[9] | rx = 1
+$finish called at time : 8070 ns : File "/Users/yuval/Projects/labs/lab_5/sim/tb_rx_phy.sv" Line 98
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701124 KB (Peak: 758004 KB), Simulation CPU Usage: 1940 ms
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 17:00:49 2026...

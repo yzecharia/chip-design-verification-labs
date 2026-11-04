@@ -8,6 +8,12 @@
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {clk}];
 
+## Asynchronous inputs - synchronized inside the design (2-FF sync in debounce_top / debounce, rx_phy)
+set_false_path -from [get_ports {cpu_reset btnc sw[*] rx}]
+
+## Slow outputs (UART at 57600 baud, LEDs, 7-segment) - no timing relationship to clk is needed
+set_false_path -to [get_ports {tx led0 led15 an[*] seg[*] dp}]
+
 # ## Asynchronous inputs - synchronized inside the design (2-FF sync in debounce)
 # set_false_path -from [get_ports {cpu_reset btnc sw[*]}]
 

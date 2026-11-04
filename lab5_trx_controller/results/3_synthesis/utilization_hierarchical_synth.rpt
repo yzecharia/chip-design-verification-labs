@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Nov  2 17:52:37 2026
+| Host         : ec0e3d33a983 running 64-bit unknown
+| Command      : report_utilization -hierarchical -file /Users/yuval/Projects/labs/lab_5/build/report/3_synthesis/chip_top/utilization_hierarchical_synth.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------+--------------+------------+------------+---------+------+-----+--------+--------+------------+
+|     Instance     |    Module    | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------+--------------+------------+------------+---------+------+-----+--------+--------+------------+
+| chip_top         |        (top) |        675 |        664 |       0 |   11 | 687 |      0 |      0 |          0 |
+|   (chip_top)     |        (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   debounce_top_i | debounce_top |        404 |        404 |       0 |    0 | 375 |      0 |      0 |          0 |
+|   rx_mac_i       |       rx_mac |         52 |         41 |       0 |   11 | 105 |      0 |      0 |          0 |
+|   rx_phy_i       |       rx_phy |         55 |         55 |       0 |    0 |  34 |      0 |      0 |          0 |
+|   tx_mac_i       |       tx_mac |         59 |         59 |       0 |    0 |  58 |      0 |      0 |          0 |
++------------------+--------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

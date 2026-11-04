@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_baud_gen_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab5_pkg" />
+            <top_module name="tb_baud_gen" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="505000 ps"></ZoomEndTime>
+      <Cursor1Time time="157000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="10000" />
+      <marker label="2" time="155000" />
+      <marker label="3" time="170000" />
+      <marker label="4" time="250000" />
+      <marker label="5" time="260000" />
+      <marker label="6" time="340000" />
+      <marker label="7" time="495000" />
+   </wave_markers>
+   <WVObjectSize size="4" />
+   <wvobject type="logic" fp_name="/tb_baud_gen/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_baud_gen/en">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+      <obj_property name="label">en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_baud_gen/baud_gen_i/cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">baud_gen.cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_baud_gen/baud_tick">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">baud_tick</obj_property>
+      <obj_property name="ObjectShortName">baud_tick</obj_property>
+      <obj_property name="label">baud_tick</obj_property>
+   </wvobject>
+</wave_config>

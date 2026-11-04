@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab5_pkg" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3577925000 ps"></ZoomStartTime>
+      <ZoomEndTime time="3581466000 ps"></ZoomEndTime>
+      <Cursor1Time time="3581167000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="3577955000" />
+      <marker label="2" time="3579555000" />
+      <marker label="3" time="3581155000" />
+   </wave_markers>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/tb_chip_top/rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="label">rx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/rx_phy_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="label">rx_phy.state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/data_rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_rx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rx[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">data_rx[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/done_rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">done_rx</obj_property>
+      <obj_property name="ObjectShortName">done_rx</obj_property>
+      <obj_property name="label">done_rx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/rx_mac_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="label">rx_mac.state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/pkt_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pkt_valid</obj_property>
+      <obj_property name="ObjectShortName">pkt_valid</obj_property>
+      <obj_property name="label">pkt_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/parser_i/row">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">row[9:0]</obj_property>
+      <obj_property name="ObjectShortName">row[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.row[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/parser_i/col">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">col[9:0]</obj_property>
+      <obj_property name="ObjectShortName">col[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.col[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/parser_i/val">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">val[9:0]</obj_property>
+      <obj_property name="ObjectShortName">val[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.val[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/parser_i/msg_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">msg_valid</obj_property>
+      <obj_property name="ObjectShortName">msg_valid</obj_property>
+      <obj_property name="label">parser.msg_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/led15">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led15</obj_property>
+      <obj_property name="ObjectShortName">led15</obj_property>
+      <obj_property name="label">led15</obj_property>
+   </wvobject>
+</wave_config>

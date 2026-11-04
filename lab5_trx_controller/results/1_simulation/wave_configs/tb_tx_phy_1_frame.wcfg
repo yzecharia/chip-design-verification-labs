@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_tx_phy_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab5_pkg" />
+            <top_module name="tb_tx_phy" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="1665000 ps"></ZoomEndTime>
+      <Cursor1Time time="17000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="15000" />
+      <marker label="2" time="175000" />
+      <marker label="3" time="335000" />
+      <marker label="4" time="495000" />
+      <marker label="5" time="655000" />
+      <marker label="6" time="815000" />
+      <marker label="7" time="975000" />
+      <marker label="8" time="1135000" />
+      <marker label="9" time="1295000" />
+      <marker label="10" time="1455000" />
+      <marker label="11" time="1605000" />
+   </wave_markers>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/tb_tx_phy/start">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+      <obj_property name="label">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_phy/data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_tx_phy/t_phy_i/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+      <obj_property name="label">tx_phy.state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_phy/t_phy_i/tick">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+      <obj_property name="label">tx_phy.tick</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_phy/t_phy_i/cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">tx_phy.cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_tx_phy/t_phy_i/sh_reg">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sh_reg[9:0]</obj_property>
+      <obj_property name="ObjectShortName">sh_reg[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">tx_phy.sh_reg[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_phy/tx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+      <obj_property name="label">tx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_tx_phy/done">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="label">done</obj_property>
+   </wvobject>
+</wave_config>

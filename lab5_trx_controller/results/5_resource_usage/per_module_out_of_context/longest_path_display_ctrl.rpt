@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Nov  2 17:08:42 2026
+| Host         : aac1803e1f37 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_5/build/report/6_module_comparison/longest_path_display_ctrl.rpt
+| Design       : display_ctrl
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 rx_data[row_index][0][1]
+                            (input port)
+  Destination:            display_out[seg][0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.606ns  (logic 0.496ns (10.769%)  route 4.110ns (89.231%))
+  Logic Levels:           4  (LUT5=2 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  rx_data[row_index][0][1] (IN)
+                         net (fo=0)                   0.973     0.973    rx_data[row_index][0][1]
+                         LUT5 (Prop_lut5_I3_O)        0.124     1.097 f  display_out[seg][6]_INST_0_i_37/O
+                         net (fo=1, unplaced)         0.732     1.829    display_out[seg][6]_INST_0_i_37_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124     1.953 r  display_out[seg][6]_INST_0_i_16/O
+                         net (fo=1, unplaced)         0.732     2.685    display_out[seg][6]_INST_0_i_16_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124     2.809 r  display_out[seg][6]_INST_0_i_3/O
+                         net (fo=7, unplaced)         0.700     3.509    display_out[seg][6]_INST_0_i_3_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124     3.633 r  display_out[seg][0]_INST_0/O
+                         net (fo=0)                   0.973     4.606    display_out[seg][0]
+                                                                      r  display_out[seg][0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

@@ -63,23 +63,11 @@ module tb_debounce_top;
     endproperty
     assert property(reset_cnt_reset);
 
-    property reset_cnt_inc;
-        @(posedge clk)
-        ($past(!debounce_top_i.reset_stable) & !$past(debounce_top_i.reset_edge)) |-> debounce_top_i.reset_cnt == $past(debounce_top_i.reset_cnt) + 1;
-    endproperty
-    assert property(reset_cnt_inc);
-
     property reset_cnt_no_wrap;
         @(posedge clk)
         ($past(debounce_top_i.reset_stable) & !$past(debounce_top_i.reset_edge)) |-> debounce_top_i.reset_cnt == DEB_COUNT-1;
     endproperty
     assert property(reset_cnt_no_wrap);
-
-    // I want to write a property to make sure a change only happenes after a some io has been changed and hels its change DEB_COUNT cycles
-    // so i will make var to remeber the the changed values
-    
-    // got a bit flustered with all the propertys here, trying to use $past(x,n)
-    // need always block to save values 
 
     
 

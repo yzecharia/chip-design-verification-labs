@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_rx_phy_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab5_pkg" />
+            <top_module name="tb_rx_phy" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="1625000 ps"></ZoomEndTime>
+      <Cursor1Time time="47000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="20000" />
+      <marker label="2" time="45000" />
+      <marker label="3" time="155000" />
+      <marker label="4" time="205000" />
+      <marker label="5" time="285000" />
+      <marker label="6" time="1405000" />
+      <marker label="7" time="1485000" />
+      <marker label="8" time="1565000" />
+   </wave_markers>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/tb_rx_phy/en">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+      <obj_property name="label">en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_rx_phy/rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="label">rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_rx_phy/dut/rx_sync">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx_sync</obj_property>
+      <obj_property name="ObjectShortName">rx_sync</obj_property>
+      <obj_property name="label">rx_phy.rx_sync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_rx_phy/dut/state">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="label">rx_phy.state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_rx_phy/dut/tick16_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tick16_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tick16_cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">rx_phy.tick16_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_rx_phy/dut/start_samples">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">start_samples[2:0]</obj_property>
+      <obj_property name="ObjectShortName">start_samples[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">rx_phy.start_samples[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_rx_phy/dut/start_check">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">start_check</obj_property>
+      <obj_property name="ObjectShortName">start_check</obj_property>
+      <obj_property name="label">rx_phy.start_check</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_rx_phy/dut/bit_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">bit_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_cnt[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">rx_phy.bit_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_rx_phy/data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_rx_phy/done">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="label">done</obj_property>
+   </wvobject>
+</wave_config>

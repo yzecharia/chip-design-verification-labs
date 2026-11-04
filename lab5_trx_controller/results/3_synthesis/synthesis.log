@@ -1,0 +1,495 @@
+
+*** Running vivado
+    with args -log chip_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chip_top.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 17:50:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source chip_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /Users/yuval/Projects/labs/lab_5/build/vivado/lab_5.srcs/utils_1/imports/synth_chip_top/chip_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /Users/yuval/Projects/labs/lab_5/build/vivado/lab_5.srcs/utils_1/imports/synth_chip_top/chip_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top chip_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 607
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2899.629 ; gain = 484.934 ; free physical = 5909 ; free virtual = 11281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'chip_top' [/Users/yuval/Projects/labs/lab_5/src/chip_top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'debounce_top' [/Users/yuval/Projects/labs/lab_5/src/debounce_top.sv:4]
+	Parameter DEB_COUNT bound to: 2000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce' [/Users/yuval/Projects/labs/lab_5/src/debounce.sv:3]
+	Parameter DEB_COUNT bound to: 2000000 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/debounce.sv:37]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/debounce.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [/Users/yuval/Projects/labs/lab_5/src/debounce.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_top' (0#1) [/Users/yuval/Projects/labs/lab_5/src/debounce_top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'btn_hold' [/Users/yuval/Projects/labs/lab_5/src/btn_hold.sv:2]
+	Parameter BTN_HOLD_COUNT bound to: 100000000 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/btn_hold.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'btn_hold' (0#1) [/Users/yuval/Projects/labs/lab_5/src/btn_hold.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'latch' [/Users/yuval/Projects/labs/lab_5/src/latch.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'latch' (0#1) [/Users/yuval/Projects/labs/lab_5/src/latch.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'tx_mac' [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:4]
+	Parameter DELAY_50MS_VAL bound to: 5000000 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:32]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:32]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:43]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:43]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:96]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:114]
+INFO: [Synth 8-6155] done synthesizing module 'tx_mac' (0#1) [/Users/yuval/Projects/labs/lab_5/src/tx_mac.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tx_phy' [/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv:4]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen' [/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv:2]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen' (0#1) [/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv:2]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv:52]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'tx_phy' (0#1) [/Users/yuval/Projects/labs/lab_5/src/tx_phy.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'rx_phy' [/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv:4]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv:93]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'rx_phy' (0#1) [/Users/yuval/Projects/labs/lab_5/src/rx_phy.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'rx_mac' [/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv:54]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'rx_mac' (0#1) [/Users/yuval/Projects/labs/lab_5/src/rx_mac.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'parser' [/Users/yuval/Projects/labs/lab_5/src/parser.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'parser' (0#1) [/Users/yuval/Projects/labs/lab_5/src/parser.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'display_ctrl' [/Users/yuval/Projects/labs/lab_5/src/display_ctrl.sv:3]
+	Parameter DISPLAY_RR bound to: 4000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen__parameterized0' [/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv:2]
+	Parameter BAUD_RATE bound to: 4000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen__parameterized0' (0#1) [/Users/yuval/Projects/labs/lab_5/src/baud_gen.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'rx_display' [/Users/yuval/Projects/labs/lab_5/src/rx_display.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/rx_display.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'rx_display' (0#1) [/Users/yuval/Projects/labs/lab_5/src/rx_display.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'tx_display' [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:13]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:27]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'tx_display' (0#1) [/Users/yuval/Projects/labs/lab_5/src/tx_display.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv:11]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (0#1) [/Users/yuval/Projects/labs/lab_5/src/seven_segment.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_ctrl' (0#1) [/Users/yuval/Projects/labs/lab_5/src/display_ctrl.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'chip_top' (0#1) [/Users/yuval/Projects/labs/lab_5/src/chip_top.sv:4]
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][3] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][2] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][1] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][0] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][3] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][2] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][1] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][0] in module parser is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3004.098 ; gain = 589.402 ; free physical = 5051 ; free virtual = 10715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3022.141 ; gain = 607.445 ; free physical = 5051 ; free virtual = 10714
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3022.141 ; gain = 607.445 ; free physical = 5051 ; free virtual = 10714
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3022.934 ; gain = 0.070 ; free physical = 5050 ; free virtual = 10714
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/Users/yuval/Projects/labs/lab_5/constraints/NexysA7-100T_Master.xdc]
+Finished Parsing XDC File [/Users/yuval/Projects/labs/lab_5/constraints/NexysA7-100T_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/Users/yuval/Projects/labs/lab_5/constraints/NexysA7-100T_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/chip_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/chip_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.367 ; gain = 0.000 ; free physical = 5019 ; free virtual = 10690
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3136.672 ; gain = 0.000 ; free physical = 5032 ; free virtual = 10703
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3137.031 ; gain = 722.336 ; free physical = 5026 ; free virtual = 10698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3145.148 ; gain = 730.453 ; free physical = 5026 ; free virtual = 10698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3145.203 ; gain = 730.508 ; free physical = 5026 ; free virtual = 10698
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debounce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'btn_hold'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_mac'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  DEB_S0 |                               10 |                               00
+                  DEB_W1 |                               11 |                               01
+                  DEB_S1 |                               01 |                               10
+                  DEB_W0 |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                BTN_IDLE |                              001 |                               00
+               BTN_COUNT |                              010 |                               01
+                BTN_WAIT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'btn_hold'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             TX_MAC_IDLE |                           001000 |                              000
+             TX_MAC_DATA |                           000010 |                              001
+       TX_MAC_NEW_LINE_0 |                           010000 |                              011
+       TX_MAC_NEW_LINE_1 |                           000100 |                              100
+            TX_MAC_SPACE |                           100000 |                              010
+            TX_MAC_DELAY |                           000001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tx_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RX_MAC_IDLE |                             0010 |                               00
+           RX_MAC_OPCODE |                             0100 |                               01
+            RX_MAC_VALUE |                             1000 |                               10
+        RX_MAC_DONE_NEXT |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'rx_mac'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 3146.828 ; gain = 732.133 ; free physical = 5030 ; free virtual = 10702
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 43    
++---Muxes : 
+	   4 Input   25 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 31    
+	   2 Input    2 Bit        Muxes := 104   
+	   4 Input    2 Bit        Muxes := 45    
+	   2 Input    1 Bit        Muxes := 38    
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][3] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][2] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][1] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_start][0] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[row_index][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[col_index][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][2][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][1][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[value][0][4] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][7] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][6] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][5] in module parser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[msg_close][4] in module parser is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3146.828 ; gain = 732.133 ; free physical = 5027 ; free virtual = 10700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 3184.543 ; gain = 769.848 ; free physical = 4912 ; free virtual = 10590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 3214.895 ; gain = 800.199 ; free physical = 4896 ; free virtual = 10574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 3216.156 ; gain = 801.461 ; free physical = 4896 ; free virtual = 10574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.125 ; gain = 965.430 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.137 ; gain = 965.441 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.195 ; gain = 965.500 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.203 ; gain = 965.508 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.227 ; gain = 965.531 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.230 ; gain = 965.535 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|chip_top    | rx_mac_i/pkt_data_reg[v][7]      | 4      | 9     | YES          | NO                 | YES               | 9      | 0       | 
+|chip_top    | rx_mac_i/pkt_data_reg[comma1][5] | 5      | 2     | YES          | NO                 | YES               | 2      | 0       | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   136|
+|3     |LUT1   |    29|
+|4     |LUT2   |    70|
+|5     |LUT3   |    58|
+|6     |LUT4   |    74|
+|7     |LUT5   |   424|
+|8     |LUT6   |    96|
+|9     |SRL16E |    11|
+|10    |FDCE   |   336|
+|11    |FDPE   |    14|
+|12    |FDRE   |   321|
+|13    |FDSE   |    16|
+|14    |IBUF   |    17|
+|15    |OBUF   |    19|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.270 ; gain = 965.574 ; free physical = 4755 ; free virtual = 10433
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 3380.309 ; gain = 851.082 ; free physical = 4755 ; free virtual = 10433
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3380.320 ; gain = 965.617 ; free physical = 4755 ; free virtual = 10433
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3380.438 ; gain = 0.000 ; free physical = 4751 ; free virtual = 10433
+INFO: [Netlist 29-17] Analyzing 136 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3437.625 ; gain = 0.000 ; free physical = 4849 ; free virtual = 10513
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d494f3f1
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 3437.625 ; gain = 1245.371 ; free physical = 4846 ; free virtual = 10511
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2397.688; main = 2166.312; forked = 540.810
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5776.043; main = 3396.750; forked = 2641.406
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3437.625 ; gain = 0.000 ; free physical = 4811 ; free virtual = 10482
+INFO: [Common 17-1381] The checkpoint '/Users/yuval/Projects/labs/lab_5/build/vivado/lab_5.runs/synth_chip_top/chip_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file chip_top_utilization_synth.rpt -pb chip_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 17:51:58 2026...

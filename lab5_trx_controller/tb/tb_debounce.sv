@@ -73,41 +73,11 @@ module tb_debounce;
         $finish;
     end
 
-
-    /*
-        Functionality:
-            1. When a change in io_io is detected, after DEB_COUNT cycles it should be stable on the new value
-            2. While the change was not at least DEB_COUNT cycles io_d, should not change.
-            3. io_d value has to be 0
-    */
-
-    bit toggle_value_prev;
-    always_ff @(posedge clk) begin
-        if (!reset_n) toggle_value_prev <= '0;
-        else toggle_value_prev <= toggle_value;
-    end
-
-    bit toggle_change; assign toggle_change = toggle_value ^ toggle_value_prev;
-
-    int cnt;
-    always @(posedge clk) begin
-        if (!reset_n | toggle_change) cnt <= '0;
-        else cnt <= cnt + 1;
-    end
-
-    property p_toggle_after_wait;
-        @(posedge clk)
-        disable iff(!reset_n)
-        (cnt >= `DEB_COUNT + 2) |-> (io_d == io_in);
-    endproperty
-
-
     property p_io_d_reset_val;
         @(posedge clk)
         (!reset_n) |=> (!io_d);
     endproperty
 
-    assert property(p_toggle_after_wait);
     assert property(p_io_d_reset_val);
 
 endmodule

@@ -1,0 +1,116 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Nov  2 17:54:08 2026
+| Host         : ec0e3d33a983 running 64-bit unknown
+| Command      : report_control_sets -verbose -file chip_top_control_sets_placed.rpt
+| Design       : chip_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            5 |
+| No           | No                    | Yes                    |              56 |           38 |
+| No           | Yes                   | No                     |              52 |           19 |
+| Yes          | No                    | No                     |              20 |            7 |
+| Yes          | No                    | Yes                    |             294 |           84 |
+| Yes          | Yes                   | No                     |             259 |           78 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                      Enable Signal                      |                            Set/Reset Signal                           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                         | debounce_top_i/io_deb[13].debounce_i/FSM_sequential_state_reg[1]_0[0] |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | tx_phy_i/baud_gen_i/E[0]                                | tx_phy_i/baud_gen_i/SR[0]                                             |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rx_mac_i/FSM_onehot_state[3]_i_1__0_n_0                 | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | rx_phy_i/tick                                           | rx_phy_i/tick16_cnt[3]_i_1_n_0                                        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | tx_mac_i/FSM_onehot_state[5]_i_2_n_0                    | debounce_top_i/io_deb[13].debounce_i/SR[0]                            |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | rx_phy_i/FSM_onehot_state_reg[2]                        | rx_phy_i/done_reg_0                                                   |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG |                                                         | rx_phy_i/tick_cnt[6]_i_1_n_0                                          |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG | tx_mac_i/col_cnt_en                                     | tx_mac_i/col_cnt[7]_i_1_n_0                                           |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | tx_mac_i/any_load                                       | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | rx_phy_i/data0                                          | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | tx_phy_i/baud_gen_i/state_reg[0]                        |                                                                       |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG | tx_mac_i/row_cnt_en                                     | latch_i/transmit_reg_0[0]                                             |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG |                                                         | tx_phy_i/baud_gen_i/cnt[10]_i_1_n_0                                   |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[13].debounce_i/E[0]               | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG |                                                         |                                                                       |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG |                                                         | display_ctrl_i/display_tick_i/cnt[0]_i_1__2_n_0                       |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG | display_ctrl_i/display_tick_i/E[0]                      | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[1].debounce_i/cnt[0]_i_1__7_n_0   | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/sel                                      | debounce_top_i/reset_edge                                             |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[2].debounce_i/cnt[0]_i_1__16_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[7].debounce_i/cnt[0]_i_1__11_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[5].debounce_i/cnt[0]_i_1__8_n_0   | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[9].debounce_i/cnt[0]_i_1__6_n_0   | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[6].debounce_i/cnt[0]_i_1__15_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[12].debounce_i/cnt[0]_i_1__4_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[8].debounce_i/cnt[0]_i_1__5_n_0   | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[11].debounce_i/cnt[0]_i_1__9_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[0].debounce_i/cnt[0]_i_1__14_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[10].debounce_i/cnt[0]_i_1__10_n_0 | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[13].debounce_i/cnt[0]_i_1__3_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[4].debounce_i/cnt[0]_i_1__13_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | debounce_top_i/io_deb[3].debounce_i/cnt[0]_i_1__12_n_0  | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | rx_phy_i/p_18_out                                       |                                                                       |                4 |             22 |         5.50 |
+|  clk_IBUF_BUFG | rx_mac_i/E[0]                                           | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG | tx_mac_i/sel                                            | tx_mac_i/delay_cnt[0]_i_1_n_0                                         |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG | btn_hold_i/Q[0]                                         | btn_hold_i/cnt[0]_i_1__1_n_0                                          |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG |                                                         | debounce_top_i/io_deb[13].debounce_i/cpu_reset_d_reg                  |               47 |             71 |         1.51 |
+|  clk_IBUF_BUFG | rx_phy_i/p_18_out                                       | rx_phy_i/pkt_data[0]                                                  |               21 |             77 |         3.67 |
++----------------+---------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+
+
