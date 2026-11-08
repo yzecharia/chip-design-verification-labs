@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_parser_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab6_pkg" />
+            <top_module name="tb_parser" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="213000 ps"></ZoomEndTime>
+      <Cursor1Time time="12000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="330"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="10000" />
+      <marker label="2" time="30000" />
+      <marker label="3" time="50000" />
+      <marker label="4" time="70000" />
+      <marker label="5" time="90000" />
+      <marker label="6" time="110000" />
+      <marker label="7" time="130000" />
+      <marker label="8" time="150000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_parser/pkt_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pkt_valid</obj_property>
+      <obj_property name="ObjectShortName">pkt_valid</obj_property>
+      <obj_property name="label">pkt_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_parser/pkt_data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pkt_data</obj_property>
+      <obj_property name="ObjectShortName">pkt_data</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">pkt_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_parser/dut/value_2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">value_2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">value_2[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.value_2[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_parser/dut/value_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">value_1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">value_1[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.value_1[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_parser/dut/value_0">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">value_0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">value_0[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">parser.value_0[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_parser/dut/valid_color_op">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">valid_color_op</obj_property>
+      <obj_property name="ObjectShortName">valid_color_op</obj_property>
+      <obj_property name="label">parser.valid_color_op</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_parser/dut/bad_pixel_value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">bad_pixel_value</obj_property>
+      <obj_property name="ObjectShortName">bad_pixel_value</obj_property>
+      <obj_property name="label">parser.bad_pixel_value</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_parser/pixel_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pixel_valid</obj_property>
+      <obj_property name="ObjectShortName">pixel_valid</obj_property>
+      <obj_property name="label">pixel_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_parser/led_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led_valid</obj_property>
+      <obj_property name="ObjectShortName">led_valid</obj_property>
+      <obj_property name="label">led_valid</obj_property>
+   </wvobject>
+</wave_config>

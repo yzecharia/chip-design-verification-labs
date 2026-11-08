@@ -11,12 +11,13 @@ place-and-route, bitstream, and a test on a real **Digilent Nexys A7-100T** (Art
 | [Lab 3 – 7-segment controller](lab3_seven_segment/) | 16-bit value latched by a 1 s button press, shown in decimal or hex on the 8-digit display | Clock dividing, button synchronizing and hold detection, serial double-dabble binary→BCD, display multiplexing | 7 testbenches, one per module; every case checked in the annotated waveforms (34 cases) | ✔ (photos) |
 | [Lab 4 – TX UART controller](lab4_tx_uart_controller/) | A switch-selected byte sent to the PC as an N×N square over UART (57600 bps, 8N1), configuration and row count on the display | Debounce and 1 s hold, byte-level FSM with an inter-byte WAIT state and registered outputs, bit-level UART PHY with a start/done handshake, state diagrams and transition tables for the three FSMs | 9 testbenches, one per module; every case checked in the annotated waveforms (59 cases) | ✔ (photos + terminal log) |
 | [Lab 5 – UART TRX controller](lab5_trx_controller/) | Lab 4's transmitter plus a UART receiver: a 16-byte `{R<ddd>,C<ddd>,V<ddd>}` message from the PC is parsed and its row, column and value shown on the display; `SW[15]` selects TX or RX | Rewrite in SystemVerilog (package, one defines file for the simulation and synthesis values), RX PHY with 16× oversampling and a 3-sample start-bit check, message FSM and parser, flip-flops counted from the RTL and compared with synthesis | 15 testbenches, one per module; 63 immediate assertions + 15 SVA properties, 0 errors; the three without assertions checked in the annotated waveforms | ✔ (photos; TX cases and terminal log from Lab 4) |
+| [Lab 6 – PWM controller for an RGB LED](lab6_pwm_rgb_led_controller/) | An sRGB pixel from the PC (`{Rddd,Gddd,Bddd}` over UART) or edited with the buttons lights `LED16` or `LED17` through gamma correction, CIE scaling and three 1024-slot PWM channels; the board sends the PWM values back to the PC | Gamma table mapped to Block RAM, Rec.601 CIE weights normalised to red as shifts and adds, the PWM size as a `chip_top` parameter (512 to 8192 slots), sequential binary→BCD for the 19-byte reply, flip-flops counted from the RTL and compared with synthesis | 17 testbenches, one per module; 91 immediate assertions + 10 SVA properties, 0 errors; `tb_seven_segment` checked in the annotated waveforms | ✔ (photos with the terminal lines) |
 
 ## Tools
 
 * **Vivado 2025.2** – xsim behavioral simulation, lint, elaboration, synthesis, implementation, bitstream
 * **tio** – serial terminal on macOS for the UART board tests
-* **CoolTerm** – serial terminal on macOS that sends the Lab 5 RX messages to the board
+* **CoolTerm** – serial terminal on macOS that sends the Lab 5 and Lab 6 RX messages to the board
 
 ## Layout of each lab
 

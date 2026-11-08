@@ -1,0 +1,45 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov  8 10:13:00 2026
+| Host         : 9a8e1094849b running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_6/build/report/6_module_comparison/longest_path_cie_scaling.rpt
+| Design       : cie_scaling
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pixel_in[green][8]
+                            (input port)
+  Destination:            pixel_out[1][8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.952ns  (logic 1.006ns (34.079%)  route 1.946ns (65.921%))
+  Logic Levels:           4  (CARRY4=3 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[green][8] (IN)
+                         net (fo=1, unset)            0.973     0.973    pixel_in[green][8]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  pixel_out[1][0]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000     1.097    pixel_out[1][0]_INST_0_i_2_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  pixel_out[1][0]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    pixel_out[1][0]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.747 r  pixel_out[1][4]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.747    pixel_out[1][4]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     1.979 r  pixel_out[1][8]_INST_0/O[0]
+                         net (fo=0)                   0.973     2.952    pixel_out[1][8]
+                                                                      r  pixel_out[1][8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

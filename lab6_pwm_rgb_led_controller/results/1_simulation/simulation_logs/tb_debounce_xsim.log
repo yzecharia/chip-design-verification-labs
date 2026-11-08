@@ -1,0 +1,152 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_6/defines/lab6_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/defines/lab6_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/pkg/lab6_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/binary_2_bcd.sv" into library work
+INFO: [VRFC 10-311] analyzing module binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/black_magic_box.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/cie_scaling.sv" into library work
+INFO: [VRFC 10-311] analyzing module cie_scaling
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/src/tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_binary_2_bvd.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_binary_2_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_cie_scailing.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cie_scailing
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_6/sim/tb_tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_debounce_snap work.tb_debounce work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.lab6_pkg
+Compiling module work.debounce(DEB_COUNT=10)
+Compiling module work.tb_debounce
+Compiling module work.glbl
+Built simulation snapshot tb_debounce_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov  8 10:24:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_debounce_snap/xsim_script.tcl
+# xsim {tb_debounce_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_6/build/xsim/behavioral/tb_debounce/tb_debounce.vcd}
+## log_vcd [get_objects -r /tb_debounce/*]
+## run -all
+Time: 0 | TASK: Reset DUT
+Time: 0 | io_in=0 | io_d=x
+Time: 5000 | io_in=0 | io_d=0
+Time: 10000 | Toggle io to 1
+Time: 10000 | TASK: Toggle io to: 1
+Time: 10000 | TASK: Wait for: 130 ns
+Time: 10000 | io_in=1 | io_d=0
+Time: 135000 | io_in=1 | io_d=1
+Time: 140000 | Toggle io to 0
+Time: 140000 | TASK: Toggle io to: 0
+Time: 140000 | TASK: Wait for: 130 ns
+Time: 140000 | io_in=0 | io_d=1
+Time: 265000 | io_in=0 | io_d=0
+Time: 280000 | Debounce teset
+Time: 280000 | TASK: Toggle io to: 1
+Time: 280000 | TASK: Wait for: 43 ns
+Time: 280000 | io_in=1 | io_d=0
+Time: 323000 | TASK: Toggle io to: 0
+Time: 323000 | TASK: Wait for: 21 ns
+Time: 323000 | io_in=0 | io_d=0
+Time: 344000 | TASK: Toggle io to: 1
+Time: 344000 | TASK: Wait for: 13 ns
+Time: 344000 | io_in=1 | io_d=0
+Time: 357000 | TASK: Toggle io to: 0
+Time: 357000 | TASK: Wait for: 26 ns
+Time: 357000 | io_in=0 | io_d=0
+Time: 383000 | TASK: Toggle io to: 1
+Time: 383000 | TASK: Wait for: 130 ns
+Time: 383000 | io_in=1 | io_d=0
+Time: 505000 | io_in=1 | io_d=1
+Time: 523000 | TASK: Toggle io to: 0
+Time: 523000 | TASK: Wait for: 65 ns
+Time: 523000 | io_in=0 | io_d=1
+Time: 588000 | TASK: Reset DUT
+Time: 595000 | io_in=0 | io_d=0
+Time: 598000 | TASK: Toggle io to: 1
+Time: 598000 | TASK: Wait for: 130 ns
+Time: 598000 | io_in=1 | io_d=0
+Time: 725000 | io_in=1 | io_d=1
+$finish called at time : 738 ns : File "/Users/yuval/Projects/labs/lab_6/sim/tb_debounce.sv" Line 73
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 701084 KB (Peak: 757980 KB), Simulation CPU Usage: 2080 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov  8 10:24:47 2026...

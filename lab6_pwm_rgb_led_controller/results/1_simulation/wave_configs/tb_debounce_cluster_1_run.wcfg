@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_debounce_cluster_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab6_pkg" />
+            <top_module name="tb_debounce_cluster" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="1495000 ps"></ZoomEndTime>
+      <Cursor1Time time="271000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="125000" />
+      <marker label="2" time="255000" />
+      <marker label="3" time="775000" />
+      <marker label="4" time="780000" />
+      <marker label="5" time="1035000" />
+      <marker label="6" time="1170000" />
+      <marker label="7" time="1485000" />
+   </wave_markers>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/tb_debounce_cluster/cpu_reset">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cpu_reset</obj_property>
+      <obj_property name="ObjectShortName">cpu_reset</obj_property>
+      <obj_property name="label">cpu_reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_debounce_cluster/debounce_cluster_i/reset_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">debounce_cluster.reset_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_debounce_cluster/cpu_reset_d">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cpu_reset_d</obj_property>
+      <obj_property name="ObjectShortName">cpu_reset_d</obj_property>
+      <obj_property name="label">cpu_reset_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_debounce_cluster/io_in">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">io_in</obj_property>
+      <obj_property name="ObjectShortName">io_in</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">io_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_debounce_cluster/io_d">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">io_d</obj_property>
+      <obj_property name="ObjectShortName">io_d</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">io_d[4:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov  8 10:18:45 2026
+| Host         : 9a8e1094849b running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_6/build/report/6_module_comparison/longest_path_pwm_cluster.rpt
+| Design       : pwm_cluster
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pwm_led
+                            (input port)
+  Destination:            led16[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.070ns  (logic 0.124ns (5.990%)  route 1.946ns (94.010%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pwm_led (IN)
+                         net (fo=5, unset)            0.973     0.973    pwm_gen[0].pwm_i/pwm_led
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  pwm_gen[0].pwm_i/led16[0]_INST_0/O
+                         net (fo=0)                   0.973     2.070    led16[0]
+                                                                      r  led16[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

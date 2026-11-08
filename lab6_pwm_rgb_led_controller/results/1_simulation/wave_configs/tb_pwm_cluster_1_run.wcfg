@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_pwm_cluster_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_pwm_cluster" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="8420000 ps"></ZoomEndTime>
+      <Cursor1Time time="83000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="200"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="10000" />
+      <marker label="2" time="1930000" />
+      <marker label="3" time="3850000" />
+      <marker label="4" time="5770000" />
+   </wave_markers>
+   <WVObjectSize size="6" />
+   <wvobject type="logic" fp_name="/tb_pwm_cluster/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_cluster/value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">value[2:0][5:0]</obj_property>
+      <obj_property name="ObjectShortName">value[2:0][5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">value[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_cluster/pwm_led">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pwm_led</obj_property>
+      <obj_property name="ObjectShortName">pwm_led</obj_property>
+      <obj_property name="label">pwm_led</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_cluster/dut/pwm_signal">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pwm_signal[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pwm_signal[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">pwm_cluster.pwm_signal[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_cluster/led16">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led16[2:0]</obj_property>
+      <obj_property name="ObjectShortName">led16[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">led16[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_cluster/led17">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led17[2:0]</obj_property>
+      <obj_property name="ObjectShortName">led17[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">led17[2:0]</obj_property>
+   </wvobject>
+</wave_config>

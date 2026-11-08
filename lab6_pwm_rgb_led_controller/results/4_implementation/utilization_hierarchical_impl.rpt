@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov  8 10:06:35 2026
+| Host         : 362bf04506cb running 64-bit unknown
+| Command      : report_utilization -hierarchical -file /Users/yuval/Projects/labs/lab_6/build/report/4_implementation/chip_top/utilization_hierarchical_impl.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|       Instance       |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| chip_top             |            (top) |        424 |        420 |       0 |    4 | 535 |      0 |      2 |          0 |
+|   (chip_top)         |            (top) |          0 |          0 |       0 |    0 |   0 |      0 |      2 |          0 |
+|   debounce_cluster_i | debounce_cluster |         50 |         50 |       0 |    0 | 150 |      0 |      0 |          0 |
+|   parser_i           |           parser |         57 |         57 |       0 |    0 |  27 |      0 |      0 |          0 |
+|   pwm_cluster_i      |      pwm_cluster |         45 |         45 |       0 |    0 |  63 |      0 |      0 |          0 |
+|   rx_mac_i           |           rx_mac |         68 |         64 |       0 |    4 | 132 |      0 |      0 |          0 |
+|   selector_i         |         selector |         56 |         56 |       0 |    0 |  34 |      0 |      0 |          0 |
+|   tx_mac_i           |           tx_mac |         58 |         58 |       0 |    0 |  39 |      0 |      0 |          0 |
++----------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

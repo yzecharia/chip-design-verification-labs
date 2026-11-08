@@ -1,0 +1,18 @@
+Assertion-based testbenches (immediate asserts + SVA properties), Vivado xsim, SIM defines.
+tb_debounce        debounce                       11 immediate + 1 SVA assertions, 0 errors  738 ns
+tb_debounce_cluster debounce_cluster (+5 debounce)  0 immediate + 2 SVA assertions, 0 errors  1,500 ns
+tb_rx_phy          rx_phy                          7 immediate + 2 SVA assertions, 0 errors  8,070 ns
+tb_rx_mac          rx_mac                         11 immediate + 0 SVA assertions, 0 errors  1,860 ns
+tb_parser          parser                          8 immediate + 0 SVA assertions, 0 errors  170 ns
+tb_selector        selector                       17 immediate + 0 SVA assertions, 0 errors  630 ns
+tb_display_ctrl    display_ctrl (+ baud_gen, seven_segment)  4 immediate + 0 SVA assertions, 0 errors  1,660 ns
+tb_seven_segment   seven_segment                   0 immediate + 0 SVA assertions, 0 errors  170 ns
+tb_gemma_correction gemma_correction                1 immediate + 0 SVA assertions, 0 errors  2,560 ns
+tb_cie_scailing    cie_scaling                     1 immediate + 0 SVA assertions, 0 errors  10,240 ns
+tb_pwm             pwm                             2 immediate + 0 SVA assertions, 0 errors  3,860 ns
+tb_pwm_cluster     pwm_cluster (+3 pwm)            6 immediate + 0 SVA assertions, 0 errors  7,700 ns
+tb_binary_2_bcd    binary_2_bcd                    2 immediate + 0 SVA assertions, 0 errors  5,770 ns
+tb_tx_mac          tx_mac (+ binary_2_bcd)         3 immediate + 0 SVA assertions, 0 errors  26,030 ns
+tb_tx_phy          tx_phy (+ baud_gen)             4 immediate + 2 SVA assertions, 0 errors  7,450 ns
+tb_baud_gen        baud_gen                        6 immediate + 3 SVA assertions, 0 errors  510 ns
+tb_chip_top        chip_top (all modules)          8 immediate + 0 SVA assertions, 0 errors  259,100 ns

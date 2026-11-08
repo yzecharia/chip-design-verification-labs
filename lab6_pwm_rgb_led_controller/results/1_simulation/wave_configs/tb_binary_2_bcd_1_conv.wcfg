@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_binary_2_bcd_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab6_pkg" />
+            <top_module name="tb_binary_2_bcd" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5660000 ps"></ZoomStartTime>
+      <ZoomEndTime time="5795000 ps"></ZoomEndTime>
+      <Cursor1Time time="5757000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="5680000" />
+      <marker label="2" time="5755000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_binary_2_bcd/start">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+      <obj_property name="label">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/bin_in">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">bin_in[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bin_in[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">bin_in[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_binary_2_bcd/dut/busy">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+      <obj_property name="label">binary_2_bcd.busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/dut/counter">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">binary_2_bcd.counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/dut/bin_shift">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">bin_shift[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bin_shift[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">binary_2_bcd.bin_shift[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/dut/ones_reg">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ones_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ones_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">binary_2_bcd.ones_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/dut/tens_reg">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tens_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tens_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">binary_2_bcd.tens_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_binary_2_bcd/done">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="label">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_binary_2_bcd/bcd_out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">bcd_out[3:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_out[3:0][3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">bcd_out[15:0]</obj_property>
+   </wvobject>
+</wave_config>
