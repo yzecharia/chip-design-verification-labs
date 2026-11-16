@@ -6,6 +6,7 @@ build/
 *.wdb
 *.str
 *.xpr
+!lab7_register_files_dds_pwm/lab7.xpr
 *.cache/
 *.hw/
 *.ip_user_files/

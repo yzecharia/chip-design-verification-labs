@@ -1,0 +1,150 @@
+Lab 7 UART demo   port: /dev/cu.usbserial-210292BE39B31   57600 8-N-1   2026-11-15 13:02:56
+static colours scaled to 25%: the values in the step titles are the full-brightness ones
+
+[01] State after reset (no picture needed)
+    TX  7B 52 03 00 00 7D                                 {R\x03\x00\x00}
+    RX  7B 52 03 00 00 2C 56 00 00 00 2C 56 00 00 01 7D   SYS_CTRL = 0x00000001  
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 01 7D   LED_CTRL = 0x00000001  
+    TX  7B 52 00 00 04 7D                                 {R\x00\x00\x04}
+    RX  7B 52 00 00 04 2C 56 00 00 00 2C 56 00 00 00 7D   LED_PATTERN = 0x00000000  
+    TX  7B 52 01 00 00 7D                                 {R\x01\x00\x00}
+    RX  7B 52 01 00 00 2C 56 00 04 00 2C 56 00 00 01 7D   PWM_CFG = 0x04000001  
+
+[02] Both LEDs on, no CIE, STATIC pattern, both black
+    TX  7B 57 00 00 04 2C 56 00 00 00 2C 56 00 00 00 7D   {W\x00\x00\x04,V\x00\x00\x00,V\x00\x00\x00}
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0D 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0D}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 0D 7D   LED_CTRL = 0x0000000D  OK
+    TX  7B 52 30 30 30 2C 47 30 30 30 2C 42 30 30 30 7D   {R000,G000,B000}
+    TX  7B 4C 30 31 37 7D                                 {L017}
+    TX  7B 52 30 30 30 2C 47 30 30 30 2C 42 30 30 30 7D   {R000,G000,B000}
+    TX  7B 4C 30 31 36 7D                                 {L016}
+
+[03] LED16 = red (LED17 stays black)
+    TX  7B 52 30 36 34 2C 47 30 30 30 2C 42 30 30 30 7D   {R064,G000,B000}
+    TX  7B 52 00 00 08 7D                                 {R\x00\x00\x08}
+    RX  7B 52 00 00 08 2C 56 00 00 40 2C 56 00 00 00 7D   LED16_VALUE = 0x00400000  OK
+
+[04] LED17 = blue (LED16 stays red)
+    TX  7B 4C 30 31 37 7D                                 {L017}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 0E 7D   LED_CTRL = 0x0000000E  OK
+    TX  7B 52 30 30 30 2C 47 30 30 30 2C 42 30 36 34 7D   {R000,G000,B064}
+    TX  7B 52 00 00 0C 7D                                 {R\x00\x00\x0C}
+    RX  7B 52 00 00 0C 2C 56 00 00 00 2C 56 00 00 40 7D   LED17_VALUE = 0x00000040  OK
+
+[05] LED16 = green (LED17 stays blue)
+    TX  7B 4C 30 31 36 7D                                 {L016}
+    TX  7B 52 30 30 30 2C 47 30 36 34 2C 42 30 30 30 7D   {R000,G064,B000}
+    TX  7B 52 00 00 08 7D                                 {R\x00\x00\x08}
+    RX  7B 52 00 00 08 2C 56 00 00 00 2C 56 00 40 00 7D   LED16_VALUE = 0x00004000  OK
+
+[06] Both LEDs = white 255/255/255, no CIE
+    TX  7B 52 30 36 34 2C 47 30 36 34 2C 42 30 36 34 7D   {R064,G064,B064}
+    TX  7B 4C 30 31 37 7D                                 {L017}
+    TX  7B 52 30 36 34 2C 47 30 36 34 2C 42 30 36 34 7D   {R064,G064,B064}
+    TX  7B 52 00 00 08 7D                                 {R\x00\x00\x08}
+    RX  7B 52 00 00 08 2C 56 00 00 40 2C 56 00 40 40 7D   LED16_VALUE = 0x00404040  OK
+    TX  7B 52 00 00 0C 7D                                 {R\x00\x00\x0C}
+    RX  7B 52 00 00 0C 2C 56 00 00 40 2C 56 00 40 40 7D   LED17_VALUE = 0x00404040  OK
+
+[07] Same white, CIE on LED16 only (compare the two LEDs)
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 1E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x1E}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 1E 7D   LED_CTRL = 0x0000001E  OK
+
+[08] Same white, CIE on both LEDs
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 3E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00>}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 3E 7D   LED_CTRL = 0x0000003E  OK
+
+[09] Both LEDs = 128/128/128, no CIE (gamma: much dimmer than half)
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0E}
+    TX  7B 52 30 33 32 2C 47 30 33 32 2C 42 30 33 32 7D   {R032,G032,B032}
+    TX  7B 4C 30 31 36 7D                                 {L016}
+    TX  7B 52 30 33 32 2C 47 30 33 32 2C 42 30 33 32 7D   {R032,G032,B032}
+    TX  7B 52 00 00 08 7D                                 {R\x00\x00\x08}
+    RX  7B 52 00 00 08 2C 56 00 00 20 2C 56 00 20 20 7D   LED16_VALUE = 0x00202020  OK
+    TX  7B 52 00 00 0C 7D                                 {R\x00\x00\x0C}
+    RX  7B 52 00 00 0C 2C 56 00 00 20 2C 56 00 20 20 7D   LED17_VALUE = 0x00202020  OK
+
+[10] LED16 = orange 255/128/0, LED17 = purple 128/0/255, no CIE
+    TX  7B 52 30 36 34 2C 47 30 33 32 2C 42 30 30 30 7D   {R064,G032,B000}
+    TX  7B 4C 30 31 37 7D                                 {L017}
+    TX  7B 52 30 33 32 2C 47 30 30 30 2C 42 30 36 34 7D   {R032,G000,B064}
+    TX  7B 52 00 00 08 7D                                 {R\x00\x00\x08}
+    RX  7B 52 00 00 08 2C 56 00 00 40 2C 56 00 20 00 7D   LED16_VALUE = 0x00402000  OK
+    TX  7B 52 00 00 0C 7D                                 {R\x00\x00\x0C}
+    RX  7B 52 00 00 0C 2C 56 00 00 20 2C 56 00 00 40 7D   LED17_VALUE = 0x00200040  OK
+
+[11] Same colours, CIE on both
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 3E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00>}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 3E 7D   LED_CTRL = 0x0000003E  OK
+
+[12] LED17 power off (LED16 stays orange)
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 06 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x06}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 06 7D   LED_CTRL = 0x00000006  OK
+
+[13] LED16 power off, LED17 on (purple)
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0A 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0A}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 0A 7D   LED_CTRL = 0x0000000A  OK
+
+[14] Both on again, DDS registers: red / green / blue freq 10, mag 0, phase 0
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0E}
+    TX  7B 57 01 00 04 2C 56 00 00 00 2C 56 00 50 00 7D   {W\x01\x00\x04,V\x00\x00\x00,V\x00P\x00}
+    TX  7B 57 01 00 08 2C 56 00 00 00 2C 56 00 50 00 7D   {W\x01\x00\x08,V\x00\x00\x00,V\x00P\x00}
+    TX  7B 57 01 00 0C 2C 56 00 00 00 2C 56 00 50 00 7D   {W\x01\x00\x0C,V\x00\x00\x00,V\x00P\x00}
+    TX  7B 52 01 00 04 7D                                 {R\x01\x00\x04}
+    RX  7B 52 01 00 04 2C 56 00 00 00 2C 56 00 50 00 7D   RED_PWM_CTRL = 0x00005000  OK
+
+[15] Pattern = BREATH (both LEDs, white): time_slots 15 -> one breath = 2.01 s, PWM = 6510 Hz
+    TX  7B 57 01 00 00 2C 56 00 04 00 2C 56 00 00 0F 7D   {W\x01\x00\x00,V\x00\x04\x00,V\x00\x00\x0F}
+    TX  7B 52 01 00 00 7D                                 {R\x01\x00\x00}
+    RX  7B 52 01 00 00 2C 56 00 04 00 2C 56 00 00 0F 7D   PWM_CFG = 0x0400000F  OK
+    TX  7B 57 00 00 04 2C 56 00 00 00 2C 56 00 00 01 7D   {W\x00\x00\x04,V\x00\x00\x00,V\x00\x00\x01}
+    TX  7B 52 00 00 04 7D                                 {R\x00\x00\x04}
+    RX  7B 52 00 00 04 2C 56 00 00 00 2C 56 00 00 01 7D   LED_PATTERN = 0x00000001  OK
+
+[16] Pattern = RAINBOW (both LEDs): time_slots 34 -> each colour = 1.52 s, full cycle = 4.56 s, PWM = 2872 Hz
+    TX  7B 57 01 00 00 2C 56 00 04 00 2C 56 00 00 22 7D   {W\x01\x00\x00,V\x00\x04\x00,V\x00\x00"}
+    TX  7B 52 01 00 00 7D                                 {R\x01\x00\x00}
+    RX  7B 52 01 00 00 2C 56 00 04 00 2C 56 00 00 22 7D   PWM_CFG = 0x04000022  OK
+    TX  7B 57 00 00 04 2C 56 00 00 00 2C 56 00 00 02 7D   {W\x00\x00\x04,V\x00\x00\x00,V\x00\x00\x02}
+    TX  7B 52 00 00 04 7D                                 {R\x00\x00\x04}
+    RX  7B 52 00 00 04 2C 56 00 00 00 2C 56 00 00 02 7D   LED_PATTERN = 0x00000002  OK
+
+[17] RAINBOW with LED16 power off (power beats the pattern)
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0A 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0A}
+    TX  7B 52 00 00 00 7D                                 {R\x00\x00\x00}
+    RX  7B 52 00 00 00 2C 56 00 00 00 2C 56 00 00 0A 7D   LED_CTRL = 0x0000000A  OK
+
+[18] Back to STATIC, both on (orange and purple return), PWM_CFG back to its reset value
+    TX  7B 57 00 00 00 2C 56 00 00 00 2C 56 00 00 0E 7D   {W\x00\x00\x00,V\x00\x00\x00,V\x00\x00\x0E}
+    TX  7B 57 00 00 04 2C 56 00 00 00 2C 56 00 00 00 7D   {W\x00\x00\x04,V\x00\x00\x00,V\x00\x00\x00}
+    TX  7B 52 00 00 04 7D                                 {R\x00\x00\x04}
+    RX  7B 52 00 00 04 2C 56 00 00 00 2C 56 00 00 00 7D   LED_PATTERN = 0x00000000  OK
+    TX  7B 57 01 00 00 2C 56 00 04 00 2C 56 00 00 01 7D   {W\x01\x00\x00,V\x00\x04\x00,V\x00\x00\x01}
+    TX  7B 52 01 00 00 7D                                 {R\x01\x00\x00}
+    RX  7B 52 01 00 00 2C 56 00 04 00 2C 56 00 00 01 7D   PWM_CFG = 0x04000001  OK
+
+[19] Counters and status registers (no picture needed)
+    TX  7B 52 02 00 00 7D                                 {R\x02\x00\x00}
+    RX  7B 52 02 00 00 2C 56 00 00 00 2C 56 00 00 42 7D   CNT_RX_PACKET = 0x00000042  
+    TX  7B 52 02 00 04 7D                                 {R\x02\x00\x04}
+    RX  7B 52 02 00 04 2C 56 00 00 00 2C 56 00 00 1D 7D   CNT_TX_PACKET = 0x0000001D  
+    TX  7B 52 02 00 08 7D                                 {R\x02\x00\x08}
+    RX  7B 52 02 00 08 2C 56 00 00 00 2C 56 00 00 0B 7D   CNT_COLOR_MSG = 0x0000000B  
+    TX  7B 52 02 00 0C 7D                                 {R\x02\x00\x0C}
+    RX  7B 52 02 00 0C 2C 56 00 00 00 2C 56 00 00 3A 7D   CNT_CONFIG_MSG = 0x0000003A  
+    TX  7B 52 00 00 10 7D                                 {R\x00\x00\x10}
+    RX  7B 52 00 00 10 2C 56 00 00 00 2C 56 00 00 00 7D   LED_STATUS = 0x00000000  
+    TX  7B 52 01 00 10 7D                                 {R\x01\x00\x10}
+    RX  7B 52 01 00 10 2C 56 00 00 00 2C 56 00 00 00 7D   PWM_STATUS = 0x00000000  
+    TX  7B 52 03 00 04 7D                                 {R\x03\x00\x04}
+    RX  7B 52 03 00 04 2C 56 00 00 00 2C 56 00 00 00 7D   SYS_STATUS = 0x00000000  
+
+done, 0 problem(s). Log: /Users/yuval/Projects/labs/lab_7/uart_demo_log.txt

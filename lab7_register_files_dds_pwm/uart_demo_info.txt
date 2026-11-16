@@ -1,0 +1,133 @@
+uart_demo.py - how to run it
+============================
+
+What it does
+------------
+Sends a fixed sequence of UART messages to the board (57600 8-N-1): static colours on
+each LED, CIE on / off, power on / off, BREATH and RAINBOW. After every change it reads
+the register back and prints OK or MISMATCH, then pauses so you can take a picture.
+
+Before the first run (once)
+---------------------------
+    cd ~/Projects/labs/lab_7
+    python3 -m venv .venv
+    .venv/bin/pip install pyserial
+
+Before every run
+----------------
+1. Program the bitstream.
+2. Disconnect CoolTerm. Only one program can use the serial port.
+
+Basic run
+---------
+    python3 uart_demo.py
+
+Pauses 10 seconds at every picture step. The script finds the .venv Python on its own.
+
+
+Modes: how the script pauses
+----------------------------
+    python3 uart_demo.py                 10 s at every picture step (default)
+    python3 uart_demo.py --delay 20      20 s at every picture step
+    python3 uart_demo.py --enter         waits until you press Enter (best for pictures)
+    python3 uart_demo.py --dry-run       no board needed: only prints the bytes it would send
+
+Ctrl+C stops the run at any point.
+
+
+Brightness of the static colours
+--------------------------------
+    python3 uart_demo.py --brightness 50
+
+Scales every static colour value the script sends. 100 is the default (full values).
+
+    --brightness    value sent for 255    light out (after gamma)
+    100             255                   100 %
+    50              128                   about 22 %
+    25              64                    about 5 %
+
+Notes:
+- The light drops much faster than the number because of the gamma table. Try 50 first.
+- The step titles always show the full-brightness values; the TX lines show what was
+  really sent.
+- It does NOT change BREATH or RAINBOW. No register lowers their brightness in the
+  current design. For those, lower the camera exposure or put white paper over the LEDs.
+
+
+Speed of BREATH and RAINBOW
+---------------------------
+    python3 uart_demo.py --breath 3 --rainbow 2
+
+    --breath SECONDS     time of one full breath, dark -> bright -> dark   (default 2.0)
+    --rainbow SECONDS    time per colour; the full cycle is 3 times this   (default 1.5)
+
+The script turns the seconds into PWM_CFG.time_slots and writes it just before each
+pattern. Slower patterns mean a lower PWM frequency, which is printed in the step title:
+
+    [15] Pattern = BREATH ...: time_slots 15 -> one breath = 2.01 s, PWM = 6510 Hz
+    [16] Pattern = RAINBOW ...: time_slots 34 -> each colour = 1.52 s, ..., PWM = 2872 Hz
+
+If the pictures show dark bands across the LEDs, the PWM frequency is too low for the
+camera: use a faster pattern, or add --freq 1 (see below).
+
+    --freq N             DDS step per PWM period (default 10, the minimum in the lab PDF).
+                         --freq 1 gives the same pattern speed with a 10 times higher
+                         PWM frequency. It works today, but 1 is below the PDF minimum.
+
+After the patterns the script writes PWM_CFG back to its reset value.
+
+
+Serial port
+-----------
+By default the script uses the last /dev/cu.usbserial-* port. If that is the wrong one:
+
+    ls /dev/cu.usbserial-*
+    python3 uart_demo.py --port /dev/cu.usbserial-XXXXXXXX1
+
+(the name is the same one CoolTerm shows)
+
+
+Combining options
+-----------------
+Options can be mixed freely, for example:
+
+    python3 uart_demo.py --enter --brightness 50 --breath 3 --rainbow 2
+
+
+The steps
+---------
+    1-2     reads the reset state, both LEDs on, STATIC, black
+    3-5     LED16 red; LED17 blue; LED16 green
+    6-8     both white: no CIE, CIE on LED16 only, CIE on both
+    9       both 128/128/128 (gamma)
+    10-11   orange and purple: no CIE, then CIE on both
+    12-13   LED17 off; then LED16 off
+    14      DDS registers
+    15      BREATH
+    16      RAINBOW
+    17      RAINBOW with LED16 power off
+    18      back to STATIC, PWM_CFG back to reset
+    19      reads the counters and the status registers
+
+
+Reading the output
+------------------
+    [03] LED16 = red (LED17 stays black)
+        TX  7B 52 32 35 35 2C ... 7D     {R255,G000,B000}
+        TX  7B 52 00 00 08 7D            {R\x00\x00\x08}
+        RX  7B 52 00 00 08 2C 56 ... 7D  LED16_VALUE = 0x00FF0000  OK
+
+    TX   what the PC sent: the bytes in hex, then the same bytes as text
+    RX   the reply from the board, the register name, its value, and OK / MISMATCH
+
+The last line of a run is "done, N problem(s)". Everything printed is also saved to
+uart_demo_log.txt in this folder (overwritten on every run).
+
+
+Problems
+--------
+    "pyserial is missing"          run the two lines under "Before the first run"
+    "Could not open ..."           CoolTerm is still connected, or the wrong port: use --port
+    "No /dev/cu.usbserial-* ..."   the board is off or the USB cable is not connected
+    "nothing (timeout)"            no reply: wrong port, or the bitstream is not programmed
+    MISMATCH                       the register did not take the value that was written

@@ -1,0 +1,16 @@
+# Vivado regenerates these; only lab7.xpr and lab7.srcs/ are kept
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.gen/
+*.ip_user_files/
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.backup.*
+xsim.dir/
+.DS_Store
