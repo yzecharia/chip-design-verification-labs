@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnt_rgf_pkg" />
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="led_rgf_pkg" />
+            <top_module name="pwm_rgf_pkg" />
+            <top_module name="sys_rgf_pkg" />
+            <top_module name="tb_chip_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="130345000 ps"></ZoomStartTime>
+      <ZoomEndTime time="143548000 ps"></ZoomEndTime>
+      <Cursor1Time time="132545000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="132245000" />
+      <marker label="2" time="142045000" />
+   </wave_markers>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/tb_chip_top/rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="label">rx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/data_rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_rx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rx[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">data_rx[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/done_rx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">done_rx</obj_property>
+      <obj_property name="ObjectShortName">done_rx</obj_property>
+      <obj_property name="label">done_rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/pkt_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pkt_valid</obj_property>
+      <obj_property name="ObjectShortName">pkt_valid</obj_property>
+      <obj_property name="label">pkt_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/msg.msg_type">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="label">msg.msg_type</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/cs_one_hot">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs_one_hot[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cs_one_hot[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">cs_one_hot[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/wdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_chip_top/dut/led_rgf_msg.led_pattern">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led_pattern[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.led_pattern[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led_pattern</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/pattern_change">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pattern_change</obj_property>
+      <obj_property name="ObjectShortName">pattern_change</obj_property>
+      <obj_property name="label">pattern_change</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/dut/tx_data.start">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.start</obj_property>
+      <obj_property name="ObjectShortName">.start</obj_property>
+      <obj_property name="label">tx_data.start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_chip_top/tx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+      <obj_property name="label">tx</obj_property>
+   </wvobject>
+</wave_config>

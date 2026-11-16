@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:52:47 2026
+| Host         : 7480be0403c3 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_7/build/report/6_module_comparison/longest_path_led_src_mux.rpt
+| Design       : led_src_mux
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 led16[green][0][0]
+                            (input port)
+  Destination:            led_val[0][green][7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.965ns  (logic 1.783ns (29.891%)  route 4.182ns (70.109%))
+  Logic Levels:           8  (CARRY4=2 LUT2=2 LUT3=2 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  led16[green][0][0] (IN)
+                         net (fo=29, unset)           0.973     0.973    gemma_clust_i/led16_gemma_i/led16[green][0][0]
+                         LUT3 (Prop_lut3_I2_O)        0.124     1.097 r  gemma_clust_i/led16_gemma_i/gamma_table_inferred__0/led_val[0][green][8]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.419     1.516    gemma_clust_i/led16_gemma_i/gamma_table_inferred__0/led_val[0][green][8]_INST_0_i_3_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     1.640 r  gemma_clust_i/led16_gemma_i/gamma_table_inferred__0/led_val[0][green][8]_INST_0_i_2/O
+                         net (fo=2, unplaced)         0.460     2.100    gemma_clust_i/led16_gemma_i/gamma_table_inferred__0/led_val[0][green][8]_INST_0_i_2_n_0
+                         LUT2 (Prop_lut2_I0_O)        0.124     2.224 r  gemma_clust_i/led16_gemma_i/gamma_table_inferred__0/led_val[0][green][8]_INST_0_i_1/O
+                         net (fo=2, unplaced)         0.460     2.684    cie_clust_i/led16_cie_i/led_val[0][green][1]_INST_0_i_2
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.808 r  cie_clust_i/led16_cie_i/led_val[0][green][1]_INST_0_i_9/O
+                         net (fo=1, unplaced)         0.000     2.808    gemma_clust_i/led16_gemma_i/led_val[0][green][1][1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     3.341 r  gemma_clust_i/led16_gemma_i/led_val[0][green][1]_INST_0_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     3.341    gemma_clust_i/led16_gemma_i/led_val[0][green][1]_INST_0_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     3.672 r  gemma_clust_i/led16_gemma_i/led_val[0][green][9]_INST_0_i_3/O[3]
+                         net (fo=1, unplaced)         0.448     4.120    gemma_clust_i/led16_gemma_i/led16_cie[green][7]
+                         LUT3 (Prop_lut3_I0_O)        0.299     4.419 r  gemma_clust_i/led16_gemma_i/led_val[0][green][7]_INST_0_i_1/O
+                         net (fo=1, unplaced)         0.449     4.868    dds_clust_i/dds_green_ch/led_val[0][green][7]
+                         LUT6 (Prop_lut6_I1_O)        0.124     4.992 r  dds_clust_i/dds_green_ch/led_val[0][green][7]_INST_0/O
+                         net (fo=0)                   0.973     5.965    led_val[0][green][7]
+                                                                      r  led_val[0][green][7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

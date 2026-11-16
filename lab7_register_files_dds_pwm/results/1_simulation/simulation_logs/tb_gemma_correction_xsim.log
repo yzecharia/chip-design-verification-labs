@@ -1,0 +1,928 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/black_magic_box.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling.sv" into library work
+INFO: [VRFC 10-311] analyzing module cie_scaling
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module cie_scaling_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module cnt_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module dds_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_single_ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module dds_single_ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module gemma_correction_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module led_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_src_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module led_src_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_led_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_led_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv" into library work
+INFO: [VRFC 10-311] analyzing module reg_interconnect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scale_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module scale_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scaler.sv" into library work
+INFO: [VRFC 10-311] analyzing module scaler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sin_wave_table.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module sys_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_cie_scailing.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cie_scailing
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_cnt_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cnt_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_dds_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dds_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_dds_single_ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dds_single_ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_led_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_led_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_led_src_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_led_src_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_reg_interconnect.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_reg_interconnect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_scaler.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_scaler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_sys_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sys_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_gemma_correction_snap work.tb_gemma_correction work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.led_rgf_pkg
+Compiling package work.lab7_pkg
+Compiling module work.gemma_correction
+Compiling module work.tb_gemma_correction
+Compiling module work.glbl
+Built simulation snapshot tb_gemma_correction_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 15 12:28:55 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_gemma_correction_snap/xsim_script.tcl
+# xsim {tb_gemma_correction_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_7/build/xsim/behavioral/tb_gemma_correction/tb_gemma_correction.vcd}
+## log_vcd [get_objects -r /tb_gemma_correction/*]
+INFO: HDL object /tb_gemma_correction/dut/gamma_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+## run -all
+Time: 10000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 20000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 30000 | pixel_out.red=   1 | calc_pixel.red=   1
+Time: 40000 | pixel_out.red=   1 | calc_pixel.red=   1
+Time: 50000 | pixel_out.red=   1 | calc_pixel.red=   1
+Time: 60000 | pixel_out.red=   2 | calc_pixel.red=   2
+Time: 70000 | pixel_out.red=   2 | calc_pixel.red=   2
+Time: 80000 | pixel_out.red=   2 | calc_pixel.red=   2
+Time: 90000 | pixel_out.red=   2 | calc_pixel.red=   2
+Time: 100000 | pixel_out.red=   3 | calc_pixel.red=   3
+Time: 110000 | pixel_out.red=   3 | calc_pixel.red=   3
+Time: 120000 | pixel_out.red=   3 | calc_pixel.red=   3
+Time: 130000 | pixel_out.red=   4 | calc_pixel.red=   4
+Time: 140000 | pixel_out.red=   4 | calc_pixel.red=   4
+Time: 150000 | pixel_out.red=   4 | calc_pixel.red=   4
+Time: 160000 | pixel_out.red=   5 | calc_pixel.red=   5
+Time: 170000 | pixel_out.red=   5 | calc_pixel.red=   5
+Time: 180000 | pixel_out.red=   6 | calc_pixel.red=   6
+Time: 190000 | pixel_out.red=   6 | calc_pixel.red=   6
+Time: 200000 | pixel_out.red=   7 | calc_pixel.red=   7
+Time: 210000 | pixel_out.red=   7 | calc_pixel.red=   7
+Time: 220000 | pixel_out.red=   8 | calc_pixel.red=   8
+Time: 230000 | pixel_out.red=   8 | calc_pixel.red=   8
+Time: 240000 | pixel_out.red=   9 | calc_pixel.red=   9
+Time: 250000 | pixel_out.red=   9 | calc_pixel.red=   9
+Time: 260000 | pixel_out.red=  10 | calc_pixel.red=  10
+Time: 270000 | pixel_out.red=  11 | calc_pixel.red=  11
+Time: 280000 | pixel_out.red=  11 | calc_pixel.red=  11
+Time: 290000 | pixel_out.red=  12 | calc_pixel.red=  12
+Time: 300000 | pixel_out.red=  13 | calc_pixel.red=  13
+Time: 310000 | pixel_out.red=  13 | calc_pixel.red=  13
+Time: 320000 | pixel_out.red=  14 | calc_pixel.red=  14
+Time: 330000 | pixel_out.red=  15 | calc_pixel.red=  15
+Time: 340000 | pixel_out.red=  16 | calc_pixel.red=  16
+Time: 350000 | pixel_out.red=  16 | calc_pixel.red=  16
+Time: 360000 | pixel_out.red=  17 | calc_pixel.red=  17
+Time: 370000 | pixel_out.red=  18 | calc_pixel.red=  18
+Time: 380000 | pixel_out.red=  19 | calc_pixel.red=  19
+Time: 390000 | pixel_out.red=  20 | calc_pixel.red=  20
+Time: 400000 | pixel_out.red=  21 | calc_pixel.red=  21
+Time: 410000 | pixel_out.red=  22 | calc_pixel.red=  22
+Time: 420000 | pixel_out.red=  23 | calc_pixel.red=  23
+Time: 430000 | pixel_out.red=  24 | calc_pixel.red=  24
+Time: 440000 | pixel_out.red=  25 | calc_pixel.red=  25
+Time: 450000 | pixel_out.red=  26 | calc_pixel.red=  26
+Time: 460000 | pixel_out.red=  27 | calc_pixel.red=  27
+Time: 470000 | pixel_out.red=  28 | calc_pixel.red=  28
+Time: 480000 | pixel_out.red=  29 | calc_pixel.red=  29
+Time: 490000 | pixel_out.red=  30 | calc_pixel.red=  30
+Time: 500000 | pixel_out.red=  31 | calc_pixel.red=  31
+Time: 510000 | pixel_out.red=  33 | calc_pixel.red=  33
+Time: 520000 | pixel_out.red=  34 | calc_pixel.red=  34
+Time: 530000 | pixel_out.red=  35 | calc_pixel.red=  35
+Time: 540000 | pixel_out.red=  36 | calc_pixel.red=  36
+Time: 550000 | pixel_out.red=  38 | calc_pixel.red=  38
+Time: 560000 | pixel_out.red=  39 | calc_pixel.red=  39
+Time: 570000 | pixel_out.red=  40 | calc_pixel.red=  40
+Time: 580000 | pixel_out.red=  42 | calc_pixel.red=  42
+Time: 590000 | pixel_out.red=  43 | calc_pixel.red=  43
+Time: 600000 | pixel_out.red=  45 | calc_pixel.red=  45
+Time: 610000 | pixel_out.red=  46 | calc_pixel.red=  46
+Time: 620000 | pixel_out.red=  48 | calc_pixel.red=  48
+Time: 630000 | pixel_out.red=  49 | calc_pixel.red=  49
+Time: 640000 | pixel_out.red=  51 | calc_pixel.red=  51
+Time: 650000 | pixel_out.red=  52 | calc_pixel.red=  52
+Time: 660000 | pixel_out.red=  54 | calc_pixel.red=  54
+Time: 670000 | pixel_out.red=  56 | calc_pixel.red=  56
+Time: 680000 | pixel_out.red=  57 | calc_pixel.red=  57
+Time: 690000 | pixel_out.red=  59 | calc_pixel.red=  59
+Time: 700000 | pixel_out.red=  61 | calc_pixel.red=  61
+Time: 710000 | pixel_out.red=  63 | calc_pixel.red=  63
+Time: 720000 | pixel_out.red=  64 | calc_pixel.red=  64
+Time: 730000 | pixel_out.red=  66 | calc_pixel.red=  66
+Time: 740000 | pixel_out.red=  68 | calc_pixel.red=  68
+Time: 750000 | pixel_out.red=  70 | calc_pixel.red=  70
+Time: 760000 | pixel_out.red=  72 | calc_pixel.red=  72
+Time: 770000 | pixel_out.red=  74 | calc_pixel.red=  74
+Time: 780000 | pixel_out.red=  76 | calc_pixel.red=  76
+Time: 790000 | pixel_out.red=  78 | calc_pixel.red=  78
+Time: 800000 | pixel_out.red=  80 | calc_pixel.red=  80
+Time: 810000 | pixel_out.red=  82 | calc_pixel.red=  82
+Time: 820000 | pixel_out.red=  84 | calc_pixel.red=  84
+Time: 830000 | pixel_out.red=  86 | calc_pixel.red=  86
+Time: 840000 | pixel_out.red=  88 | calc_pixel.red=  88
+Time: 850000 | pixel_out.red=  91 | calc_pixel.red=  91
+Time: 860000 | pixel_out.red=  93 | calc_pixel.red=  93
+Time: 870000 | pixel_out.red=  95 | calc_pixel.red=  95
+Time: 880000 | pixel_out.red=  97 | calc_pixel.red=  97
+Time: 890000 | pixel_out.red= 100 | calc_pixel.red= 100
+Time: 900000 | pixel_out.red= 102 | calc_pixel.red= 102
+Time: 910000 | pixel_out.red= 105 | calc_pixel.red= 105
+Time: 920000 | pixel_out.red= 107 | calc_pixel.red= 107
+Time: 930000 | pixel_out.red= 109 | calc_pixel.red= 109
+Time: 940000 | pixel_out.red= 112 | calc_pixel.red= 112
+Time: 950000 | pixel_out.red= 115 | calc_pixel.red= 115
+Time: 960000 | pixel_out.red= 117 | calc_pixel.red= 117
+Time: 970000 | pixel_out.red= 120 | calc_pixel.red= 120
+Time: 980000 | pixel_out.red= 122 | calc_pixel.red= 122
+Time: 990000 | pixel_out.red= 125 | calc_pixel.red= 125
+Time: 1000000 | pixel_out.red= 128 | calc_pixel.red= 128
+Time: 1010000 | pixel_out.red= 130 | calc_pixel.red= 130
+Time: 1020000 | pixel_out.red= 133 | calc_pixel.red= 133
+Time: 1030000 | pixel_out.red= 136 | calc_pixel.red= 136
+Time: 1040000 | pixel_out.red= 139 | calc_pixel.red= 139
+Time: 1050000 | pixel_out.red= 142 | calc_pixel.red= 142
+Time: 1060000 | pixel_out.red= 145 | calc_pixel.red= 145
+Time: 1070000 | pixel_out.red= 147 | calc_pixel.red= 147
+Time: 1080000 | pixel_out.red= 150 | calc_pixel.red= 150
+Time: 1090000 | pixel_out.red= 153 | calc_pixel.red= 153
+Time: 1100000 | pixel_out.red= 156 | calc_pixel.red= 156
+Time: 1110000 | pixel_out.red= 160 | calc_pixel.red= 160
+Time: 1120000 | pixel_out.red= 163 | calc_pixel.red= 163
+Time: 1130000 | pixel_out.red= 166 | calc_pixel.red= 166
+Time: 1140000 | pixel_out.red= 169 | calc_pixel.red= 169
+Time: 1150000 | pixel_out.red= 172 | calc_pixel.red= 172
+Time: 1160000 | pixel_out.red= 175 | calc_pixel.red= 175
+Time: 1170000 | pixel_out.red= 179 | calc_pixel.red= 179
+Time: 1180000 | pixel_out.red= 182 | calc_pixel.red= 182
+Time: 1190000 | pixel_out.red= 185 | calc_pixel.red= 185
+Time: 1200000 | pixel_out.red= 189 | calc_pixel.red= 189
+Time: 1210000 | pixel_out.red= 192 | calc_pixel.red= 192
+Time: 1220000 | pixel_out.red= 196 | calc_pixel.red= 196
+Time: 1230000 | pixel_out.red= 199 | calc_pixel.red= 199
+Time: 1240000 | pixel_out.red= 203 | calc_pixel.red= 203
+Time: 1250000 | pixel_out.red= 206 | calc_pixel.red= 206
+Time: 1260000 | pixel_out.red= 210 | calc_pixel.red= 210
+Time: 1270000 | pixel_out.red= 213 | calc_pixel.red= 213
+Time: 1280000 | pixel_out.red= 217 | calc_pixel.red= 217
+Time: 1290000 | pixel_out.red= 221 | calc_pixel.red= 221
+Time: 1300000 | pixel_out.red= 225 | calc_pixel.red= 225
+Time: 1310000 | pixel_out.red= 228 | calc_pixel.red= 228
+Time: 1320000 | pixel_out.red= 232 | calc_pixel.red= 232
+Time: 1330000 | pixel_out.red= 236 | calc_pixel.red= 236
+Time: 1340000 | pixel_out.red= 240 | calc_pixel.red= 240
+Time: 1350000 | pixel_out.red= 244 | calc_pixel.red= 244
+Time: 1360000 | pixel_out.red= 248 | calc_pixel.red= 248
+Time: 1370000 | pixel_out.red= 252 | calc_pixel.red= 252
+Time: 1380000 | pixel_out.red= 256 | calc_pixel.red= 256
+Time: 1390000 | pixel_out.red= 260 | calc_pixel.red= 260
+Time: 1400000 | pixel_out.red= 264 | calc_pixel.red= 264
+Time: 1410000 | pixel_out.red= 268 | calc_pixel.red= 268
+Time: 1420000 | pixel_out.red= 272 | calc_pixel.red= 272
+Time: 1430000 | pixel_out.red= 277 | calc_pixel.red= 277
+Time: 1440000 | pixel_out.red= 281 | calc_pixel.red= 281
+Time: 1450000 | pixel_out.red= 285 | calc_pixel.red= 285
+Time: 1460000 | pixel_out.red= 290 | calc_pixel.red= 290
+Time: 1470000 | pixel_out.red= 294 | calc_pixel.red= 294
+Time: 1480000 | pixel_out.red= 298 | calc_pixel.red= 298
+Time: 1490000 | pixel_out.red= 303 | calc_pixel.red= 303
+Time: 1500000 | pixel_out.red= 307 | calc_pixel.red= 307
+Time: 1510000 | pixel_out.red= 312 | calc_pixel.red= 312
+Time: 1520000 | pixel_out.red= 317 | calc_pixel.red= 317
+Time: 1530000 | pixel_out.red= 321 | calc_pixel.red= 321
+Time: 1540000 | pixel_out.red= 326 | calc_pixel.red= 326
+Time: 1550000 | pixel_out.red= 331 | calc_pixel.red= 331
+Time: 1560000 | pixel_out.red= 335 | calc_pixel.red= 335
+Time: 1570000 | pixel_out.red= 340 | calc_pixel.red= 340
+Time: 1580000 | pixel_out.red= 345 | calc_pixel.red= 345
+Time: 1590000 | pixel_out.red= 350 | calc_pixel.red= 350
+Time: 1600000 | pixel_out.red= 355 | calc_pixel.red= 355
+Time: 1610000 | pixel_out.red= 360 | calc_pixel.red= 360
+Time: 1620000 | pixel_out.red= 365 | calc_pixel.red= 365
+Time: 1630000 | pixel_out.red= 370 | calc_pixel.red= 370
+Time: 1640000 | pixel_out.red= 375 | calc_pixel.red= 375
+Time: 1650000 | pixel_out.red= 380 | calc_pixel.red= 380
+Time: 1660000 | pixel_out.red= 385 | calc_pixel.red= 385
+Time: 1670000 | pixel_out.red= 390 | calc_pixel.red= 390
+Time: 1680000 | pixel_out.red= 395 | calc_pixel.red= 395
+Time: 1690000 | pixel_out.red= 401 | calc_pixel.red= 401
+Time: 1700000 | pixel_out.red= 406 | calc_pixel.red= 406
+Time: 1710000 | pixel_out.red= 411 | calc_pixel.red= 411
+Time: 1720000 | pixel_out.red= 417 | calc_pixel.red= 417
+Time: 1730000 | pixel_out.red= 422 | calc_pixel.red= 422
+Time: 1740000 | pixel_out.red= 427 | calc_pixel.red= 427
+Time: 1750000 | pixel_out.red= 433 | calc_pixel.red= 433
+Time: 1760000 | pixel_out.red= 439 | calc_pixel.red= 439
+Time: 1770000 | pixel_out.red= 444 | calc_pixel.red= 444
+Time: 1780000 | pixel_out.red= 450 | calc_pixel.red= 450
+Time: 1790000 | pixel_out.red= 455 | calc_pixel.red= 455
+Time: 1800000 | pixel_out.red= 461 | calc_pixel.red= 461
+Time: 1810000 | pixel_out.red= 467 | calc_pixel.red= 467
+Time: 1820000 | pixel_out.red= 473 | calc_pixel.red= 473
+Time: 1830000 | pixel_out.red= 479 | calc_pixel.red= 479
+Time: 1840000 | pixel_out.red= 484 | calc_pixel.red= 484
+Time: 1850000 | pixel_out.red= 490 | calc_pixel.red= 490
+Time: 1860000 | pixel_out.red= 496 | calc_pixel.red= 496
+Time: 1870000 | pixel_out.red= 502 | calc_pixel.red= 502
+Time: 1880000 | pixel_out.red= 508 | calc_pixel.red= 508
+Time: 1890000 | pixel_out.red= 514 | calc_pixel.red= 514
+Time: 1900000 | pixel_out.red= 521 | calc_pixel.red= 521
+Time: 1910000 | pixel_out.red= 527 | calc_pixel.red= 527
+Time: 1920000 | pixel_out.red= 533 | calc_pixel.red= 533
+Time: 1930000 | pixel_out.red= 539 | calc_pixel.red= 539
+Time: 1940000 | pixel_out.red= 546 | calc_pixel.red= 546
+Time: 1950000 | pixel_out.red= 552 | calc_pixel.red= 552
+Time: 1960000 | pixel_out.red= 558 | calc_pixel.red= 558
+Time: 1970000 | pixel_out.red= 565 | calc_pixel.red= 565
+Time: 1980000 | pixel_out.red= 571 | calc_pixel.red= 571
+Time: 1990000 | pixel_out.red= 578 | calc_pixel.red= 578
+Time: 2000000 | pixel_out.red= 584 | calc_pixel.red= 584
+Time: 2010000 | pixel_out.red= 591 | calc_pixel.red= 591
+Time: 2020000 | pixel_out.red= 598 | calc_pixel.red= 598
+Time: 2030000 | pixel_out.red= 604 | calc_pixel.red= 604
+Time: 2040000 | pixel_out.red= 611 | calc_pixel.red= 611
+Time: 2050000 | pixel_out.red= 618 | calc_pixel.red= 618
+Time: 2060000 | pixel_out.red= 625 | calc_pixel.red= 625
+Time: 2070000 | pixel_out.red= 631 | calc_pixel.red= 631
+Time: 2080000 | pixel_out.red= 638 | calc_pixel.red= 638
+Time: 2090000 | pixel_out.red= 645 | calc_pixel.red= 645
+Time: 2100000 | pixel_out.red= 652 | calc_pixel.red= 652
+Time: 2110000 | pixel_out.red= 659 | calc_pixel.red= 659
+Time: 2120000 | pixel_out.red= 666 | calc_pixel.red= 666
+Time: 2130000 | pixel_out.red= 674 | calc_pixel.red= 674
+Time: 2140000 | pixel_out.red= 681 | calc_pixel.red= 681
+Time: 2150000 | pixel_out.red= 688 | calc_pixel.red= 688
+Time: 2160000 | pixel_out.red= 695 | calc_pixel.red= 695
+Time: 2170000 | pixel_out.red= 702 | calc_pixel.red= 702
+Time: 2180000 | pixel_out.red= 710 | calc_pixel.red= 710
+Time: 2190000 | pixel_out.red= 717 | calc_pixel.red= 717
+Time: 2200000 | pixel_out.red= 725 | calc_pixel.red= 725
+Time: 2210000 | pixel_out.red= 732 | calc_pixel.red= 732
+Time: 2220000 | pixel_out.red= 740 | calc_pixel.red= 740
+Time: 2230000 | pixel_out.red= 747 | calc_pixel.red= 747
+Time: 2240000 | pixel_out.red= 755 | calc_pixel.red= 755
+Time: 2250000 | pixel_out.red= 763 | calc_pixel.red= 763
+Time: 2260000 | pixel_out.red= 770 | calc_pixel.red= 770
+Time: 2270000 | pixel_out.red= 778 | calc_pixel.red= 778
+Time: 2280000 | pixel_out.red= 786 | calc_pixel.red= 786
+Time: 2290000 | pixel_out.red= 794 | calc_pixel.red= 794
+Time: 2300000 | pixel_out.red= 802 | calc_pixel.red= 802
+Time: 2310000 | pixel_out.red= 809 | calc_pixel.red= 809
+Time: 2320000 | pixel_out.red= 817 | calc_pixel.red= 817
+Time: 2330000 | pixel_out.red= 826 | calc_pixel.red= 826
+Time: 2340000 | pixel_out.red= 834 | calc_pixel.red= 834
+Time: 2350000 | pixel_out.red= 842 | calc_pixel.red= 842
+Time: 2360000 | pixel_out.red= 850 | calc_pixel.red= 850
+Time: 2370000 | pixel_out.red= 858 | calc_pixel.red= 858
+Time: 2380000 | pixel_out.red= 866 | calc_pixel.red= 866
+Time: 2390000 | pixel_out.red= 875 | calc_pixel.red= 875
+Time: 2400000 | pixel_out.red= 883 | calc_pixel.red= 883
+Time: 2410000 | pixel_out.red= 891 | calc_pixel.red= 891
+Time: 2420000 | pixel_out.red= 900 | calc_pixel.red= 900
+Time: 2430000 | pixel_out.red= 908 | calc_pixel.red= 908
+Time: 2440000 | pixel_out.red= 917 | calc_pixel.red= 917
+Time: 2450000 | pixel_out.red= 925 | calc_pixel.red= 925
+Time: 2460000 | pixel_out.red= 934 | calc_pixel.red= 934
+Time: 2470000 | pixel_out.red= 943 | calc_pixel.red= 943
+Time: 2480000 | pixel_out.red= 952 | calc_pixel.red= 952
+Time: 2490000 | pixel_out.red= 960 | calc_pixel.red= 960
+Time: 2500000 | pixel_out.red= 969 | calc_pixel.red= 969
+Time: 2510000 | pixel_out.red= 978 | calc_pixel.red= 978
+Time: 2520000 | pixel_out.red= 987 | calc_pixel.red= 987
+Time: 2530000 | pixel_out.red= 996 | calc_pixel.red= 996
+Time: 2540000 | pixel_out.red=1005 | calc_pixel.red=1005
+Time: 2550000 | pixel_out.red=1014 | calc_pixel.red=1014
+Time: 2560000 | pixel_out.red=1023 | calc_pixel.red=1023
+Time: 2570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2680000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2690000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2700000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2710000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2720000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2730000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2740000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2750000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2760000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2770000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2780000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2790000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2800000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2810000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2820000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2830000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2840000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2850000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2860000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2870000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2880000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2890000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2900000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2910000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2920000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2930000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2940000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2950000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2960000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2970000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2980000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 2990000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3000000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3010000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3020000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3030000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3040000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3050000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3060000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3070000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3080000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3090000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3100000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3110000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3120000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3130000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3140000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3150000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3160000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3170000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3180000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3190000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3200000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3210000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3220000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3230000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3240000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3250000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3260000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3270000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3280000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3290000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3300000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3310000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3320000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3330000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3340000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3350000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3360000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3370000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3380000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3390000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3400000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3410000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3420000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3430000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3440000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3450000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3460000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3470000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3480000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3490000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3500000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3510000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3520000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3530000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3540000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3550000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3560000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3680000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3690000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3700000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3710000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3720000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3730000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3740000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3750000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3760000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3770000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3780000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3790000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3800000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3810000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3820000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3830000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3840000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3850000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3860000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3870000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3880000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3890000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3900000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3910000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3920000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3930000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3940000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3950000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3960000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3970000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3980000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 3990000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4000000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4010000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4020000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4030000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4040000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4050000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4060000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4070000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4080000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4090000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4100000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4110000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4120000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4130000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4140000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4150000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4160000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4170000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4180000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4190000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4200000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4210000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4220000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4230000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4240000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4250000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4260000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4270000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4280000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4290000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4300000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4310000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4320000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4330000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4340000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4350000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4360000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4370000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4380000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4390000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4400000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4410000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4420000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4430000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4440000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4450000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4460000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4470000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4480000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4490000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4500000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4510000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4520000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4530000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4540000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4550000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4560000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4680000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4690000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4700000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4710000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4720000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4730000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4740000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4750000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4760000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4770000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4780000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4790000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4800000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4810000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4820000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4830000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4840000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4850000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4860000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4870000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4880000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4890000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4900000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4910000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4920000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4930000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4940000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4950000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4960000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4970000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4980000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 4990000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5000000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5010000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5020000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5030000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5040000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5050000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5060000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5070000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5080000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5090000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5100000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5110000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5120000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5130000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5140000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5150000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5160000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5170000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5180000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5190000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5200000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5210000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5220000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5230000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5240000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5250000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5260000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5270000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5280000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5290000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5300000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5310000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5320000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5330000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5340000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5350000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5360000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5370000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5380000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5390000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5400000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5410000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5420000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5430000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5440000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5450000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5460000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5470000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5480000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5490000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5500000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5510000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5520000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5530000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5540000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5550000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5560000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5680000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5690000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5700000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5710000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5720000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5730000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5740000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5750000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5760000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5770000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5780000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5790000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5800000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5810000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5820000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5830000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5840000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5850000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5860000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5870000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5880000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5890000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5900000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5910000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5920000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5930000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5940000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5950000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5960000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5970000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5980000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 5990000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6000000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6010000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6020000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6030000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6040000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6050000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6060000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6070000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6080000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6090000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6100000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6110000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6120000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6130000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6140000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6150000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6160000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6170000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6180000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6190000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6200000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6210000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6220000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6230000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6240000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6250000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6260000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6270000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6280000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6290000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6300000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6310000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6320000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6330000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6340000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6350000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6360000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6370000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6380000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6390000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6400000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6410000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6420000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6430000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6440000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6450000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6460000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6470000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6480000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6490000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6500000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6510000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6520000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6530000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6540000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6550000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6560000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6680000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6690000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6700000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6710000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6720000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6730000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6740000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6750000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6760000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6770000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6780000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6790000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6800000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6810000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6820000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6830000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6840000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6850000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6860000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6870000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6880000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6890000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6900000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6910000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6920000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6930000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6940000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6950000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6960000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6970000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6980000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 6990000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7000000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7010000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7020000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7030000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7040000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7050000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7060000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7070000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7080000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7090000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7100000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7110000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7120000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7130000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7140000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7150000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7160000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7170000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7180000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7190000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7200000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7210000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7220000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7230000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7240000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7250000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7260000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7270000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7280000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7290000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7300000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7310000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7320000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7330000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7340000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7350000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7360000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7370000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7380000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7390000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7400000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7410000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7420000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7430000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7440000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7450000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7460000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7470000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7480000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7490000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7500000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7510000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7520000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7530000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7540000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7550000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7560000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7570000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7580000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7590000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7600000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7610000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7620000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7630000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7640000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7650000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7660000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7670000 | pixel_out.red=   0 | calc_pixel.red=   0
+Time: 7680000 | pixel_out.red=   0 | calc_pixel.red=   0
+$finish called at time : 7680 ns : File "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_gemma_correction.sv" Line 55
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 700792 KB (Peak: 757980 KB), Simulation CPU Usage: 2080 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov 15 12:29:06 2026...

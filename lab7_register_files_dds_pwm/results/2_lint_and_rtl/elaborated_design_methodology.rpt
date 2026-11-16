@@ -1,0 +1,80 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:20:37 2026
+| Host         : 862b4f736c0c running 64-bit unknown
+| Command      : report_methodology -file /Users/yuval/Projects/labs/lab_7/build/report/2_rtl_analysis/2_elaborated/chip_top/methodology.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: rtl-elabchip_top
+          Floorplan: rtl_chip_top
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 9
++--------+----------+----------------------------------------------------------+--------+
+| Rule   | Severity | Description                                              | Checks |
++--------+----------+----------------------------------------------------------+--------+
+| RMIR-1 | Advisory | Input registers of multiplier have an asynchronous reset | 9      |
++--------+----------+----------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+RMIR-1#1 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#2 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT__0' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#3 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT__1' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#4 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT__2' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#5 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT__3' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#6 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'parser_i/RTL_MULT__4' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#7 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0_i' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#8 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0_i' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+RMIR-1#9 Advisory
+Input registers of multiplier have an asynchronous reset  
+Input register of multiplier 'scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0_i' has an asynchronous reset. Vivado won't be able to pack the register, and performance and area will be negatively impacted.
+Related violations: <none>
+
+

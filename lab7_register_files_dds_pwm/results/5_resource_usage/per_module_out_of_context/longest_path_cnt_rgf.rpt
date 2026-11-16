@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:40:44 2026
+| Host         : 7480be0403c3 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_7/build/report/6_module_comparison/longest_path_cnt_rgf.rpt
+| Design       : cnt_rgf
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 addr[12]
+                            (input port)
+  Destination:            rdata[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.374ns  (logic 0.496ns (11.340%)  route 3.878ns (88.660%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  addr[12] (IN)
+                         net (fo=0)                   0.973     0.973    addr[12]
+                         LUT4 (Prop_lut4_I3_O)        0.124     1.097 f  rdata[0]_INST_0_i_4/O
+                         net (fo=2, unplaced)         0.975     2.072    rdata[0]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     2.196 f  rdata[0]_INST_0_i_2/O
+                         net (fo=3, unplaced)         0.467     2.663    rdata[0]_INST_0_i_2_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     2.787 r  rdata[31]_INST_0_i_1/O
+                         net (fo=32, unplaced)        0.490     3.277    rdata[31]_INST_0_i_1_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     3.401 r  rdata[0]_INST_0/O
+                         net (fo=0)                   0.973     4.374    rdata[0]
+                                                                      r  rdata[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

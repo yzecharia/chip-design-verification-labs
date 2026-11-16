@@ -1,0 +1,49 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:28:47 2026
+| Host         : 862b4f736c0c running 64-bit unknown
+| Command      : report_utilization -hierarchical -file /Users/yuval/Projects/labs/lab_7/build/report/4_implementation/chip_top/utilization_hierarchical_placed.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+--------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|       Instance       |          Module          | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------+--------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| chip_top             |                    (top) |       1898 |       1898 |       0 |    0 | 1044 |      0 |      0 |          6 |
+|   (chip_top)         |                    (top) |          0 |          0 |       0 |    0 |    6 |      0 |      0 |          0 |
+|   cnt_rgf_i          |                  cnt_rgf |          4 |          4 |       0 |    0 |  129 |      0 |      0 |          0 |
+|   debounce_cluster_i |         debounce_cluster |        144 |        144 |       0 |    0 |  127 |      0 |      0 |          0 |
+|   led_rgf_i          |                  led_rgf |        195 |        195 |       0 |    0 |   60 |      0 |      0 |          0 |
+|   led_src_mux_i      |              led_src_mux |        503 |        503 |       0 |    0 |   51 |      0 |      0 |          0 |
+|     dds_clust_i      |              dds_cluster |        273 |        273 |       0 |    0 |   51 |      0 |      0 |          0 |
+|       dds_blue_ch    |            dds_single_ch |         91 |         91 |       0 |    0 |   17 |      0 |      0 |          0 |
+|       dds_green_ch   |          dds_single_ch_8 |         90 |         90 |       0 |    0 |   17 |      0 |      0 |          0 |
+|       dds_red_ch     |          dds_single_ch_9 |         92 |         92 |       0 |    0 |   17 |      0 |      0 |          0 |
+|     gemma_clust_i    | gemma_correction_cluster |        230 |        230 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       led16_gemma_i  |         gemma_correction |        115 |        115 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       led17_gemma_i  |       gemma_correction_7 |        115 |        115 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   parser_i           |                   parser |        236 |        236 |       0 |    0 |   59 |      0 |      0 |          0 |
+|   pwm_cluster_i      |              pwm_cluster |        192 |        192 |       0 |    0 |  198 |      0 |      0 |          0 |
+|     pwm_led_16_i     |          pwm_led_cluster |         96 |         96 |       0 |    0 |   99 |      0 |      0 |          0 |
+|     pwm_led_17_i     |        pwm_led_cluster_1 |         96 |         96 |       0 |    0 |   99 |      0 |      0 |          0 |
+|   pwm_rgf_i          |                  pwm_rgf |        186 |        186 |       0 |    0 |  105 |      0 |      0 |          0 |
+|   rx_mac_i           |                   rx_mac |        200 |        200 |       0 |    0 |  137 |      0 |      0 |          0 |
+|   selector_i         |                 selector |         58 |         58 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   tx_mac_i           |                   tx_mac |         41 |         41 |       0 |    0 |   57 |      0 |      0 |          0 |
++----------------------+--------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

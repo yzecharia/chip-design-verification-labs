@@ -1,0 +1,3 @@
+BITSTREAM (impl_chip_top)
+  File:       chip_top.bit  (also in build/bit/, used by the Program tasks)
+  Messages:   0 error(s), 0 critical warning(s), 0 warning(s)  (in implementation.log)

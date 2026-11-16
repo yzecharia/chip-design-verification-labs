@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_cnt_rgf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnt_rgf_pkg" />
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="tb_cnt_rgf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="490000 ps"></ZoomEndTime>
+      <Cursor1Time time="67000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="60000" />
+      <marker label="2" time="175000" />
+      <marker label="3" time="220000" />
+      <marker label="4" time="300000" />
+      <marker label="5" time="310000" />
+      <marker label="6" time="350000" />
+      <marker label="7" time="430000" />
+   </wave_markers>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/msg.msg_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.msg_valid</obj_property>
+      <obj_property name="ObjectShortName">.msg_valid</obj_property>
+      <obj_property name="label">msg.msg_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/msg.msg_type">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="label">msg.msg_type</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/tx_msg_sent">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tx_msg_sent</obj_property>
+      <obj_property name="ObjectShortName">tx_msg_sent</obj_property>
+      <obj_property name="label">tx_msg_sent</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/cs">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+      <obj_property name="label">cs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_cnt_rgf/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/rdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/dut/rx_packet_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rx_packet_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_packet_cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">cnt_rgf.rx_packet_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/dut/tx_packet_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tx_packet_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_packet_cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">cnt_rgf.tx_packet_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/dut/color_msg_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">color_msg_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">color_msg_cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">cnt_rgf.color_msg_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/dut/config_msg_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">config_msg_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">config_msg_cnt[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">cnt_rgf.config_msg_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_cnt_rgf/dut/cnt_status">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cnt_status</obj_property>
+      <obj_property name="ObjectShortName">cnt_status</obj_property>
+      <obj_property name="label">cnt_rgf.cnt_status</obj_property>
+   </wvobject>
+</wave_config>

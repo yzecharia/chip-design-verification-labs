@@ -1,0 +1,56 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:57:03 2026
+| Host         : 7480be0403c3 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_7/build/report/6_module_comparison/longest_path_pwm_led_cluster.rpt
+| Design       : pwm_led_cluster
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pwm_cfg[time_slots][2]
+                            (input port)
+  Destination:            wrap_cnt
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.866ns  (logic 1.906ns (32.492%)  route 3.960ns (67.508%))
+  Logic Levels:           8  (CARRY4=6 LUT1=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pwm_cfg[time_slots][2] (IN)
+                         net (fo=1, unset)            0.973     0.973    rgb_pwm_loop[0].pwm_i/pwm_cfg[time_slots][2]
+                         LUT1 (Prop_lut1_I0_O)        0.124     1.097 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.747 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.747    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.864 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     1.864    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.981 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en0_carry__2/CO[3]
+                         net (fo=24, unplaced)        1.192     3.173    rgb_pwm_loop[0].pwm_i/CO[0]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.657     3.830 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.830    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.947 r  rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en_carry__2/CO[3]
+                         net (fo=36, unplaced)        0.822     4.769    rgb_pwm_loop[0].pwm_i/sweep_time_cnt_en
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.893 r  rgb_pwm_loop[0].pwm_i/wrap_cnt_INST_0/O
+                         net (fo=16, unset)           0.973     5.866    wrap_cnt
+                                                                      r  wrap_cnt (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

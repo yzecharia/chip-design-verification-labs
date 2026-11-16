@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_dds_cluster_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="led_rgf_pkg" />
+            <top_module name="pwm_rgf_pkg" />
+            <top_module name="tb_dds_cluster" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="315000 ps"></ZoomEndTime>
+      <Cursor1Time time="108000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="95000" />
+      <marker label="2" time="115000" />
+      <marker label="3" time="155000" />
+      <marker label="4" time="215000" />
+      <marker label="5" time="235000" />
+   </wave_markers>
+   <WVObjectSize size="11" />
+   <wvobject type="array" fp_name="/tb_dds_cluster/pattern">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pattern[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pattern[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_cluster/pattern_change">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pattern_change</obj_property>
+      <obj_property name="ObjectShortName">pattern_change</obj_property>
+      <obj_property name="label">pattern_change</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_cluster/wrap_red">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wrap_red</obj_property>
+      <obj_property name="ObjectShortName">wrap_red</obj_property>
+      <obj_property name="label">wrap_red</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_cluster/wrap_green">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wrap_green</obj_property>
+      <obj_property name="ObjectShortName">wrap_green</obj_property>
+      <obj_property name="label">wrap_green</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_cluster/wrap_blue">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wrap_blue</obj_property>
+      <obj_property name="ObjectShortName">wrap_blue</obj_property>
+      <obj_property name="label">wrap_blue</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/red_pwm_ctrl.phase">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.phase[8:0]</obj_property>
+      <obj_property name="ObjectShortName">.phase[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">red_pwm_ctrl.phase</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/green_pwm_ctrl.phase">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.phase[8:0]</obj_property>
+      <obj_property name="ObjectShortName">.phase[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">green_pwm_ctrl.phase</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/blue_pwm_ctrl.phase">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.phase[8:0]</obj_property>
+      <obj_property name="ObjectShortName">.phase[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">blue_pwm_ctrl.phase</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/dds_pixel.red">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.red[9:0]</obj_property>
+      <obj_property name="ObjectShortName">.red[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_pixel.red</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/dds_pixel.green">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.green[9:0]</obj_property>
+      <obj_property name="ObjectShortName">.green[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_pixel.green</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_cluster/dds_pixel.blue">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.blue[9:0]</obj_property>
+      <obj_property name="ObjectShortName">.blue[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_pixel.blue</obj_property>
+   </wvobject>
+</wave_config>

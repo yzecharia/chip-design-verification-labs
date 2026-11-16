@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 13:02:34 2026
+| Host         : 7480be0403c3 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_7/build/report/6_module_comparison/longest_path_scaler.rpt
+| Design       : scaler
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pwm_cfg[sweep_time][15]
+                            (input port)
+  Destination:            scaled_vals[0][0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.787ns  (logic 3.841ns (66.373%)  route 1.946ns (33.627%))
+  Logic Levels:           1  (DSP48E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pwm_cfg[sweep_time][15] (IN)
+                         net (fo=2, unset)            0.973     0.973    pwm_cfg[sweep_time][15]
+                         DSP48E1 (Prop_dsp48e1_A[15]_P[10])
+                                                      3.841     4.814 r  scaled_vals[0]0/P[10]
+                         net (fo=0)                   0.973     5.787    scaled_vals[0][0]
+                                                                      r  scaled_vals[0][0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

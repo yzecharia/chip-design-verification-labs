@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_reg_interconnect_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="led_rgf_pkg" />
+            <top_module name="tb_reg_interconnect" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="408000 ps"></ZoomEndTime>
+      <Cursor1Time time="79000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="35000" />
+      <marker label="2" time="75000" />
+      <marker label="3" time="115000" />
+      <marker label="4" time="155000" />
+      <marker label="5" time="205000" />
+      <marker label="6" time="245000" />
+      <marker label="7" time="325000" />
+   </wave_markers>
+   <WVObjectSize size="13" />
+   <wvobject type="logic" fp_name="/tb_reg_interconnect/msg.msg_valid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.msg_valid</obj_property>
+      <obj_property name="ObjectShortName">.msg_valid</obj_property>
+      <obj_property name="label">msg.msg_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/msg.msg_type">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.msg_type[1:0]</obj_property>
+      <obj_property name="label">msg.msg_type</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/msg.msg_data.addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.addr[2:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">.addr[2:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">msg.msg_data.addr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/msg.msg_data.data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.data[5:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">.data[5:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">msg.msg_data.data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_reg_interconnect/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_reg_interconnect/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/cs_one_hot">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs_one_hot[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cs_one_hot[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">cs_one_hot[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/wdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_reg_interconnect/tx_data.start">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.start</obj_property>
+      <obj_property name="ObjectShortName">.start</obj_property>
+      <obj_property name="label">tx_data.start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/tx_data.msg.addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.addr[2:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">.addr[2:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">tx_data.msg.addr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_reg_interconnect/tx_data.msg.data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.data[5:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">.data[5:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">tx_data.msg.data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_reg_interconnect/msb_addr_err">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">msb_addr_err</obj_property>
+      <obj_property name="ObjectShortName">msb_addr_err</obj_property>
+      <obj_property name="label">msb_addr_err</obj_property>
+   </wvobject>
+</wave_config>

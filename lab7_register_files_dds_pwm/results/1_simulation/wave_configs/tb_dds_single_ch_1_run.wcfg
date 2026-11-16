@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_dds_single_ch_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="pwm_rgf_pkg" />
+            <top_module name="tb_dds_single_ch" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="785000 ps"></ZoomEndTime>
+      <Cursor1Time time="99000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="85000" />
+      <marker label="2" time="115000" />
+      <marker label="3" time="195000" />
+      <marker label="4" time="345000" />
+      <marker label="5" time="395000" />
+      <marker label="6" time="655000" />
+      <marker label="7" time="735000" />
+   </wave_markers>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/tb_dds_single_ch/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_single_ch/pattern_change">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pattern_change</obj_property>
+      <obj_property name="ObjectShortName">pattern_change</obj_property>
+      <obj_property name="label">pattern_change</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_dds_single_ch/cnt_wrap">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cnt_wrap</obj_property>
+      <obj_property name="ObjectShortName">cnt_wrap</obj_property>
+      <obj_property name="label">cnt_wrap</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/pwm_ch_ctrl.freq">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.freq[12:0]</obj_property>
+      <obj_property name="ObjectShortName">.freq[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pwm_ch_ctrl.freq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/pwm_ch_ctrl.mag">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.mag[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.mag[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pwm_ch_ctrl.mag</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/pwm_ch_ctrl.phase">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.phase[8:0]</obj_property>
+      <obj_property name="ObjectShortName">.phase[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pwm_ch_ctrl.phase</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/dut/acc">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">acc[16:0]</obj_property>
+      <obj_property name="ObjectShortName">acc[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">dds_single_ch.acc[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/dut/idx">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">idx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_single_ch.idx[8:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/dut/mag_val">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mag_val[12:0]</obj_property>
+      <obj_property name="ObjectShortName">mag_val[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_single_ch.mag_val[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_dds_single_ch/dds_ch_val">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dds_ch_val[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dds_ch_val[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">dds_ch_val[9:0]</obj_property>
+   </wvobject>
+</wave_config>

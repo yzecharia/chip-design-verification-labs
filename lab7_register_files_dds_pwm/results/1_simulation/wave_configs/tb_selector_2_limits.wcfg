@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_selector_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="led_rgf_pkg" />
+            <top_module name="tb_selector" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="342000 ps"></ZoomStartTime>
+      <ZoomEndTime time="645000 ps"></ZoomEndTime>
+      <Cursor1Time time="356000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="350000" />
+      <marker label="2" time="370000" />
+      <marker label="3" time="410000" />
+      <marker label="4" time="450000" />
+      <marker label="5" time="470000" />
+      <marker label="6" time="490000" />
+      <marker label="7" time="600000" />
+      <marker label="8" time="620000" />
+   </wave_markers>
+   <WVObjectSize size="9" />
+   <wvobject type="array" fp_name="/tb_selector/btn_in">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">btn_in</obj_property>
+      <obj_property name="ObjectShortName">btn_in</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">btn_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_selector/pc_led_update">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pc_led_update</obj_property>
+      <obj_property name="ObjectShortName">pc_led_update</obj_property>
+      <obj_property name="label">pc_led_update</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_selector/led_rgf_msg.led_ctrl.select">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.select[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led_ctrl.select</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_selector/led_rgf_msg.led16_value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led16_value</obj_property>
+      <obj_property name="ObjectShortName">.led16_value</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led16_value</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_selector/dut/display_cnt">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">display_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">display_cnt[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">selector.display_cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_selector/leds_out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">leds_out</obj_property>
+      <obj_property name="ObjectShortName">leds_out</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">leds_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_selector/sel_out.led_value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led_value</obj_property>
+      <obj_property name="ObjectShortName">.led_value</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">sel_out.led_value</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_selector/sel_out.display_led">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.display_led</obj_property>
+      <obj_property name="ObjectShortName">.display_led</obj_property>
+      <obj_property name="label">sel_out.display_led</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_selector/sel_out.btnc">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.btnc</obj_property>
+      <obj_property name="ObjectShortName">.btnc</obj_property>
+      <obj_property name="label">sel_out.btnc</obj_property>
+   </wvobject>
+</wave_config>

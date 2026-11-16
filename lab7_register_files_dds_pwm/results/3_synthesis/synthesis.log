@@ -1,0 +1,609 @@
+
+*** Running vivado
+    with args -log chip_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chip_top.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 15 12:21:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source chip_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2192.227 ; gain = 113.387 ; free physical = 6026 ; free virtual = 11732
+Command: read_checkpoint -auto_incremental -incremental /Users/yuval/Projects/labs/lab_7/build/vivado/lab_7.srcs/utils_1/imports/synth_chip_top/chip_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /Users/yuval/Projects/labs/lab_7/build/vivado/lab_7.srcs/utils_1/imports/synth_chip_top/chip_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top chip_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 699
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2899.594 ; gain = 485.945 ; free physical = 5421 ; free virtual = 10726
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'chip_top' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/chip_top.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'debounce_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce_cluster.sv:4]
+	Parameter DEB_COUNT bound to: 2000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv:3]
+	Parameter DEB_COUNT bound to: 2000000 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv:37]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce_cluster.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'rx_phy' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv:4]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv:67]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'rx_phy' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'rx_mac' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv:51]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv:51]
+INFO: [Synth 8-6155] done synthesizing module 'rx_mac' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'parser' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv:86]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv:99]
+INFO: [Synth 8-6155] done synthesizing module 'parser' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_interconnect' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv:25]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv:52]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv:52]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv:99]
+INFO: [Synth 8-6155] done synthesizing module 'reg_interconnect' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'selector' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:96]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'led_rgf' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv:50]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'led_rgf' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pwm_rgf' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv:25]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv:44]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_rgf' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'cnt_rgf' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv:57]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv:82]
+INFO: [Synth 8-6155] done synthesizing module 'cnt_rgf' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sys_rgf' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'sys_rgf' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'display_ctrl' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/display_ctrl.sv:3]
+	Parameter DISPLAY_RR bound to: 4000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv:2]
+	Parameter BAUD_RATE bound to: 4000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv:2]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/display_ctrl.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv:9]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_ctrl' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/display_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'led_src_mux' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_src_mux.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'gemma_correction_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction_cluster.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'gemma_correction' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'gemma_correction' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'gemma_correction_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction_cluster.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'cie_scaling_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling_cluster.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'cie_scaling' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'cie_scaling' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'cie_scaling_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling_cluster.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'dds_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:5]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:16]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:16]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:27]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:38]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'dds_single_ch' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_single_ch.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'dds_single_ch' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_single_ch.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'dds_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'led_src_mux' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_src_mux.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'scale_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scale_cluster.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'scaler' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scaler.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'scaler' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scaler.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'scale_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scale_cluster.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_cluster.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'pwm_led_cluster' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_led_cluster.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_led_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_led_cluster.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cluster' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_cluster.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'tx_mac' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:72]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:72]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:88]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:88]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'tx_mac' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tx_phy' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv:4]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_gen__parameterized0' [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv:2]
+	Parameter BAUD_RATE bound to: 57600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_gen__parameterized0' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv:2]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv:52]
+INFO: [Synth 8-226] default block is never used [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'tx_phy' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'chip_top' (0#1) [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/chip_top.sv:8]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[0].btn_prev_reg[up] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[0].btn_prev_reg[down] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[0].btn_prev_reg[left] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[0].btn_prev_reg[right] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[0].btn_prev_reg[center] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[1].btn_prev_reg[up] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[1].btn_prev_reg[down] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[1].btn_prev_reg[left] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[1].btn_prev_reg[right] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[1].btn_prev_reg[center] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[2].btn_prev_reg[up] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[2].btn_prev_reg[down] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[2].btn_prev_reg[left] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[2].btn_prev_reg[right] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[2].btn_prev_reg[center] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[3].btn_prev_reg[up] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[3].btn_prev_reg[down] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[3].btn_prev_reg[left] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[3].btn_prev_reg[right] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[3].btn_prev_reg[center] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[4].btn_prev_reg[up] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[4].btn_prev_reg[down] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[4].btn_prev_reg[left] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[4].btn_prev_reg[right] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-7137] Register BTN_EDGE_DETECTORS[4].btn_prev_reg[center] in module selector has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv:39]
+WARNING: [Synth 8-6014] Unused sequential element msg_temp_reg[data][5] was removed.  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:65]
+WARNING: [Synth 8-6014] Unused sequential element msg_temp_reg[data][4] was removed.  [/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv:65]
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][7] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][6] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][5] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][4] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][3] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][2] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][1] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][5][0] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][7] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][6] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][5] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][4] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][3] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][2] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][1] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_in[msg][data][4][0] in module tx_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][15] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][14] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][13] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][12] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][11] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][10] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][9] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][8] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][7] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][6] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][5] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][4] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][3] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][2] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][1] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_cfg[time_slots][0] in module scaler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][15] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][14] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][13] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][12] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][11] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][10] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][9] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][8] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][7] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][6] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][5] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][4] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][3] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][2] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][1] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][sweep_time][0] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][15] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][14] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][13] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][12] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][11] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][10] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][9] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][8] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][7] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][6] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][5] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][4] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][3] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][2] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][1] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pwm_msg[pwm_cfg][time_slots][0] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_ctrl[select][1] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_ctrl[select][0] in module led_src_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[31] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[30] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[29] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[28] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[27] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[26] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[25] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[24] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[23] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[22] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[21] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[20] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[19] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[18] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[17] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[16] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[15] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[14] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[13] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[12] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[11] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[10] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[9] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[8] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[7] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[6] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[5] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[4] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[3] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[2] in module sys_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port msg[msg_data][addr][2][7] in module cnt_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port msg[msg_data][addr][2][6] in module cnt_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port msg[msg_data][addr][2][5] in module cnt_rgf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port msg[msg_data][addr][2][4] in module cnt_rgf is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 3014.172 ; gain = 600.523 ; free physical = 4176 ; free virtual = 9906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 3032.207 ; gain = 618.559 ; free physical = 4076 ; free virtual = 9844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 3032.207 ; gain = 618.559 ; free physical = 4068 ; free virtual = 9837
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3033.016 ; gain = 0.078 ; free physical = 3724 ; free virtual = 9575
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/Users/yuval/Projects/labs/lab_7/lab7.srcs/constrs_1/new/NexysA7-100T_Master.xdc]
+Finished Parsing XDC File [/Users/yuval/Projects/labs/lab_7/lab7.srcs/constrs_1/new/NexysA7-100T_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/Users/yuval/Projects/labs/lab_7/lab7.srcs/constrs_1/new/NexysA7-100T_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/chip_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/chip_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3150.398 ; gain = 0.000 ; free physical = 4425 ; free virtual = 10291
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3152.703 ; gain = 0.000 ; free physical = 4450 ; free virtual = 10315
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3153.059 ; gain = 739.410 ; free physical = 4395 ; free virtual = 10202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3161.176 ; gain = 747.527 ; free physical = 4395 ; free virtual = 10204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3161.230 ; gain = 747.582 ; free physical = 4395 ; free virtual = 10211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debounce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  DEB_S0 |                               10 |                               00
+                  DEB_W1 |                               11 |                               01
+                  DEB_S1 |                               01 |                               10
+                  DEB_W0 |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RX_MAC_IDLE |                             0010 |                               00
+           RX_MAC_OPCODE |                             0100 |                               01
+            RX_MAC_VALUE |                             1000 |                               10
+        RX_MAC_DONE_NEXT |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'rx_mac'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 3162.805 ; gain = 749.156 ; free physical = 4403 ; free virtual = 10261
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 12    
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 8     
+	               13 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 37    
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 22    
+	   4 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 30    
+	   5 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 14    
+	   2 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 50    
+	   4 Input    2 Bit        Muxes := 17    
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 66    
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 18    
+	   5 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0.
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0.
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0.
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0.
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0.
+DSP Report: Generating DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0, operation Mode is: A*B.
+DSP Report: operator scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 is absorbed into DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 3162.805 ; gain = 749.156 ; free physical = 4520 ; free virtual = 9959
+---------------------------------------------------------------------------------
+ Sort Area is  scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0_3 : 0 0 : 1089 1089 : Used 1 time 0
+ Sort Area is  scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0_2 : 0 0 : 1089 1089 : Used 1 time 0
+ Sort Area is  scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0_0 : 0 0 : 1089 1089 : Used 1 time 0
+ Sort Area is  scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0_6 : 0 0 : 1089 1089 : Used 1 time 0
+ Sort Area is  scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0_5 : 0 0 : 1089 1089 : Used 1 time 0
+ Sort Area is  scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0_4 : 0 0 : 1089 1089 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+-----------------------------------------+---------------+----------------+
+|Module Name      | RTL Object                              | Depth x Width | Implemented As | 
++-----------------+-----------------------------------------+---------------+----------------+
+|gemma_correction | gamma_table                             | 256x10        | LUT            | 
+|gemma_correction | gamma_table                             | 256x10        | LUT            | 
+|gemma_correction | gamma_table                             | 256x10        | LUT            | 
+|dds_single_ch    | wave_table                              | 512x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led17_gemma_i/gamma_table | 256x10        | LUT            | 
+|led_src_mux      | dds_clust_i/dds_red_ch/wave_table       | 512x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led17_gemma_i/gamma_table | 256x10        | LUT            | 
+|led_src_mux      | dds_clust_i/dds_green_ch/wave_table     | 512x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led17_gemma_i/gamma_table | 256x10        | LUT            | 
+|led_src_mux      | dds_clust_i/dds_blue_ch/wave_table      | 512x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led16_gemma_i/gamma_table | 256x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led16_gemma_i/gamma_table | 256x10        | LUT            | 
+|led_src_mux      | gemma_clust_i/led16_gemma_i/gamma_table | 256x10        | LUT            | 
++-----------------+-----------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scaler      | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 3242.398 ; gain = 828.750 ; free physical = 4299 ; free virtual = 10133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:22 . Memory (MB): peak = 3271.730 ; gain = 858.082 ; free physical = 4220 ; free virtual = 10034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 3285.973 ; gain = 872.324 ; free physical = 4279 ; free virtual = 10062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.770 ; gain = 983.121 ; free physical = 4144 ; free virtual = 9872
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.777 ; gain = 983.129 ; free physical = 4143 ; free virtual = 9872
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.840 ; gain = 983.191 ; free physical = 4139 ; free virtual = 9896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.852 ; gain = 983.203 ; free physical = 4139 ; free virtual = 9881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.875 ; gain = 983.227 ; free physical = 4139 ; free virtual = 9879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 3396.879 ; gain = 983.230 ; free physical = 4135 ; free virtual = 9882
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|scaler      | (A*B)'      | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   240|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |    48|
+|5     |LUT2    |   357|
+|6     |LUT3    |   230|
+|7     |LUT4    |   382|
+|8     |LUT5    |   422|
+|9     |LUT6    |   840|
+|10    |MUXF7   |   156|
+|11    |MUXF8   |    50|
+|12    |FDCE    |  1011|
+|13    |FDPE    |    33|
+|14    |IBUF    |     8|
+|15    |OBUF    |    39|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 3396.926 ; gain = 983.277 ; free physical = 4135 ; free virtual = 9901
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 182 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 3396.969 ; gain = 862.820 ; free physical = 4135 ; free virtual = 9924
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:31 . Memory (MB): peak = 3396.980 ; gain = 983.320 ; free physical = 4135 ; free virtual = 9924
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3397.125 ; gain = 0.000 ; free physical = 4416 ; free virtual = 10210
+INFO: [Netlist 29-17] Analyzing 452 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3456.582 ; gain = 0.000 ; free physical = 4497 ; free virtual = 10009
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 935ad20d
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 3458.625 ; gain = 1266.398 ; free physical = 4178 ; free virtual = 9863
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2194.062; main = 2018.237; forked = 424.697
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5792.078; main = 3456.660; forked = 2641.410
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3482.203 ; gain = 0.469 ; free physical = 4190 ; free virtual = 9912
+INFO: [Common 17-1381] The checkpoint '/Users/yuval/Projects/labs/lab_7/build/vivado/lab_7.runs/synth_chip_top/chip_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file chip_top_utilization_synth.rpt -pb chip_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 15 12:23:31 2026...

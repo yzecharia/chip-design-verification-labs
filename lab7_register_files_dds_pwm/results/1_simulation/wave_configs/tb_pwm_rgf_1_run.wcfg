@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_pwm_rgf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="pwm_rgf_pkg" />
+            <top_module name="tb_pwm_rgf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="495000 ps"></ZoomEndTime>
+      <Cursor1Time time="47000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="35000" />
+      <marker label="2" time="95000" />
+      <marker label="3" time="125000" />
+      <marker label="4" time="185000" />
+      <marker label="5" time="305000" />
+      <marker label="6" time="365000" />
+      <marker label="7" time="395000" />
+   </wave_markers>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/cs">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+      <obj_property name="label">cs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/wdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/rdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/pwm_rgf_msg.pwm_cfg.sweep_time">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.sweep_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">.sweep_time[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pwm_rgf_msg.pwm_cfg.sweep_time</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/pwm_rgf_msg.pwm_cfg.time_slots">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.time_slots[15:0]</obj_property>
+      <obj_property name="ObjectShortName">.time_slots[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pwm_rgf_msg.pwm_cfg.time_slots</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/pwm_rgf_msg.red_ctrl">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.red_ctrl</obj_property>
+      <obj_property name="ObjectShortName">.red_ctrl</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">pwm_rgf_msg.red_ctrl</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/pwm_rgf_msg.green_ctrl">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.green_ctrl</obj_property>
+      <obj_property name="ObjectShortName">.green_ctrl</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">pwm_rgf_msg.green_ctrl</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/pwm_rgf_i/sweep_err">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sweep_err</obj_property>
+      <obj_property name="ObjectShortName">sweep_err</obj_property>
+      <obj_property name="label">pwm_rgf.sweep_err</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pwm_rgf/pwm_rgf_i/time_err">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">time_err</obj_property>
+      <obj_property name="ObjectShortName">time_err</obj_property>
+      <obj_property name="label">pwm_rgf.time_err</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pwm_rgf/pwm_rgf_i/pwm_status">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pwm_status</obj_property>
+      <obj_property name="ObjectShortName">pwm_status</obj_property>
+      <obj_property name="label">pwm_rgf.pwm_status</obj_property>
+   </wvobject>
+</wave_config>

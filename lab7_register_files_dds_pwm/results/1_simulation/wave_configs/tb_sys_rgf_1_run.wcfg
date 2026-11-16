@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sys_rgf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="sys_rgf_pkg" />
+            <top_module name="tb_sys_rgf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="400000 ps"></ZoomEndTime>
+      <Cursor1Time time="57000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="50000" />
+      <marker label="2" time="110000" />
+      <marker label="3" time="150000" />
+      <marker label="4" time="210000" />
+      <marker label="5" time="225000" />
+      <marker label="6" time="280000" />
+      <marker label="7" time="325000" />
+      <marker label="8" time="370000" />
+   </wave_markers>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/tb_sys_rgf/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/cs">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+      <obj_property name="label">cs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_sys_rgf/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_sys_rgf/wdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_sys_rgf/rdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/msb_addr_err">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">msb_addr_err</obj_property>
+      <obj_property name="ObjectShortName">msb_addr_err</obj_property>
+      <obj_property name="label">msb_addr_err</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/sw_rst">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sw_rst</obj_property>
+      <obj_property name="ObjectShortName">sw_rst</obj_property>
+      <obj_property name="label">sw_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/en">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+      <obj_property name="label">en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_sys_rgf/dut/sys_status">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sys_status</obj_property>
+      <obj_property name="ObjectShortName">sys_status</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">sys_rgf.sys_status[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_sys_rgf/dut/status_sel">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">status_sel</obj_property>
+      <obj_property name="ObjectShortName">status_sel</obj_property>
+      <obj_property name="label">sys_rgf.status_sel</obj_property>
+   </wvobject>
+</wave_config>

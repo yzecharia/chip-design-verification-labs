@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_led_rgf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab7_pkg" />
+            <top_module name="led_rgf_pkg" />
+            <top_module name="tb_led_rgf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="645000 ps"></ZoomEndTime>
+      <Cursor1Time time="47000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <wave_markers>
+      <marker label="1" time="35000" />
+      <marker label="2" time="65000" />
+      <marker label="3" time="125000" />
+      <marker label="4" time="155000" />
+      <marker label="5" time="215000" />
+      <marker label="6" time="275000" />
+      <marker label="7" time="365000" />
+      <marker label="8" time="455000" />
+      <marker label="9" time="515000" />
+   </wave_markers>
+   <WVObjectSize size="15" />
+   <wvobject type="logic" fp_name="/tb_led_rgf/reset_n">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="label">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/cs">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+      <obj_property name="label">cs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/wen">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+      <obj_property name="label">wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/ren">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+      <obj_property name="label">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/addr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/wdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/rdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/led_rgf_msg.led_ctrl">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led_ctrl</obj_property>
+      <obj_property name="ObjectShortName">.led_ctrl</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led_ctrl</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/led_rgf_msg.led_pattern">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led_pattern[1:0]</obj_property>
+      <obj_property name="ObjectShortName">.led_pattern[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led_pattern</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/led_rgf_msg.led16_value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led16_value</obj_property>
+      <obj_property name="ObjectShortName">.led16_value</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led16_value</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/led_rgf_msg.led17_value">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.led17_value</obj_property>
+      <obj_property name="ObjectShortName">.led17_value</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">led_rgf_msg.led17_value</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/select_in.btnc">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.btnc</obj_property>
+      <obj_property name="ObjectShortName">.btnc</obj_property>
+      <obj_property name="label">select_in.btnc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/pc_led_update">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pc_led_update</obj_property>
+      <obj_property name="ObjectShortName">pc_led_update</obj_property>
+      <obj_property name="label">pc_led_update</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_led_rgf/pattern_change">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pattern_change</obj_property>
+      <obj_property name="ObjectShortName">pattern_change</obj_property>
+      <obj_property name="label">pattern_change</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_led_rgf/led_rgf_i/led_status">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">led_status</obj_property>
+      <obj_property name="ObjectShortName">led_status</obj_property>
+      <obj_property name="label">led_rgf.led_status</obj_property>
+   </wvobject>
+</wave_config>

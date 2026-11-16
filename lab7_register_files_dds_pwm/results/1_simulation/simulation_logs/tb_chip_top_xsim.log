@@ -1,0 +1,232 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Xilinx/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_definitions.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/lab7_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/black_magic_box.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling.sv" into library work
+INFO: [VRFC 10-311] analyzing module cie_scaling
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cie_scaling_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module cie_scaling_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/cnt_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module cnt_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module dds_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/dds_single_ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module dds_single_ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/gemma_correction_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module gemma_correction_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module led_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/led_src_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module led_src_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_led_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_led_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/pwm_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module pwm_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/reg_interconnect.sv" into library work
+INFO: [VRFC 10-311] analyzing module reg_interconnect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scale_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module scale_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/scaler.sv" into library work
+INFO: [VRFC 10-311] analyzing module scaler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sin_wave_table.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/sys_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module sys_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sources_1/new/tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_baud_gen.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_chip_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_chip_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_cie_scailing.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cie_scailing
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_cnt_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cnt_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_dds_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dds_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_dds_single_ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dds_single_ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_debounce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_debounce_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_debounce_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_display_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_gemma_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_gemma_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_led_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_led_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_led_src_mux.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_led_src_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_parser.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm_cluster.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm_cluster
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_pwm_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pwm_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_reg_interconnect.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_reg_interconnect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_rx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_rx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_rx_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_scaler.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_scaler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_selector.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_seven_segment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_sys_rgf.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sys_rgf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_tx_mac.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_tx_phy.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_tx_phy
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -L unisims_ver -L unimacro_ver -s tb_chip_top_snap work.tb_chip_top work.glbl 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.lab7_pkg
+Compiling package work.led_rgf_pkg
+Compiling package work.pwm_rgf_pkg
+Compiling package work.cnt_rgf_pkg
+Compiling package work.sys_rgf_pkg
+Compiling module work.debounce(DEB_COUNT=10)
+Compiling module work.debounce_cluster_default
+Compiling module work.rx_phy_default
+Compiling module work.rx_mac_default
+Compiling module work.parser_default
+Compiling module work.reg_interconnect
+Compiling module work.selector_default
+Compiling module work.led_rgf
+Compiling module work.pwm_rgf
+Compiling module work.cnt_rgf
+Compiling module work.sys_rgf
+Compiling module work.baud_gen(BAUD_RATE=10000000)
+Compiling module work.seven_segment
+Compiling module work.display_ctrl
+Compiling module work.gemma_correction
+Compiling module work.gemma_correction_cluster
+Compiling module work.cie_scaling
+Compiling module work.cie_scaling_cluster
+Compiling module work.dds_single_ch
+Compiling module work.dds_cluster
+Compiling module work.led_src_mux
+Compiling module work.scaler_default
+Compiling module work.scale_cluster_default
+Compiling module work.pwm
+Compiling module work.pwm_led_cluster_default
+Compiling module work.pwm_cluster
+Compiling module work.tx_mac_default
+Compiling module work.baud_gen_default
+Compiling module work.tx_phy_default
+Compiling module work.chip_top
+Compiling module work.tb_chip_top
+Compiling module work.glbl
+Built simulation snapshot tb_chip_top_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 15 12:23:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_chip_top_snap/xsim_script.tcl
+# xsim {tb_chip_top_snap} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## open_vcd {/Users/yuval/Projects/labs/lab_7/build/xsim/behavioral/tb_chip_top/tb_chip_top.vcd}
+## log_vcd [get_objects -r /tb_chip_top/*]
+INFO: HDL object /tb_chip_top/dut/led_src_mux_i/gemma_clust_i/led16_gemma_i/gamma_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+INFO: HDL object /tb_chip_top/dut/led_src_mux_i/gemma_clust_i/led17_gemma_i/gamma_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+INFO: HDL object /tb_chip_top/dut/led_src_mux_i/dds_clust_i/dds_red_ch/wave_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+INFO: HDL object /tb_chip_top/dut/led_src_mux_i/dds_clust_i/dds_green_ch/wave_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+INFO: HDL object /tb_chip_top/dut/led_src_mux_i/dds_clust_i/dds_blue_ch/wave_table is an unpacked array. VCD does not support unpacked array type according to IEEE LRM 1800-2009, section21.7.5.
+## run -all
+Time: 0 | Scenario 1 - reset values
+Time: 0 | TASK: Reset DUT
+Time: 35760000 | PASS: sys_ctrl = 00000001
+Time: 71220000 | PASS: sys_status = 00000000
+Time: 106680000 | PASS: led_pattern = 00000000
+Time: 106680000 | Scenario 2 - write and read back
+Time: 106680000 | TASK: Write 00000001 to rgf 0 offset 4
+Time: 167940000 | PASS: led_pattern = 00000001
+Time: 167940000 | Scenario 3 - counters
+Time: 167940000 | TASK: Send {R255,G000,B000}
+Time: 193740000 | TASK: Send {R010,G020,B030}
+Time: 219540000 | TASK: Send {L017}
+Time: 264800000 | PASS: rx_packet = 00000008
+Time: 300260000 | PASS: tx_packet = 00000005
+Time: 335720000 | PASS: color_msg = 00000002
+Time: 371180000 | PASS: config_msg = 00000009
+Time: 371180000 | Scenario 4 - address errors
+Time: 406640000 | PASS: bad offset = 00000000
+Time: 442100000 | PASS: cnt_status = 00000001
+Time: 477560000 | PASS: cnt_status after read = 00000000
+Time: 525820000 | PASS: sys_status = 00000002
+Time: 561280000 | PASS: sys_status after read = 00000000
+Time: 561280000 | Scenario 5 - enable
+Time: 561280000 | TASK: Write 00000000 to rgf 3 offset 0
+Time: 587130000 | PASS: outputs are off
+Time: 622590000 | PASS: sys_ctrl = 00000000
+Time: 622640000 | PASS: outputs are off
+Time: 622640000 | TASK: Write 00000001 to rgf 3 offset 0
+Time: 648490000 | PASS: outputs follow the data path
+Time: 648490000 | Scenario 6 - sw reset
+Time: 648490000 | TASK: Write 00000003 to rgf 3 offset 0
+Time: 709750000 | PASS: rx_packet = 00000000
+Time: 745210000 | PASS: led_pattern = 00000000
+Time: 780670000 | PASS: sys_ctrl = 00000001
+TEST PASSED
+$finish called at time : 780770 ns : File "/Users/yuval/Projects/labs/lab_7/lab7.srcs/sim_1/new/tb_chip_top.sv" Line 244
+run: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:21 . Memory (MB): peak = 2096.824 ; gain = 0.000 ; free physical = 6283 ; free virtual = 11791
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 710348 KB (Peak: 758056 KB), Simulation CPU Usage: 7790 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov 15 12:24:12 2026...

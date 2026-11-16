@@ -1,0 +1,528 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:29:29 2026
+| Host         : 862b4f736c0c running 64-bit unknown
+| Command      : report_methodology -file /Users/yuval/Projects/labs/lab_7/build/report/4_implementation/chip_top/methodology_impl.rpt
+| Design       : chip_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_chip_top
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 97
++---------+----------+------------------------------+--------+
+| Rule    | Severity | Description                  | Checks |
++---------+----------+------------------------------+--------+
+| DPIR-1  | Warning  | Asynchronous driver check    | 96     |
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1      |
++---------+----------+------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[0]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[1]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[0].scaler_i/scaled_vals[2]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[0]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[1]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#82 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#83 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#84 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#85 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#86 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#87 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#88 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#89 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#90 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#91 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#92 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#93 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#94 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#95 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#96 Warning
+Asynchronous driver check  
+DSP scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0 input pin scale_cluster_i/scale_cluster_loop[1].scaler_i/scaled_vals[2]0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell sys_rgf_i/FSM_sequential_state[1]_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) pwm_signal0_carry_i_9/CLR, pwm_signal0_carry_i_9__0/CLR,
+pwm_signal0_carry_i_9__1/CLR, pwm_signal0_carry_i_9__2/CLR,
+pwm_signal0_carry_i_9__3/CLR, pwm_signal0_carry_i_9__4/CLR,
+tx_phy_i/sh_reg_reg[1]/PRE, tx_phy_i/sh_reg_reg[2]/PRE,
+tx_phy_i/sh_reg_reg[3]/PRE, tx_phy_i/sh_reg_reg[4]/PRE,
+tx_phy_i/sh_reg_reg[5]/PRE, tx_phy_i/sh_reg_reg[6]/PRE,
+tx_phy_i/sh_reg_reg[7]/PRE, tx_phy_i/sh_reg_reg[8]/PRE,
+tx_phy_i/state_reg/CLR (the first 15 of 913 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

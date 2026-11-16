@@ -1,0 +1,38 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sun Nov 15 12:43:17 2026
+| Host         : 7480be0403c3 running 64-bit unknown
+| Command      : report_timing -from [all_inputs] -to [all_outputs] -max_paths 1 -file /Users/yuval/Projects/labs/lab_7/build/report/6_module_comparison/longest_path_dds_single_ch.rpt
+| Design       : dds_single_ch
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pwm_ch_ctrl[mag][0]
+                            (input port)
+  Destination:            dds_ch_val[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.167ns  (logic 0.248ns (7.831%)  route 2.919ns (92.169%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pwm_ch_ctrl[mag][0] (IN)
+                         net (fo=14, unset)           0.973     0.973    pwm_ch_ctrl[mag][0]
+                         LUT5 (Prop_lut5_I0_O)        0.124     1.097 r  dds_ch_val[7]_INST_0_i_4/O
+                         net (fo=6, unplaced)         0.973     2.070    dds_ch_val[7]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     2.194 r  dds_ch_val[2]_INST_0/O
+                         net (fo=0)                   0.973     3.167    dds_ch_val[2]
+                                                                      r  dds_ch_val[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

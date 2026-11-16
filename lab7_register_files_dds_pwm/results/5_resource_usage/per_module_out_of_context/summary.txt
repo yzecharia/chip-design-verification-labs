@@ -1,0 +1,32 @@
+MODULE COMPARISON (each module synthesized alone, out-of-context, no I/O buffers)
+  Module                 LUTs    FFs  CARRY4   Levels   Delay (ns)*
+  baud_gen                 19     11       0        -             -
+  cie_scaling               3      0       3        4         2.952
+  cie_scaling_cluster       6      0       6        4         2.952
+  cnt_rgf                  82    129      32        4         4.374
+  dds_cluster             443     51      15        2         3.167
+  dds_single_ch           145     17       5        2         3.167
+  debounce                 31     25       6        -             -
+  debounce_cluster        152    127      30        -             -
+  display_ctrl             45     23       4        3          3.75
+  gemma_correction        108      0       0        2         3.158
+  gemma_correction_cluster    216      0       0        2         3.158
+  led_rgf                  76     60       0        4         4.447
+  led_src_mux             699     51      21        8         5.965
+  parser                  177     59      31        -             -
+  pwm                     115     49      26        8          5.84
+  pwm_cluster             535    294     116        8         5.883
+  pwm_led_cluster         283    147      62        8         5.866
+  pwm_rgf                  87    105       0        4         4.663
+  reg_interconnect        158      0       0        3         3.872
+  rx_mac                  147    137       0        -             -
+  rx_phy                   42     31       0        -             -
+  scale_cluster             0      0       0        1         5.787
+  scaler                    0      0       0        1         5.787
+  selector                 78     32       6        1          2.07
+  seven_segment             7      0       0        1          2.07
+  sys_rgf                  11      4       0        3         3.531
+  tx_mac                   61     63       0        1          2.07
+  tx_phy                   36     25       0        -             -
+  * longest input-to-output path after synthesis (estimate, before placement)
+  Reports: utilization_<module>.rpt, longest_path_<module>.rpt; schematics: ooc_<module>.pdf

@@ -1,0 +1,26 @@
+Assertion-based testbenches (immediate asserts + SVA properties), Vivado xsim, SIM defines.
+tb_debounce        debounce                       11 immediate + 1 SVA assertions, 0 errors  738 ns
+tb_debounce_cluster debounce_cluster (+5 debounce)  3 immediate + 2 SVA assertions, 0 errors  1,533 ns
+tb_rx_phy          rx_phy                          6 immediate + 2 SVA assertions, 0 errors  10,010 ns
+tb_rx_mac          rx_mac                          2 immediate + 0 SVA assertions, 0 errors  2,750 ns
+tb_parser          parser                          3 immediate + 0 SVA assertions, 0 errors  250 ns
+tb_reg_interconnect reg_interconnect                7 immediate + 0 SVA assertions, 0 errors  395 ns
+tb_led_rgf         led_rgf                        17 immediate + 4 SVA assertions, 0 errors  645 ns
+tb_pwm_rgf         pwm_rgf                        12 immediate + 2 SVA assertions, 0 errors  495 ns
+tb_cnt_rgf         cnt_rgf                         3 immediate + 0 SVA assertions, 0 errors  490 ns
+tb_sys_rgf         sys_rgf                         5 immediate + 0 SVA assertions, 0 errors  400 ns
+tb_selector        selector                       11 immediate + 0 SVA assertions, 0 errors  650 ns
+tb_display_ctrl    display_ctrl (+ baud_gen, seven_segment)  4 immediate + 0 SVA assertions, 0 errors  1,660 ns
+tb_seven_segment   seven_segment                   0 immediate + 0 SVA assertions, 0 errors  170 ns
+tb_gemma_correction gemma_correction                3 immediate + 0 SVA assertions, 0 errors  7,680 ns
+tb_cie_scailing    cie_scaling                     1 immediate + 0 SVA assertions, 0 errors  10,290 ns
+tb_dds_single_ch   dds_single_ch                   3 immediate + 4 SVA assertions, 0 errors  785 ns
+tb_dds_cluster     dds_cluster (+3 dds_single_ch)  4 immediate + 0 SVA assertions, 0 errors  3,750 ns
+tb_led_src_mux     led_src_mux (+ gamma, CIE and DDS clusters)  7 immediate + 0 SVA assertions, 0 errors  230 ns
+tb_scaler          scaler                          1 immediate + 0 SVA assertions, 0 errors  30 ns
+tb_pwm             pwm                             2 immediate + 0 SVA assertions, 0 errors  9,610 ns
+tb_pwm_cluster     pwm_cluster (+2 pwm_led_cluster, 6 pwm)  3 immediate + 0 SVA assertions, 0 errors  3,210 ns
+tb_tx_mac          tx_mac                          3 immediate + 0 SVA assertions, 0 errors  11,250 ns
+tb_tx_phy          tx_phy (+ baud_gen)             4 immediate + 2 SVA assertions, 0 errors  7,450 ns
+tb_baud_gen        baud_gen                        6 immediate + 3 SVA assertions, 0 errors  510 ns
+tb_chip_top        chip_top (the whole design)     5 immediate + 0 SVA assertions, 0 errors  780,770 ns
